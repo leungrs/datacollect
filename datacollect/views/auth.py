@@ -50,13 +50,13 @@ def register():
         error = None
 
         if not username:
-            error = 'Username is required.'
+            error = '请输入用户名'
         elif not password:
-            error = 'Password is required.'
+            error = '请输入密码'
         elif db.execute(
             'SELECT id FROM user WHERE username = ?', (username,)
         ).fetchone() is not None:
-            error = 'User {0} is already registered.'.format(username)
+            error = '用户名 {0} 已经存在'.format(username)
 
         if error is None:
             # the name is available, store it in the database and go to
@@ -86,15 +86,15 @@ def login():
         ).fetchone()
 
         if user is None:
-            error = 'Incorrect username.'
+            error = '用户名不存在'
         elif not check_password_hash(user['password'], password):
-            error = 'Incorrect password.'
+            error = '密码错误'
 
         if error is None:
             # store the user id in a new session and return to the index
             session.clear()
             session['user_id'] = user['id']
-            return redirect(url_for('index'))
+            return redirect(url_for('blog.index'))
 
         flash(error)
 
@@ -105,4 +105,4 @@ def login():
 def logout():
     """Clear the current session, including the stored user id."""
     session.clear()
-    return redirect(url_for('index'))
+    return redirect(url_for('auth.login'))

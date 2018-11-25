@@ -1,8 +1,13 @@
 import sqlite3
 
 import click
+import os
+import time
 from flask import current_app, g
 from flask.cli import with_appcontext
+
+
+schema_sql_file = "schema.sqlite.sql"
 
 
 def get_db():
@@ -32,9 +37,15 @@ def close_db(e=None):
 
 def init_db():
     """Clear existing data and create new tables."""
+
+    # backup old db if exists
+    database = current_app.config['DATABASE']
+    timestamp = time.strftime("%Y%m%d%H%M%S")
+    os.rename(database, database + "." + timestamp)
+
     db = get_db()
 
-    with current_app.open_resource('schema.sql') as f:
+    with current_app.open_resource(schema_sql_file) as f:
         db.executescript(f.read().decode('utf8'))
 
 

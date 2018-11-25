@@ -1,12 +1,15 @@
+# coding: utf-8
+
 from flask import (
     Blueprint, flash, g, redirect, render_template, request, url_for
 )
 from werkzeug.exceptions import abort
 
+from datacollect import get_db
 from datacollect.views.auth import login_required
-from datacollect.db import get_db
+from datacollect.dao import restaurant
 
-bp = Blueprint('blog', __name__, url_prefix="/blog")
+bp = Blueprint('restaurant', __name__, url_prefix="/restaurant")
 
 
 @bp.route('/')
@@ -14,12 +17,8 @@ bp = Blueprint('blog', __name__, url_prefix="/blog")
 def index():
     """Show all the posts, most recent first."""
     db = get_db()
-    posts = db.execute(
-        'SELECT p.id, title, body, created, author_id, username'
-        ' FROM post p JOIN user u ON p.author_id = u.id'
-        ' ORDER BY created DESC'
-    ).fetchall()
-    return render_template('blog/index.html', posts=posts)
+    restaurants = restaurant.select_restaurant(db, {})
+    return render_template('restaurant/index.html')
 
 
 def get_post(id, check_author=True):
@@ -77,7 +76,7 @@ def create():
     return render_template('blog/create.html')
 
 
-@bp.route('/blog/<int:id>/update', methods=('GET', 'POST'))
+@bp.route('/<int:id>/update', methods=('GET', 'POST'))
 @login_required
 def update(id):
     """Update a post if the current user is the author."""
@@ -105,10 +104,11 @@ def update(id):
     return render_template('blog/update.html', post=post)
 
 
-@bp.route('/blog/<int:id>/delete', methods=('POST',))
+@bp.route('/<int:id>/delete', methods=('POST',))
 @login_required
 def delete(id):
     """Delete a post.
+
     Ensures that the post exists and that the logged in user is the
     author of the post.
     """
