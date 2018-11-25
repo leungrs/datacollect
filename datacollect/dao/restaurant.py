@@ -6,3 +6,6 @@ def select_restaurant(db, param):
     print(param)
     restaurants = db.execute(sql).fetchall()
     return restaurants
+
+
+

@@ -7,7 +7,8 @@ from flask import current_app, g
 from flask.cli import with_appcontext
 
 
-schema_sql_file = "schema.sqlite.sql"
+schema_sql_file = "sql/schema.sqlite.sql"
+data_sql_file = "sql/data.sqlite.sql"
 
 
 def get_db():
@@ -46,6 +47,8 @@ def init_db():
     db = get_db()
 
     with current_app.open_resource(schema_sql_file) as f:
+        db.executescript(f.read().decode('utf8'))
+    with current_app.open_resource(data_sql_file) as f:
         db.executescript(f.read().decode('utf8'))
 
 

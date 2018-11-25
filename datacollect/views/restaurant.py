@@ -1,7 +1,8 @@
 # coding: utf-8
 
 from flask import (
-    Blueprint, flash, g, redirect, render_template, request, url_for
+    Blueprint, flash, g, redirect, render_template,
+    request, url_for,jsonify
 )
 from werkzeug.exceptions import abort
 
@@ -19,6 +20,25 @@ def index():
     db = get_db()
     restaurants = restaurant.select_restaurant(db, {})
     return render_template('restaurant/index.html')
+
+
+@bp.route('/crud')
+@login_required
+def crud():
+    """Show all the posts, most recent first."""
+    return render_template('restaurant/crud.html')
+
+
+@bp.route('/list', methods=["POST", "GET"])
+@login_required
+def query():
+    print(request)
+    result = [{
+        "id":1,
+        "name":"lai",
+        "price": 1.2
+    }]
+    return jsonify(result)
 
 
 def get_post(id, check_author=True):

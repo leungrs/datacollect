@@ -2,14 +2,29 @@
 -- Drop any existing data and create empty tables.
 
 DROP TABLE IF EXISTS user;
+DROP TABLE IF EXISTS user_last_cache;
+DROP TABLE IF EXISTS survey_types;
+DROP TABLE IF EXISTS post;
 DROP TABLE IF EXISTS ent_restaurant_survey;
 
+-- 用户信息表
 CREATE TABLE user (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   username TEXT UNIQUE NOT NULL,
   password TEXT NOT NULL
 );
-
+-- 用户上次操作系统的缓存信息表
+CREATE TABLE user_last_cache (
+  user_id INTEGER NOT NULL,
+  survey_type_id INTEGER NOT NULL -- 上次操作的调查表类型
+);
+-- 调查表类型表
+CREATE TABLE survey_types (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,  -- 简称
+  fullname TEXT NOT NULL -- 全称
+);
+-- 博客表
 CREATE TABLE post (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   author_id INTEGER NOT NULL,
@@ -18,7 +33,6 @@ CREATE TABLE post (
   body TEXT NOT NULL,
   FOREIGN KEY (author_id) REFERENCES user (id)
 );
-
 -- 餐饮企业污染源信息调查表
 CREATE TABLE ent_restaurant_survey (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -70,3 +84,4 @@ CREATE TABLE ent_restaurant_survey (
   updated_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updated_by TEXT NOT NULL
 );
+
