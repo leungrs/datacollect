@@ -1,15 +1,91 @@
 {% extends 'base.html' %}
 
-{% block header %}
-  <h1>{% block title %}New Post{% endblock %}</h1>
-{% endblock %}
-
 {% block content %}
-  <form method="post">
-    <label for="title">Title</label>
-    <input name="title" id="title" value="{{ request.form['title'] }}" required>
-    <label for="body">Body</label>
-    <textarea name="body" id="body">{{ request.form['body'] }}</textarea>
-    <input type="submit" value="Save">
-  </form>
+<div class="container">
+    <form>
+        <fieldset>
+        <legend>企业基本信息</legend>
+        <div class="form-row">
+            <label class="col-sm-2 text-right" for="uniform_credit_code">
+                统一社会信用代码
+            </label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="uniform_credit_code">
+            </div>
+            <label class="col-sm-2 text-right" for="origin_org_code">原组织机构代码号</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="origin_org_code"
+                       placeholder="尚未领取统一社会信用代码的填写">
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="col-sm-2 text-right" for="ent_name">单位详细名称</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="ent_name">
+            </div>
+            <label class="col-sm-2 text-right" for="ent_former_name">曾用名</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="ent_former_name">
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="col-sm-2 text-right" for="province">省（自治区、直辖市）</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="province">
+            </div>
+            <label class="col-sm-2 text-right" for="city">地（区、市、州、盟）</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="city">
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="col-sm-2 text-right" for="district">县（区、市、旗）</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="district">
+            </div>
+            <label class="col-sm-2 text-right" for="town">乡（镇）</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="town">
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="col-sm-2 text-right" for="address">街，村，门牌号</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="address">
+            </div>
+            <label class="col-sm-2 text-right" for="region_code">区划代码</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="region_code">
+            </div>
+        </div>
+        </fieldset>
+        <fieldset>
+            <legend>企业地理坐标</legend>
+            <div class="form-row">
+                <label class="col-sm-2 text-right" for="address">经度（度、分、秒）</label>
+                <div class="col-sm-4">
+                    <div class="input-group">
+                      <input type="text" class="text-right form-control form-control-sm" placeholder="度">
+                      <input type="text" class="text-right form-control form-control-sm" placeholder="分">
+                      <input type="text" class="text-right form-control form-control-sm" placeholder="秒">
+                    </div>
+                </div>
+                <label class="col-sm-2 text-right" for="region_code">纬度（度、分、秒）</label>
+                <div class="col-sm-4">
+                    <div class="input-group">
+                      <input type="text" class="text-right form-control form-control-sm" placeholder="度">
+                      <input type="text" class="text-right form-control form-control-sm" placeholder="分">
+                      <input type="text" class="text-right form-control form-control-sm" placeholder="秒">
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <hr>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">保存</button>
+            <button type="submit" class="btn btn-primary">取消</button>
+        </div>
+    </form>
+</div>
+
 {% endblock %}
