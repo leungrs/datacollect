@@ -1,19 +1,269 @@
 {% extends 'base.html' %}
 
-{% block header %}
-  <h1>{% block title %}Edit "{{ post['title'] }}"{% endblock %}</h1>
-{% endblock %}
-
 {% block content %}
-  <form method="post">
-    <label for="title">Title</label>
-    <input name="title" id="title" value="{{ request.form['title'] or post['title'] }}" required>
-    <label for="body">Body</label>
-    <textarea name="body" id="body">{{ request.form['body'] or post['body'] }}</textarea>
-    <input type="submit" value="Save">
-  </form>
-  <hr>
-  <form action="{{ url_for('blog.delete', id=post['id']) }}" method="post">
-    <input class="danger" type="submit" value="Delete" onclick="return confirm('Are you sure?');">
-  </form>
+<div class="container">
+    <form>
+        <fieldset>
+        <legend>企业基本信息</legend>
+        <div class="form-row">
+            <label class="col-sm-2 text-right" for="uniform_credit_code">
+                统一社会信用代码
+            </label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="uniform_credit_code">
+            </div>
+            <label class="col-sm-2 text-right" for="origin_org_code">原组织机构代码号</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="origin_org_code"
+                       placeholder="尚未领取统一社会信用代码的填写">
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="col-sm-2 text-right" for="ent_name">单位详细名称</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="ent_name">
+            </div>
+            <label class="col-sm-2 text-right" for="ent_former_name">曾用名</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="ent_former_name">
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="col-sm-2 text-right" for="province">省(自治区、直辖市)</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="province">
+            </div>
+            <label class="col-sm-2 text-right" for="city">地(区、市、州、盟)</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="city">
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="col-sm-2 text-right" for="district">县(区、市、旗)</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="district">
+            </div>
+            <label class="col-sm-2 text-right" for="town">乡(镇)</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="town">
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="col-sm-2 text-right" for="address">街，村，门牌号</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="address">
+            </div>
+            <label class="col-sm-2 text-right" for="region_code">区划代码</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="region_code">
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="col-sm-2 text-right" for="address">经度(度、分、秒)</label>
+            <div class="col-sm-4">
+                <div class="input-group">
+                  <input type="text" class="text-right form-control form-control-sm" placeholder="度">
+                  <input type="text" class="text-right form-control form-control-sm" placeholder="分">
+                  <input type="text" class="text-right form-control form-control-sm" placeholder="秒">
+                </div>
+            </div>
+            <label class="col-sm-2 text-right" for="region_code">纬度(度、分、秒)</label>
+            <div class="col-sm-4">
+                <div class="input-group">
+                  <input type="text" class="text-right form-control form-control-sm" placeholder="度">
+                  <input type="text" class="text-right form-control form-control-sm" placeholder="分">
+                  <input type="text" class="text-right form-control form-control-sm" placeholder="秒">
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="col-sm-2 text-right" for="address">法定(单位负责人)</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="legal_person">
+            </div>
+            <label class="col-sm-2 text-right" for="region_code">开业(成立)时间</label>
+            <div class="col-sm-4">
+                <input type="date" class="form-control form-control-sm" id="open_date">
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="col-sm-2 text-right" for="address">联系人</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="ent_contact">
+            </div>
+            <label class="col-sm-2 text-right" for="region_code">电话号码</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="ent_phone">
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="col-sm-2 text-right" for="address">餐饮类型</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="restaurant_type">
+            </div>
+            <label class="col-sm-2 text-right" for="region_code">炉头数</label>
+            <div class="col-sm-4">
+                <input type="number" class="form-control form-control-sm" id="burner_num">
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="col-sm-2 text-right" for="address">员工人数</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="employee_num">
+            </div>
+            <label class="col-sm-2 text-right" for="region_code">可容纳就餐人数</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="customer_capacity">
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="col-sm-2 text-right" for="address">经营面积(m2)</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="ent_area">
+            </div>
+            <label class="col-sm-2 text-right" for="region_code">年营业额(万元)</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm" id="annual_turnover">
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="col-sm-2 text-right" for="address">是/否正常运营</label>
+            <div class="col-sm-4 text-center">
+                <div class="form-check form-check-inline pr-6">
+                  <input class="form-check-input" type="radio"
+                         checked name="run_yes" id="run_yes" value="Y">
+                  <label class="form-check-label" for="run_yes">是</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="run_no"
+                         id="run_no" value="N">
+                  <label class="form-check-label" for="run_no">否</label>
+                </div>
+            </div>
+        </div>
+        </fieldset>
+        <fieldset>
+            <legend>食用油情况</legend>
+            <div class="form-row">
+                <label class="col-sm-2 text-right" for="address">食用油使用量(吨)</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control form-control-sm"
+                           id="cooking_oil">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>废水情况</legend>
+            <div class="form-row">
+                <label class="col-sm-2 text-right" for="water_used">年用水量(m3)</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="water_used">
+                </div>
+                <label class="col-sm-2 text-right" for="water_waster_emit">年废水排放量</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control form-control-sm"
+                           id="water_waster_emit">
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="col-sm-2 text-right" for="water_cod">化学需氧量浓度</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="water_cod">
+                </div>
+                <label class="col-sm-2 text-right" for="water_oil">动植物油浓度</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control form-control-sm" id="water_oil">
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="col-sm-2 text-right" for="water_nh4">氨氮浓度</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="water_nh4">
+                </div>
+                <label class="col-sm-2 text-right" for="water_tp">总磷浓度</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control form-control-sm" id="water_tp">
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="col-sm-2 text-right" for="address">是否有隔油设施</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="oil_device">
+                </div>
+                <label class="col-sm-2 text-right" for="region_code">是否安装在线监测</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control form-control-sm"
+                           id="water_monitor">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>废气情况</legend>
+            <div class="form-row">
+                <label class="col-sm-2 text-right" for="gas_emission_vol">
+                    油烟排放风量(m3/h)
+                </label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm"
+                           id="gas_emission_vol">
+                </div>
+                <label class="col-sm-2 text-right" for="device_runtime">年运行小时数</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control form-control-sm"
+                           id="device_runtime" placeholder="油烟排放设施年运行小时数">
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="col-sm-2 text-right" for="gas_solid">
+                    浓烟颗粒物浓度(mg/m3)
+                </label>
+                <div class="col-sm-4">
+                    <input type="text" name="gas_solid" class="form-control form-control-sm"
+                           id="gas_solid">
+                </div>
+                <label class="col-sm-2 text-right" for="not_ch4">
+                    非甲烷总烃浓度(mg/m3)
+                </label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control form-control-sm" id="not_ch4">
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="col-sm-2 text-right" for="gas_device">是否有油烟净化装置</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="gas_device">
+                </div>
+                <label class="col-sm-2 text-right" for="gas_monitor">是否安装在线监测</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control form-control-sm" id="gas_monitor">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>固体废物情况</legend>
+            <div class="form-row">
+                <label class="col-sm-2 text-right" for="kitchen_waster_volume">
+                    餐厨垃圾产生量
+                </label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm"
+                           id="kitchen_waster_volume">
+                </div>
+                <label class="col-sm-2 text-right" for="kitchen_waster_gone">
+                    餐厨垃圾去向
+                </label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control form-control-sm"
+                           id="kitchen_waster_gone">
+                </div>
+            </div>
+        </fieldset>
+        <hr>
+        <div class="text-center">
+            <button id="btn_save" class="btn btn-primary">保存</button>
+            <button id="btn_del" class="btn btn-primary">删除</button>
+        </div>
+    </form>
+</div>
+
 {% endblock %}

@@ -22,7 +22,11 @@ CREATE TABLE user_last_cache (
 CREATE TABLE survey_types (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT NOT NULL,  -- 简称
-  fullname TEXT NOT NULL -- 全称
+  fullname TEXT NOT NULL, -- 全称
+  index_page TEXT NOT NULL,  -- 对应的首页
+  attrib1 TEXT,
+  attrib2 TEXT,
+  attrib3 TEXT
 );
 -- 博客表
 CREATE TABLE post (
@@ -53,6 +57,7 @@ CREATE TABLE ent_restaurant_survey (
   latitude_m REAL,
   latitude_s REAL,
   legal_person TEXT, -- 法人代表
+  open_date DATE,  -- 开业(成立)时间
   ent_contact TEXT, -- 企业联系人
   ent_phone TEXT, -- 企业联系电话
   run_normally TEXT, -- 是否正常运营
@@ -64,6 +69,7 @@ CREATE TABLE ent_restaurant_survey (
   ent_area REAL, -- 经营面积
   cooking_oil REAL, -- 食用油使用量
   water_used REAL, -- 年用水量
+  water_waster_emit REAL, -- 年废水排放量
   oil_device TEXT, -- 是否有隔油设施
   water_cod REAL, -- 废水化学需氧量浓度
   water_nh4 REAL, -- 废水氨氮浓度

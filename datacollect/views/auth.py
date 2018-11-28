@@ -30,10 +30,16 @@ def load_logged_in_user():
 
     if user_id is None:
         g.user = None
+        g.survey_types = []
     else:
-        g.user = get_db().execute(
+        db = get_db()
+        g.user = db.execute(
             'SELECT * FROM user WHERE id = ?', (user_id,)
         ).fetchone()
+        survey_types = db.execute(
+            "select id, name, fullname, index_page from survey_types"
+        ).fetchall()
+        g.survey_types = survey_types
 
 
 @bp.route('/register', methods=('GET', 'POST'))
