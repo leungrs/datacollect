@@ -9,3 +9,7 @@
 .navbar {
   color: #563d7c;
 }
+
+.my-toolbar {
+    margin: .25rem 0;
+}

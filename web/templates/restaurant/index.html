@@ -1,8 +1,37 @@
 {% extends 'base.html' %}
 {% block title %}餐饮企业{% endblock %}
 {% block content %}
-  <table data-pagination="true" data-search="true"
-         data-toggle="table" data-url="{{url_for('restaurant.query')}}">
+
+<div class="search_area">
+<form>
+  <div class="form-row align-items-center">
+    <div class="col-auto">
+      <input type="text" class="form-control mb-2" id="inlineFormInput"
+             placeholder="社会统一信用代码">
+    </div>
+    <div class="col-auto">
+        <input type="text" class="form-control mb-2" id="inlineFormInputGroup" placeholder="企业名称">
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-2">搜索</button>
+    </div>
+  </div>
+</form>
+</div>
+
+<div class="my-toolbar">
+  <div class="btn-toolbar justify-content-between" role="toolbar">
+      <div class="btn-group" role="group" aria-label="First group">
+        <a href="/restaurant/create" class="btn btn-outline-primary">新增</a>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-outline-primary">Excel导入</button>
+        <button class="btn btn-outline-primary">Excel导出</button>
+      </div>
+  </div>
+</div>
+
+<table  data-method="post" data-toggle="table" data-url="{{url_for('restaurant.query')}}">
     <thead>
         <tr>
             <th data-sortable="true" data-field="id">ID</th>

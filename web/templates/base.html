@@ -9,51 +9,54 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.responsive.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.quickfix.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}">
     <title>{% block title %}{% endblock %}污染物调查</title>
     {% block header %}{% endblock %}
   </head>
   <body>
-  <div id="wrap">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <img style="margin-right: 10px;" src="{{ url_for('static', filename='img/login.png') }}" alt="" width="60" height="60">
-      <a class="navbar-brand" href="#">污染物调查系统</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown show">
-            <a class="nav-link dropdown-toggle" href="https://example.com"
-               id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
-               aria-expanded="false">调查表类型</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown03">
-              {% for survey_type in g.survey_types %}
-              <a class="dropdown-item" href="/{{survey_type['index_page']}}">{{ survey_type['fullname']}}</a>
-              {% endfor %}
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline mt-2 mt-md-0" action="/auth/logout">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">退出登录({{g.user.username}})</button>
-        </form>
-      </div>
-    </nav>
+    <div id="wrap">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <img style="margin-right: 10px;" src="{{ url_for('static', filename='img/login.png') }}" alt="" width="60" height="60">
+        <a class="navbar-brand" href="#">污染物调查系统</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown show">
+              <a class="nav-link dropdown-toggle" href="https://example.com"
+                 id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
+                 aria-expanded="false">调查表类型</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown03">
+                {% for survey_type in g.survey_types %}
+                <a class="dropdown-item" href="/{{survey_type['index_page']}}">{{ survey_type['fullname']}}</a>
+                {% endfor %}
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0" action="/auth/logout">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">退出登录({{g.user.username}})</button>
+          </form>
+        </div>
+      </nav>
 
-    <!-- Begin page content -->
-    <main id="content" role="main" class="container">
-      {% with messages = get_flashed_messages() %}
-        {% if messages %}
-          {% for message in messages %}
-            <div class="alert alert-block alert-error fade in">
-              <a class="close" data-dismiss="alert">&times;</a>
-              {{ message }}
-            </div>
-          {% endfor %}
-        {% endif %}
-      {% endwith %}
-      {% block content %}{% endblock %}
-    </main>
-  </div>
+      <!-- Begin page content -->
+      <main id="content" role="main" class="container">
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                {{message}}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+      </main>
+    </div>
 
     <div id="footer">
       <div class="container">
