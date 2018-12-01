@@ -17,14 +17,14 @@ bp = Blueprint('restaurant', __name__, url_prefix="/restaurant")
 @bp.route('/')
 @login_required
 def index():
-    restaurants = restaurant.select_restaurant(get_db(), {})
     return render_template('restaurant/index.html')
 
 
 @bp.route("/query", methods=["POST"])
 @login_required
 def query():
-    restaurants = restaurant.select_restaurant(get_db(), {})
+    param = request.json
+    total, restaurants = restaurant.select_by_page(get_db(), param)
     results = []
     for item in restaurants:
         results.append(
@@ -35,7 +35,8 @@ def query():
                 "province": item["province"],
             }
         )
-    return jsonify(results)
+    data = {"total": total, "rows": results}
+    return jsonify(data)
 
 
 @bp.route('/create', methods=('GET', 'POST'))
@@ -46,40 +47,28 @@ def create():
         data = request.form.copy()
         data["updated_date"] = datetime.now()
         data["updated_by"] = g.user["username"]
-        error = restaurant.save(get_db(), data)
+        error = restaurant.insert_update(get_db(), data)
         if error is not None:
             flash(error)
         else:
             return redirect(url_for('restaurant.index'))
-    return render_template('restaurant/create.html')
+    return render_template('restaurant/update.html', item=None)
 
 
 @bp.route('/<int:id>/update', methods=('GET', 'POST'))
 @login_required
 def update(id):
     """Update a post if the current user is the author."""
-    post = get_post(id)
-
     if request.method == 'POST':
-        title = request.form['title']
-        body = request.form['body']
-        error = None
-
-        if not title:
-            error = 'Title is required.'
-
+        item = request.form
+        error = restaurant.insert_update(get_db(), item, id)
         if error is not None:
             flash(error)
         else:
-            db = get_db()
-            db.execute(
-                'UPDATE post SET title = ?, body = ? WHERE id = ?',
-                (title, body, id)
-            )
-            db.commit()
-            return redirect(url_for('blog.index'))
-
-    return render_template('blog/update.html', post=post)
+            return redirect(url_for('restaurant.index'))
+    else:
+        item = restaurant.select_by_id(get_db(), id)
+    return render_template('restaurant/update.html', item=item)
 
 
 @bp.route('/<int:id>/delete', methods=('POST',))

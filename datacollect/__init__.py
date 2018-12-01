@@ -30,16 +30,17 @@ def create_app(config=None):
     db.init_app(app)
 
     # apply the blueprints to the app
-    from datacollect.views import auth, restaurant, blog
+    from datacollect.views import auth, restaurant, blog, common
     app.register_blueprint(auth.bp)
     app.register_blueprint(restaurant.bp)
     app.register_blueprint(blog.bp)
+    app.register_blueprint(common.bp)
 
     # make url_for('index') == url_for('blog.index')
     # in another app, you might define a separate main index here with
     # app.route, while giving the blog blueprint a url_prefix, but for
     # the tutorial the blog will be the main index
-    app.add_url_rule('/', endpoint='blog.index')
+    app.add_url_rule('/', endpoint='restaurant.index')
 
     print(app.url_map)
 

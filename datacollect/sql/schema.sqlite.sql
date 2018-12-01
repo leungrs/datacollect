@@ -50,14 +50,10 @@ CREATE TABLE ent_restaurant_survey (
   town TEXT,  -- 乡镇
   address TEXT,
   region_code TEXT,
-  longitude_d REAL,
-  longitude_m REAL,
-  longitude_s REAL,
-  latitude_d REAL,
-  latitude_m REAL,
-  latitude_s REAL,
+  longitude REAL,
+  latitude REAL,
   legal_person TEXT, -- 法人代表
-  open_date DATE,  -- 开业(成立)时间
+  open_date TEXT,  -- 开业(成立)时间
   ent_contact TEXT, -- 企业联系人
   ent_phone TEXT, -- 企业联系电话
   run_normally TEXT, -- 是否正常运营

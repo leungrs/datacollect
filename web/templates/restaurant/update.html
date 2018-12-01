@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="container">
-    <form>
+    <form method="post">
         <fieldset>
         <legend>企业基本信息</legend>
         <div class="form-row">
@@ -10,144 +10,194 @@
                 统一社会信用代码
             </label>
             <div class="col-sm-4">
-                <input type="text" class="form-control form-control-sm" id="uniform_credit_code">
+                <input type="text" class="form-control form-control-sm"
+                       name="uniform_credit_code" value="{{item['uniform_credit_code'] or ''}}"
+                       id="uniform_credit_code">
             </div>
             <label class="col-sm-2 text-right" for="origin_org_code">原组织机构代码号</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control form-control-sm" id="origin_org_code"
+                <input type="text" class="form-control form-control-sm"
+                        name="origin_org_code" id="origin_org_code"
+                         value="{{item['origin_org_code'] or ''}}"
                        placeholder="尚未领取统一社会信用代码的填写">
             </div>
         </div>
         <div class="form-row">
             <label class="col-sm-2 text-right" for="ent_name">单位详细名称</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control form-control-sm" id="ent_name">
+                <input type="text" name="ent_name" class="form-control form-control-sm"
+                         value="{{item['ent_name'] or ''}}"
+                       id="ent_name" required>
             </div>
             <label class="col-sm-2 text-right" for="ent_former_name">曾用名</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control form-control-sm" id="ent_former_name">
+                <input type="text" name="ent_former_name"
+                           value="{{item['ent_former_name'] or ''}}"
+                       class="form-control form-control-sm" id="ent_former_name">
             </div>
         </div>
         <div class="form-row">
             <label class="col-sm-2 text-right" for="province">省(自治区、直辖市)</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control form-control-sm" id="province">
+                <input type="text" name="province"
+                           value="{{item['province'] or ''}}"
+                       class="form-control form-control-sm" id="province">
             </div>
             <label class="col-sm-2 text-right" for="city">地(区、市、州、盟)</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control form-control-sm" id="city">
+                <input type="text" name="city" class="form-control form-control-sm" id="city"
+                   value="{{item['city'] or ''}}">
             </div>
         </div>
         <div class="form-row">
             <label class="col-sm-2 text-right" for="district">县(区、市、旗)</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control form-control-sm" id="district">
+                <input type="text"  value="{{item['district'] or ''}}"
+                       name="district" class="form-control form-control-sm" id="district">
             </div>
             <label class="col-sm-2 text-right" for="town">乡(镇)</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control form-control-sm" id="town">
+                <input type="text" name="town"  value="{{item['town'] or ''}}"
+                       class="form-control form-control-sm" id="town">
             </div>
         </div>
         <div class="form-row">
             <label class="col-sm-2 text-right" for="address">街，村，门牌号</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control form-control-sm" id="address">
+                <input type="text" name="address"   value="{{item['address'] or ''}}"
+                       class="form-control form-control-sm" id="address">
             </div>
             <label class="col-sm-2 text-right" for="region_code">区划代码</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control form-control-sm" id="region_code">
+                <input type="text" name="region_code" value="{{item['region_code'] or ''}}"
+                       class="form-control form-control-sm" id="region_code">
             </div>
         </div>
         <div class="form-row">
-            <label class="col-sm-2 text-right" for="address">经度(度、分、秒)</label>
+            <label class="col-sm-2 text-right" for="lon_d">经度(度、分、秒)</label>
             <div class="col-sm-4">
                 <div class="input-group">
-                  <input type="text" class="text-right form-control form-control-sm" placeholder="度">
-                  <input type="text" class="text-right form-control form-control-sm" placeholder="分">
-                  <input type="text" class="text-right form-control form-control-sm" placeholder="秒">
+                  <input type="number" name="lon_d", id="lon_d"
+                          value="{{item['lon_d'] or 0}}"
+                         class="text-right form-control form-control-sm"
+                         placeholder="度">
+                  <input type="number" name="lon_m"
+                          value="{{item['lon_m'] or 0}}"
+                         class="text-right form-control form-control-sm"
+                         placeholder="分">
+                  <input type="number" name="lon_s"
+                            value="{{item['lon_s'] or 0}}"
+                         class="text-right form-control form-control-sm"
+                         placeholder="秒">
                 </div>
             </div>
-            <label class="col-sm-2 text-right" for="region_code">纬度(度、分、秒)</label>
+            <label class="col-sm-2 text-right" for="lat_d">纬度(度、分、秒)</label>
             <div class="col-sm-4">
                 <div class="input-group">
-                  <input type="text" class="text-right form-control form-control-sm" placeholder="度">
-                  <input type="text" class="text-right form-control form-control-sm" placeholder="分">
-                  <input type="text" class="text-right form-control form-control-sm" placeholder="秒">
+                  <input type="number" name="lat_d" id="lat_d"
+                           value="{{item['lat_d'] or 0}}"
+                         class="text-right form-control form-control-sm"
+                         placeholder="度">
+                  <input type="number" name="lat_m"
+                          value="{{item['lat_m'] or 0}}"
+                         class="text-right form-control form-control-sm"
+                         placeholder="分">
+                  <input type="number" name="lat_s"
+                            value="{{item['lat_s'] or 0}}"
+                         class="text-right form-control form-control-sm"
+                         placeholder="秒">
                 </div>
             </div>
         </div>
         <div class="form-row">
-            <label class="col-sm-2 text-right" for="address">法定(单位负责人)</label>
+            <label class="col-sm-2 text-right" for="legal_person">法定(单位负责人)</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control form-control-sm" id="legal_person">
+                <input type="text" name="legal_person"   value="{{item['legal_person'] or ''}}"
+                       class="form-control form-control-sm" id="legal_person">
             </div>
-            <label class="col-sm-2 text-right" for="region_code">开业(成立)时间</label>
+            <label class="col-sm-2 text-right" for="open_date">开业(成立)时间</label>
             <div class="col-sm-4">
-                <input type="date" class="form-control form-control-sm" id="open_date">
+                <input type="date" name="open_date"    value="{{item['open_date'] or ''}}"
+                       class="form-control form-control-sm" id="open_date">
             </div>
         </div>
         <div class="form-row">
             <label class="col-sm-2 text-right" for="address">联系人</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control form-control-sm" id="ent_contact">
+                <input type="text"    value="{{item['ent_contact'] or ''}}"
+                       class="form-control form-control-sm" id="ent_contact">
             </div>
             <label class="col-sm-2 text-right" for="region_code">电话号码</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control form-control-sm" id="ent_phone">
+                <input type="text"   value="{{item['ent_phone'] or ''}}"
+                       class="form-control form-control-sm" id="ent_phone">
             </div>
         </div>
         <div class="form-row">
-            <label class="col-sm-2 text-right" for="address">餐饮类型</label>
+            <label class="col-sm-2 text-right" for="restaurant_type">餐饮类型</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control form-control-sm" id="restaurant_type">
+                <select name="restaurant_type" id="restaurant_type"
+                        class="custom-select custom-select-sm"  required>
+                    <option value="">请选择...</option>
+                    <option {{'selected' if (item['run_normally'] or '中餐') == '中餐'}} value="中餐">中餐</option>
+                    <option {{'selected' if (item['run_normally']) == '西餐'}} value="西餐">西餐</option>
+                    <option {{'selected' if (item['run_normally']) == '烧烤'}} value="烧烤">烧烤</option>
+                    <option {{'selected' if (item['run_normally']) == '其他'}} value="其他">其他</option>
+                </select>
             </div>
             <label class="col-sm-2 text-right" for="region_code">炉头数</label>
             <div class="col-sm-4">
-                <input type="number" class="form-control form-control-sm" id="burner_num">
+                <input type="number"   value="{{item['burner_num'] or 0}}"
+                       class="form-control form-control-sm" id="burner_num">
             </div>
         </div>
         <div class="form-row">
-            <label class="col-sm-2 text-right" for="address">员工人数</label>
+            <label class="col-sm-2 text-right" for="employee_num">员工人数</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control form-control-sm" id="employee_num">
+                <input type="number" name="employee_num"
+                         value="{{item['employee_num'] or 0}}"
+                       class="form-control form-control-sm" id="employee_num">
             </div>
-            <label class="col-sm-2 text-right" for="region_code">可容纳就餐人数</label>
+            <label class="col-sm-2 text-right" for="customer_capacity">可容纳就餐人数</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control form-control-sm" id="customer_capacity">
-            </div>
-        </div>
-        <div class="form-row">
-            <label class="col-sm-2 text-right" for="address">经营面积(m2)</label>
-            <div class="col-sm-4">
-                <input type="text" class="form-control form-control-sm" id="ent_area">
-            </div>
-            <label class="col-sm-2 text-right" for="region_code">年营业额(万元)</label>
-            <div class="col-sm-4">
-                <input type="text" class="form-control form-control-sm" id="annual_turnover">
+                <input type="number" name="customer_capacity"
+                          value="{{item['customer_capacity'] or 0}}"
+                       class="form-control form-control-sm" id="customer_capacity">
             </div>
         </div>
         <div class="form-row">
-            <label class="col-sm-2 text-right" for="address">是/否正常运营</label>
-            <div class="col-sm-4 text-center">
-                <div class="form-check form-check-inline pr-6">
-                  <input class="form-check-input" type="radio"
-                         checked name="run_yes" id="run_yes" value="Y">
-                  <label class="form-check-label" for="run_yes">是</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="run_no"
-                         id="run_no" value="N">
-                  <label class="form-check-label" for="run_no">否</label>
-                </div>
+            <label class="col-sm-2 text-right" for="ent_area">经营面积(m2)</label>
+            <div class="col-sm-4">
+                <input type="number" name="ent_area"
+                          value="{{item['ent_area'] or 0}}"
+                       class="form-control form-control-sm" id="ent_area">
+            </div>
+            <label class="col-sm-2 text-right" for="annual_turnover">年营业额(万元)</label>
+            <div class="col-sm-4">
+                <input type="number" name="annual_turnover"    value="{{item['annual_turnover'] or 0}}"
+                       class="form-control form-control-sm" id="annual_turnover">
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="col-sm-2 text-right" for="run_normally">是/否正常运营</label>
+            <div class="col-sm-4">
+                <select name="run_normally" id="run_normally"
+                        class="custom-select custom-select-sm"   value="{{item['run_normally'] or ''}}"
+                        required>
+                  <option value="">请选择...</option>
+                  <option {{'selected' if (item['run_normally'] or '是') == '是'}} value="是">是</option>
+                  <option {{'selected' if item['run_normally']  == '否'}} value="否">否</option>
+                </select>
             </div>
         </div>
         </fieldset>
         <fieldset>
             <legend>食用油情况</legend>
             <div class="form-row">
-                <label class="col-sm-2 text-right" for="address">食用油使用量(吨)</label>
+                <label class="col-sm-2 text-right" for="cooking_oil">食用油使用量(吨)</label>
                 <div class="col-sm-10">
                     <input type="number" class="form-control form-control-sm"
+                           name="cooking_oil"   value="{{item['cooking_oil'] or 0}}"
                            id="cooking_oil">
                 </div>
             </div>
@@ -157,43 +207,57 @@
             <div class="form-row">
                 <label class="col-sm-2 text-right" for="water_used">年用水量(m3)</label>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control form-control-sm" id="water_used">
+                    <input type="number" name="water_used"  value="{{item['water_used'] or 0}}"
+                           class="form-control form-control-sm" id="water_used">
                 </div>
                 <label class="col-sm-2 text-right" for="water_waster_emit">年废水排放量</label>
                 <div class="col-sm-4">
                     <input type="number" class="form-control form-control-sm"
+                           name="water_waster_emit"
+                            value="{{item['water_waster_emit'] or 0}}"
                            id="water_waster_emit">
                 </div>
             </div>
             <div class="form-row">
                 <label class="col-sm-2 text-right" for="water_cod">化学需氧量浓度</label>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control form-control-sm" id="water_cod">
+                    <input type="number" name="water_cod"  value="{{item['water_cod'] or 0}}"
+                           class="form-control form-control-sm" id="water_cod">
                 </div>
                 <label class="col-sm-2 text-right" for="water_oil">动植物油浓度</label>
                 <div class="col-sm-4">
-                    <input type="number" class="form-control form-control-sm" id="water_oil">
+                    <input type="number" name="water_oil"  value="{{item['water_oil'] or 0}}"
+                           class="form-control form-control-sm" id="water_oil">
                 </div>
             </div>
             <div class="form-row">
                 <label class="col-sm-2 text-right" for="water_nh4">氨氮浓度</label>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control form-control-sm" id="water_nh4">
+                    <input type="number" name="water_nh4"  value="{{item['water_nh4'] or 0}}"
+                           class="form-control form-control-sm" id="water_nh4">
                 </div>
                 <label class="col-sm-2 text-right" for="water_tp">总磷浓度</label>
                 <div class="col-sm-4">
-                    <input type="number" class="form-control form-control-sm" id="water_tp">
+                    <input type="number" name="water_tp"  value="{{item['water_tp'] or 0}}"
+                           class="form-control form-control-sm" id="water_tp">
                 </div>
             </div>
             <div class="form-row">
-                <label class="col-sm-2 text-right" for="address">是否有隔油设施</label>
+                <label class="col-sm-2 text-right" for="oil_device">是否有隔油设施</label>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control form-control-sm" id="oil_device">
+                    <select class="custom-select custom-select-sm" name="oil_device" id="oil_device" required>
+                      <option value="">请选择...</option>
+                      <option {{'selected' if (item['oil_device'] or '是') == '是'}} value="是">是</option>
+                      <option {{'selected' if item['oil_device']  == '否'}} value="否">否</option>
+                    </select>
                 </div>
-                <label class="col-sm-2 text-right" for="region_code">是否安装在线监测</label>
+                <label class="col-sm-2 text-right" for="water_monitor">是否安装在线监测</label>
                 <div class="col-sm-4">
-                    <input type="number" class="form-control form-control-sm"
-                           id="water_monitor">
+                    <select class="custom-select custom-select-sm" name="water_monitor" id="water_monitor" required>
+                      <option value="">请选择...</option>
+                      <option {{'selected' if (item['water_monitor'] or '是') == '是'}} value="是">是</option>
+                      <option {{'selected' if item['water_monitor']  == '否'}} value="否">否</option>
+                    </select>
                 </div>
             </div>
         </fieldset>
@@ -204,12 +268,16 @@
                     油烟排放风量(m3/h)
                 </label>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control form-control-sm"
+                    <input type="number" class="form-control form-control-sm"
+                             value="{{item['gas_emission_vol'] or 0}}"
+                           name="gas_emission_vol"
                            id="gas_emission_vol">
                 </div>
                 <label class="col-sm-2 text-right" for="device_runtime">年运行小时数</label>
                 <div class="col-sm-4">
                     <input type="number" class="form-control form-control-sm"
+                             value="{{item['device_runtime'] or 0}}"
+                           name="device_runtime"
                            id="device_runtime" placeholder="油烟排放设施年运行小时数">
                 </div>
             </div>
@@ -218,24 +286,33 @@
                     浓烟颗粒物浓度(mg/m3)
                 </label>
                 <div class="col-sm-4">
-                    <input type="text" name="gas_solid" class="form-control form-control-sm"
-                           id="gas_solid">
+                    <input type="number" name="gas_solid" class="form-control form-control-sm"
+                           id="gas_solid"    value="{{item['gas_solid'] or 0}}">
                 </div>
                 <label class="col-sm-2 text-right" for="not_ch4">
                     非甲烷总烃浓度(mg/m3)
                 </label>
                 <div class="col-sm-4">
-                    <input type="number" class="form-control form-control-sm" id="not_ch4">
+                    <input type="number"   value="{{item['not_ch4'] or 0}}"
+                           name="not_ch4" class="form-control form-control-sm" id="not_ch4">
                 </div>
             </div>
             <div class="form-row">
                 <label class="col-sm-2 text-right" for="gas_device">是否有油烟净化装置</label>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control form-control-sm" id="gas_device">
+                    <select class="custom-select custom-select-sm" name="gas_device" id="gas_device" required>
+                      <option value="">请选择...</option>
+                      <option {{'selected' if (item['gas_device'] or '是') == '是'}} value="是">是</option>
+                      <option {{'selected' if item['gas_device']  == '否'}} value="否">否</option>
+                    </select>
                 </div>
                 <label class="col-sm-2 text-right" for="gas_monitor">是否安装在线监测</label>
                 <div class="col-sm-4">
-                    <input type="number" class="form-control form-control-sm" id="gas_monitor">
+                    <select class="custom-select custom-select-sm" name="gas_monitor" id="gas_monitor" required>
+                      <option value="">请选择...</option>
+                      <option {{'selected' if (item['gas_monitor'] or '是') == '是'}} value="是">是</option>
+                      <option {{'selected' if item['gas_monitor']  == '否'}} value="否">否</option>
+                    </select>
                 </div>
             </div>
         </fieldset>
@@ -246,24 +323,27 @@
                     餐厨垃圾产生量
                 </label>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control form-control-sm"
+                    <input type="number" class="form-control form-control-sm"
+                           name="kitchen_waster_volume"
+                            value="{{item['kitchen_waster_volume'] or 0}}"
                            id="kitchen_waster_volume">
                 </div>
                 <label class="col-sm-2 text-right" for="kitchen_waster_gone">
                     餐厨垃圾去向
                 </label>
                 <div class="col-sm-4">
-                    <input type="number" class="form-control form-control-sm"
+                    <input type="text" class="form-control form-control-sm"
+                              value="{{item['kitchen_waster_gone'] or ''}}"
+                           name="kitchen_waster_gone"
                            id="kitchen_waster_gone">
                 </div>
             </div>
         </fieldset>
         <hr>
         <div class="text-center">
-            <button id="btn_save" class="btn btn-primary">保存</button>
-            <button id="btn_del" class="btn btn-primary">删除</button>
+            <button id="btn_save" type="submit" class="btn btn-primary">保存</button>
+            <a href="/restaurant"><input type="button" value="取消" id="btn_cancel" class="btn btn-primary"></a>
         </div>
     </form>
 </div>
-
 {% endblock %}
