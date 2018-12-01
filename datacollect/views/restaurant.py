@@ -5,11 +5,10 @@ from flask import (
     Blueprint, flash, g, redirect, render_template,
     request, url_for, jsonify
 )
-from werkzeug.exceptions import abort
 
 from datacollect import get_db
 from datacollect.views.auth import login_required
-from datacollect.dao import restaurant
+from datacollect.dao import restaurant, select
 
 bp = Blueprint('restaurant', __name__, url_prefix="/restaurant")
 
@@ -24,18 +23,16 @@ def index():
 @login_required
 def query():
     param = request.json
-    total, restaurants = restaurant.select_by_page(get_db(), param)
-    results = []
-    for item in restaurants:
-        results.append(
-            {
-                "id": item["id"],
-                "ent_name": item["ent_name"],
-                "uniform_credit_code": item["uniform_credit_code"],
-                "province": item["province"],
-            }
-        )
-    data = {"total": total, "rows": results}
+    total, rows = select(
+        db=get_db(),
+        select_fields=[
+            "id", "ent_name", "province",
+            "uniform_credit_code"
+        ],
+        table_name="ent_restaurant_survey",
+        param=param
+    )
+    data = {"total": total, "rows": rows}
     return jsonify(data)
 
 
@@ -74,13 +71,5 @@ def update(id):
 @bp.route('/<int:id>/delete', methods=('POST',))
 @login_required
 def delete(id):
-    """Delete a post.
-
-    Ensures that the post exists and that the logged in user is the
-    author of the post.
-    """
-    get_post(id)
-    db = get_db()
-    db.execute('DELETE FROM post WHERE id = ?', (id,))
-    db.commit()
-    return redirect(url_for('blog.index'))
+    restaurant.delete_by_id(get_db(), id)
+    return redirect(url_for('restaurant.index'))

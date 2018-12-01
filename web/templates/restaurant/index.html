@@ -31,7 +31,10 @@
       </div>
       <div class="btn-group">
         <button onclick="open_excel()" class="btn btn-outline-primary">Excel导入</button>
-        <button id="excel_export" class="btn btn-outline-primary">Excel导出</button>
+        <a href="/common/export?excel_type=restaurant" id="excel_export"
+           class="btn btn-outline-primary" target="_blank">
+            Excel导出
+        </a>
       </div>
   </div>
 </div>
@@ -47,6 +50,7 @@
             <th data-field="uniform_credit_code">社会统一信用代码</th>
             <th data-field="ent_name">企业名称</th>
             <th data-field="province">省份</th>
+            <th data-formatter="op_formatter">操作</th>
         </tr>
     </thead>
 </table>

@@ -1,6 +1,7 @@
 import os
 
-from flask import Flask, render_template
+from flask import Flask
+import flask_excel
 
 from datacollect.db import get_db
 from .config import STATIC_FOLDER, TEMPLATES_FOLDER
@@ -28,6 +29,7 @@ def create_app(config=None):
     # register the database commands
     from datacollect import db
     db.init_app(app)
+    flask_excel.init_excel(app)
 
     # apply the blueprints to the app
     from datacollect.views import auth, restaurant, blog, common

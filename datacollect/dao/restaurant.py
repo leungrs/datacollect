@@ -4,20 +4,9 @@
 from datacollect.common import to_type
 
 
-def select_by_page(db, param):
-    limit = param["limit"]
-    offset = param["offset"]
-    sql = "select * from ent_restaurant_survey order by id desc limit {0} offset {1}".format(limit, offset)
-    sql_count = "select count(*) from ent_restaurant_survey"
-    r = db.execute(sql_count).fetchone()
-    count = r[0]
-    restaurants = db.execute(sql).fetchall()
-    return count, restaurants
-
-
 def to_d_m_s(val):
     i_d = int(val)
-    m=(val-i_d)*60
+    m = (val - i_d) * 60
     i_m = int(m)
     i_s = int((m - i_m) * 60)
     return i_d, i_m, i_s
@@ -45,6 +34,16 @@ def select_by_id(db, id):
     return item
 
 
+def delete_by_id(db, id):
+    item = select_by_id(db, id)
+    if item:
+        sql = "delete from ent_restaurant_survey where id=?"
+        db.execute(sql, [id])
+        db.commit()
+        return True
+    return False
+
+
 def insert_update(db, param, id=None):
     try:
         fields = []
@@ -65,10 +64,10 @@ def insert_update(db, param, id=None):
                 latitude += to_type(v, float, 0)
                 continue
             if k == "lat_m":
-                latitude += to_type(v, float, 0)/60
+                latitude += to_type(v, float, 0) / 60
                 continue
             if k == "lat_s":
-                latitude += to_type(v, float, 0)/3600
+                latitude += to_type(v, float, 0) / 3600
                 continue
 
             fields.append(k)

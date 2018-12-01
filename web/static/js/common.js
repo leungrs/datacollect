@@ -1,4 +1,10 @@
-function open_excel() {
+function refresh_curr_page()
+{
+    window.location.reload();
+}
+
+function open_excel()
+{
     $("#excel_import").click()
 }
 
@@ -23,7 +29,7 @@ function import_excel(obj, excel_type)
             }
             else {
                 alert("导入成功！");
-                window.location.reload()
+                refresh_curr_page();
             }
             $(obj).val("");
         },
@@ -31,9 +37,31 @@ function import_excel(obj, excel_type)
             alert("导入失败");
         }
     });
-
 }
 
-function id_field_formatter(value, row, index, field) {
-return "<a href='"+value+ "/update'>" + value + "</a>"
+function id_field_formatter(value, row, index, field)
+{
+    return "<a href='"+value+ "/update'>" + value + "</a>"
 }
+
+function op_formatter(value, row, index, field)
+{
+   rowid = row.id
+   return "<button data-rowid=" +rowid+ " class='op_delete btn btn_primary'>删除</button>"
+}
+
+$(document).on("click", ".op_delete", function(e) {
+    rowid = this.dataset["rowid"];
+    $.ajax({
+        url: rowid+"/delete",
+        type: "post",
+        processData: false,
+        contentType: false,
+        success: function() {
+            refresh_curr_page();
+        },
+        error: function() {
+            alert("删除失败!");
+        }
+    });
+});
