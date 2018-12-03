@@ -47,7 +47,8 @@ function id_field_formatter(value, row, index, field)
 function op_formatter(value, row, index, field)
 {
    rowid = row.id
-   return "<button data-rowid=" +rowid+ " class='op_delete btn btn_primary'>删除</button>"
+   return "<button data-rowid=" +rowid+ " class='mr-1 op_delete btn btn-primary'>删除</button>" +
+   "<a href='" +rowid+ "/export' class='op_export btn btn-primary'>导出</a>";
 }
 
 $(document).on("click", ".op_delete", function(e) {

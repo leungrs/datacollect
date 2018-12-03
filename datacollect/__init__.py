@@ -32,10 +32,9 @@ def create_app(config=None):
     flask_excel.init_excel(app)
 
     # apply the blueprints to the app
-    from datacollect.views import auth, restaurant, blog, common
+    from datacollect.views import auth, restaurant, common
     app.register_blueprint(auth.bp)
     app.register_blueprint(restaurant.bp)
-    app.register_blueprint(blog.bp)
     app.register_blueprint(common.bp)
 
     # make url_for('index') == url_for('blog.index')

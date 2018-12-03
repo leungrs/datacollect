@@ -11,6 +11,7 @@ DROP TABLE IF EXISTS ent_restaurant_survey;
 CREATE TABLE user (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   username TEXT UNIQUE NOT NULL,
+  role TEXT NOT NULL,
   password TEXT NOT NULL
 );
 -- 用户上次操作系统的缓存信息表

@@ -3,7 +3,7 @@ from datetime import datetime
 
 from flask import (
     Blueprint, flash, g, redirect, render_template,
-    request, url_for, jsonify
+    request, url_for, jsonify, make_response
 )
 
 from datacollect import get_db
@@ -73,3 +73,13 @@ def update(id):
 def delete(id):
     restaurant.delete_by_id(get_db(), id)
     return redirect(url_for('restaurant.index'))
+
+
+@bp.route('/<int:id>/export', methods=('GET',))
+@login_required
+def export(id):
+    item = restaurant.select_by_id(get_db(), id)
+    result = render_template("restaurant/rest.xml", item=item)
+    response = make_response(result)
+    response.headers["Content-Disposition"] = "attachment; filename=restaurant.doc"
+    return response
