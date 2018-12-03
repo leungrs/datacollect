@@ -42,7 +42,7 @@ def load_logged_in_user():
         g.survey_types = survey_types
 
 
-@bp.route('/register', methods=('GET', 'POST'))
+# @bp.route('/register', methods=('GET', 'POST'))
 def register():
     """Register a new user.
 
@@ -52,6 +52,7 @@ def register():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
+        role = "user"
         db = get_db()
         error = None
 
@@ -68,8 +69,8 @@ def register():
             # the name is available, store it in the database and go to
             # the login page
             db.execute(
-                'INSERT INTO user (username, password) VALUES (?, ?)',
-                (username, generate_password_hash(password))
+                'INSERT INTO user (username, role, password) VALUES (?, ?, ?)',
+                (username, role, generate_password_hash(password))
             )
             db.commit()
             return redirect(url_for('auth.login'))

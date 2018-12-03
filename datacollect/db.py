@@ -42,7 +42,8 @@ def init_db():
     # backup old db if exists
     database = current_app.config['DATABASE']
     timestamp = time.strftime("%Y%m%d%H%M%S")
-    os.rename(database, database + "." + timestamp)
+    if os.path.exists(database):
+        os.rename(database, database + "." + timestamp)
 
     db = get_db()
 
@@ -70,3 +71,13 @@ def init_app(app):
 
 def create_database():
     pass
+
+
+@click.command("passhash")
+@with_appcontext
+def password_hash(password):
+    import sys
+    from werkzeug.security import generate_password_hash
+    print(sys.argv)
+    h = generate_password_hash("666888")
+    print(h)

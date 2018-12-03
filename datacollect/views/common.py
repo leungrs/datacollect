@@ -9,11 +9,13 @@ from flask import (
 
 from datacollect.db import get_db
 from datacollect.dao import import_from_array, get_excel_array
+from datacollect.views.auth import login_required
 
 bp = Blueprint('common', __name__, url_prefix='/common')
 
 
 @bp.route("/import", methods=["POST"])
+@login_required
 def import_excel():
     """"""
     array = request.get_array(field_name='file')
@@ -25,6 +27,7 @@ def import_excel():
 
 
 @bp.route("/export", methods=["GET"])
+@login_required
 def export_excel():
     """"""
     excel_type = request.args["excel_type"]

@@ -1,5 +1,5 @@
--- 插入管理员(Administrator, Liang.Winson)
-INSERT INTO user (username, password) VALUES  ('Administrator', 'pbkdf2:sha256:50000$pySt4Hfy$d1641a4f426bbe6753d4409328520c6c25536fc5a2740fcf1ff8b8bb5e2f6242');
+-- 插入管理员(Administrator, 666888)
+INSERT INTO user (username, role, password) VALUES  ('Administrator', 'manager', 'pbkdf2:sha256:50000$rUFCrsg5$ad191cc9e1331b8f2d3a575aae1c6d3b5fed374b81563dab155a128ed428245f');
 --INSERT INTO post (title, body, author_id, created) VALUES  ('test title', 'test' || x'0a' || 'body', 1, '2018-01-01 00:00:00');
 --INSERT INTO survey_types (name, fullname, index_page)
 --VALUES ("汽车维修企业", "汽车维修企业污染源信息调查表", "car");
