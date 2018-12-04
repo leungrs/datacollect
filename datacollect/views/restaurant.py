@@ -23,6 +23,12 @@ def index():
 @login_required
 def query():
     param = request.json
+    user = g.user
+    username = user['username']
+    role = user['role']
+    if role == 'user':
+        param["uniform_credit_code"] = username
+
     total, rows = select(
         db=get_db(),
         select_fields=[

@@ -47,9 +47,14 @@ function id_field_formatter(value, row, index, field)
 function op_formatter(value, row, index, field)
 {
    rowid = row.id
-   return "<button data-rowid=" +rowid+ " class='mr-1 op_delete btn btn-primary'>删除</button>" +
-   "<a href='" +rowid+ "/export' class='op_export btn btn-primary'>导出</a>";
+   btn_del = "<button data-rowid=" +rowid+ " class='op_delete btn btn-primary'>删除</button>"
+   btn_exp = "<a href='" +rowid+ "/export' class='ml-1 op_export btn btn-primary'>导出</a>"
+   if (is_manager) {
+      btn_exp += btn_del;
+   }
+   return btn_exp
 }
+
 
 $(document).on("click", ".op_delete", function(e) {
     rowid = this.dataset["rowid"];

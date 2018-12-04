@@ -113,3 +113,8 @@ def logout():
     """Clear the current session, including the stored user id."""
     session.clear()
     return redirect(url_for('auth.login'))
+
+
+if __name__ == '__main__':
+    pwd = generate_password_hash("888888")
+    print(pwd)

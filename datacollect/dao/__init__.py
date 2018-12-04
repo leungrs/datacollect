@@ -36,16 +36,16 @@ def select(db, table_name, select_fields=None,
     if limit:
         return_count = True
         sql_count = "select count(*) from ({0})".format(sql)
-        r = db.execute(sql_count).fetchone()
+        r = db.execute(sql_count, w_values).fetchone()
         count = r[0]
         sql += " limit {0} offset {1}".format(limit, offset)
 
     if fetchone:
         return_count = False
-        data = db.execute(sql).fetchone()
+        data = db.execute(sql, w_values).fetchone()
         result = sqlite3_row_to_dict(data)
     else:
-        data = db.execute(sql).fetchall()
+        data = db.execute(sql, w_values).fetchall()
         result = [sqlite3_row_to_dict(row) for row in data]
 
     if return_count:
