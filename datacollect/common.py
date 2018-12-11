@@ -1,10 +1,16 @@
 # coding: utf-8
 
+import os
+import json
+from datacollect.config import DATA_FOLDER
+
 SUCCESS = "ok"
 FAIL = "fail"
 
 
-class Result:
+class Result(object):
+    """"""
+
     def __init__(self, status=SUCCESS, data=None, message=""):
         self.status = status
         self.message = message
@@ -39,62 +45,107 @@ def to_type(obj, type_obj=str, default=0):
         return default
 
 
-class Table(object):
-    TABLE_NAME = ""
-    TABLE_FIELDS = [
-    ]
+def to_d_m_s(val):
+    """十进制转换成度分秒"""
+    i_d = int(val)
+    m = (val - i_d) * 60
+    i_m = int(m)
+    i_s = int((m - i_m) * 60)
+    return i_d, i_m, i_s
 
 
-class TableNames:
-    ENT_RESTAURANT_SURVEY = "ent_restaurant_survey"
+class AdminNode(object):
+    def __init__(self, name, level=1):
+        self.name = name
+        self.level = level
+        self.children = []
+        self.parent = None
+        self.selected = False
 
-class RestaurantTable(Table):
-    TABLE_NAME = TableNames.ENT_RESTAURANT_SURVEY
-    TABLE_FIELDS = [
-        ("id", "唯一键ID"),
-        ("uniform_credit_code", "社会统一信用代码"),
-        ("origin_org_code", "原组织机构代码号"),
-        ("ent_name", "单位名称"),
-        ("ent_former_name", "单位曾用名"),
-        ("province", "省"),
-        ("city","市"),
-        ("district","地（区，市，州，盟）"),
-        ("town","乡镇"),
-        ("address","详细地址"),
-        ("region_code","区划代码"),
-        ("longitude","经度"),
-        ("latitude","纬度"),
-        ("legal_person","法人代表"),
-        ("open_date","开业(成立)时间"),
-        ("ent_contact","企业联系人"),
-        ("ent_phone","企业联系电话"),
-        ("run_normally","是否正常运营"),
-        ("restaurant_type","餐饮类型"),
-        ("burner_num","炉头数"),
-        ("customer_capacity","可容纳就餐人数"),
-        ("employee_num","员工人数"),
-        ("annual_turnover","年营业额"),
-        ("ent_area","经营面积"),
-        ("cooking_oil","食用油使用量"),
-        ("water_used","年用水量"),
-        ("water_waster_emit","年废水排放量"),
-        ("oil_device","是否有隔油设施"),
-        ("water_cod","废水化学需氧量浓度"),
-        ("water_nh4","废水氨氮浓度"),
-        ("water_tp","废水总磷浓度"),
-        ("water_oil","废水动植物油浓度"),
-        ("water_monitor","是否在线监测"),
-        ("gas_device","是否有油烟净化设施"),
-        ("gas_emission_vol","油烟排放风量"),
-        ("device_runtime","设施年运行小时数"),
-        ("gas_solid","油烟颗粒物浓度"),
-        ("not_ch4","非甲烷浓度"),
-        ("gas_monitor","是否有油烟在线监测"),
-        ("kitchen_waster_volume","餐厨垃圾量"),
-        ("kitchen_waster_gone","餐厨垃圾去向"),
-        ("survey_person","调查人"),
-        ("contact","联系人"),
-        ("survey_date","调查日期"),
-        ("updated_by","更改人"),
-        ("updated_date","更改日期"),
-    ]
+    def add_child(self, child):
+        self.children.append(child)
+        child.parent = self
+        child.level = self.level + 1
+
+
+def init_admin_tree(node, obj):
+    for name, value in obj.items():
+        child_node = AdminNode(name)
+        node.add_child(child_node)
+        if isinstance(value, list):
+            for item in value:
+                child_node.add_child(AdminNode(item))
+        else:
+            init_admin_tree(child_node, value)
+
+
+def create_china_admin_tree(file_path):
+    root = AdminNode("中国", -1)
+    with open(file_path, "r", encoding="utf-8") as fp:
+        obj = json.load(fp)
+        init_admin_tree(root, obj)
+    return root
+
+
+class AdminNodeHandler(object):
+    def __init__(self):
+        self.root = create_china_admin_tree(os.path.join(DATA_FOLDER, "address4.json"))
+
+        self.level_nodes = [[], [], [], []]
+
+        for node in self.root.children:
+            level = node.level
+            self.level_nodes[level].append(node)
+
+        self.select_by_name(name="广东省")
+        self.select_by_name(level=1, name="深圳市")
+        self.select_by_name(level=2, name="福田区")
+
+    def select_by_index(self, level=0, index=0):
+        self.select_node(self.level_nodes[level][index])
+
+    def select_by_name(self, level=0, name="北京市"):
+        for node in self.level_nodes[level]:
+            if node.name == name:
+                self.select_node(node)
+                break
+
+    def select_node(self, selected_node):
+        selected_node.selected = True
+        level = selected_node.level
+        while level < 3:
+            self.level_nodes[level + 1].clear()
+            level += 1
+
+        level_nodes = self.level_nodes[selected_node.level]
+        for node in level_nodes:
+            if node != selected_node:
+                node.selected = False
+
+        if selected_node.children:
+            for node in selected_node.children:
+                self.level_nodes[selected_node.level+1].append(node)
+            self.select_node(selected_node.children[0])
+
+    def print(self):
+        i = 0
+        while 1:
+            l1 = self.level_nodes[0][i:i+1]
+            l2 = self.level_nodes[1][i:i+1]
+            l3 = self.level_nodes[2][i:i+1]
+            l4 = self.level_nodes[3][i:i+1]
+            if l1 or l2 or l3 or l4:
+                print("%-20s %-20s %-20s %-20s " % (
+                    "" if not l1 else l1[0].name + "+" if l1[0].selected else l1[0].name,
+                    "" if not l2 else l2[0].name + "+" if l2[0].selected else l2[0].name,
+                    "" if not l3 else l3[0].name + "+" if l3[0].selected else l3[0].name,
+                    "" if not l4 else l4[0].name + "+" if l4[0].selected else l4[0].name,
+                ))
+                i += 1
+            else:
+                break
+
+if __name__ == '__main__':
+    hd = AdminNodeHandler()
+    hd.print()
+

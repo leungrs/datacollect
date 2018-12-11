@@ -4,7 +4,6 @@
 DROP TABLE IF EXISTS user;
 DROP TABLE IF EXISTS user_last_cache;
 DROP TABLE IF EXISTS survey_types;
-DROP TABLE IF EXISTS post;
 DROP TABLE IF EXISTS ent_restaurant_survey;
 
 -- 用户信息表
@@ -29,15 +28,6 @@ CREATE TABLE survey_types (
   attrib2 TEXT,
   attrib3 TEXT
 );
--- 博客表
-CREATE TABLE post (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  author_id INTEGER NOT NULL,
-  created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  title TEXT NOT NULL,
-  body TEXT NOT NULL,
-  FOREIGN KEY (author_id) REFERENCES user (id)
-);
 -- 餐饮企业污染源信息调查表
 CREATE TABLE ent_restaurant_survey (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -53,6 +43,12 @@ CREATE TABLE ent_restaurant_survey (
   region_code TEXT,
   longitude REAL,
   latitude REAL,
+  lon_d REAL,
+  lon_m REAL,
+  lon_s REAL,
+  lat_d REAL,
+  lat_m REAL,
+  lat_s REAL,
   legal_person TEXT, -- 法人代表
   open_date TEXT,  -- 开业(成立)时间
   ent_contact TEXT, -- 企业联系人

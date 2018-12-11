@@ -7,8 +7,10 @@ from flask import (
     Blueprint, g, request, jsonify
 )
 
+from datacollect.common import Result
+from datacollect.dao.restaurant import import_restaurant_from_array
 from datacollect.db import get_db
-from datacollect.dao import import_from_array, get_excel_array
+from datacollect.dao import get_excel_array
 from datacollect.views.auth import login_required
 
 bp = Blueprint('common', __name__, url_prefix='/common')
@@ -36,3 +38,13 @@ def export_excel():
         return make_response_from_array(array, "xlsx", sheet_name="Sheet1", file_name="{0}.xlsx".format(excel_type))
     else:
         return "Not Data Found"
+
+
+def import_from_array(data, db, excel_type, updated_date, updated_by):
+    result = Result()
+    success_count = 0
+    if excel_type == "restaurant":
+        success_count = import_restaurant_from_array(data, db, updated_date, updated_by)
+    result.data = success_count
+    result.message = "导入成功{}条记录".format(success_count)
+    return result
