@@ -1,4 +1,5 @@
 # coding: utf-8
+
 from datetime import datetime
 
 from flask import (
@@ -7,17 +8,16 @@ from flask import (
 )
 
 from datacollect import get_db
-from datacollect.common import ADMIN_HANDLER
 from datacollect.views.auth import login_required
 from datacollect.dao import restaurant, select
 
-bp = Blueprint('restaurant', __name__, url_prefix="/restaurant")
+bp = Blueprint('hospital', __name__, url_prefix="/hospital")
 
 
 @bp.route('/')
 @login_required
 def index():
-    return render_template('restaurant/index.html')
+    return render_template('hospital/index.html')
 
 
 @bp.route("/query", methods=["POST"])
@@ -56,8 +56,7 @@ def create():
             flash(error)
         else:
             return redirect(url_for('restaurant.index'))
-    admins = ADMIN_HANDLER.get_admins()
-    return render_template('restaurant/update.html', item=None, admins=admins)
+    return render_template('restaurant/update.html', item=None)
 
 
 @bp.route('/<int:id>/update', methods=('GET', 'POST'))
@@ -68,16 +67,12 @@ def update(id):
         item = request.form
         error = restaurant.insert_update(get_db(), item, id)
         if error is not None:
-            ADMIN_HANDLER.select_by_item(item)
             flash(error)
         else:
             return redirect(url_for('restaurant.index'))
     else:
         item = restaurant.select_by_id(get_db(), id)
-        ADMIN_HANDLER.select_by_item(item)
-
-    admins = ADMIN_HANDLER.get_admins()
-    return render_template('restaurant/update.html', item=item, admins=admins)
+    return render_template('restaurant/update.html', item=item)
 
 
 @bp.route('/<int:id>/delete', methods=('POST',))
@@ -91,7 +86,7 @@ def delete(id):
 @login_required
 def export(id):
     item = restaurant.select_by_id(get_db(), id)
-    result = render_template("restaurant/rest.xml", item=item)
+    result = render_template("hospital/rest.xml", item=item)
     response = make_response(result)
-    response.headers["Content-Disposition"] = "attachment; filename=restaurant.doc"
+    response.headers["Content-Disposition"] = "attachment; filename=hospital.doc"
     return response

@@ -5,6 +5,7 @@ DROP TABLE IF EXISTS user;
 DROP TABLE IF EXISTS user_last_cache;
 DROP TABLE IF EXISTS survey_types;
 DROP TABLE IF EXISTS ent_restaurant_survey;
+DROP TABLE IF EXISTS hospital_survey;
 
 -- 用户信息表
 CREATE TABLE user (
@@ -77,6 +78,57 @@ CREATE TABLE ent_restaurant_survey (
   gas_monitor TEXT, -- 是否有油烟在线监测
   kitchen_waster_volume REAL, -- 餐厨垃圾量
   kitchen_waster_gone TEXT, -- 餐厨垃圾去向
+  survey_person TEXT, -- 调查人
+  contact TEXT, -- 联系人
+  survey_date TIMESTAMP,
+  updated_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_by TEXT NOT NULL
+);
+-- 医疗机构污染源信息调查表
+CREATE TABLE hospital_survey (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  uniform_credit_code TEXT,  -- 社会统一信用代码
+  origin_org_code TEXT,  -- 原组织机构代码号
+  ent_name TEXT, -- 单位名称
+  ent_former_name TEXT, -- 单位曾用名
+  province TEXT,  -- 省
+  city TEXT, -- 市
+  district TEXT, -- 地（区，市，州，盟）
+  town TEXT,  -- 乡镇
+  address TEXT,
+  region_code TEXT,
+  longitude REAL,
+  latitude REAL,
+  lon_d REAL,
+  lon_m REAL,
+  lon_s REAL,
+  lat_d REAL,
+  lat_m REAL,
+  lat_s REAL,
+  legal_person TEXT, -- 法人代表
+  open_date TEXT,  -- 开业(成立)时间
+  ent_contact TEXT, -- 企业联系人
+  ent_phone TEXT, -- 企业联系电话
+  run_normally TEXT, -- 是否正常运营
+  bed_num INT, -- 床位数
+  patient_num INT, -- 年就诊人数
+  annual_turnover REAL, -- 年营业额
+  building_area REAL, -- 建筑面积
+  water_used REAL, -- 年用水量
+  water_waster_emit REAL, -- 年废水排放量
+  water_cod REAL, -- 废水化学需氧量浓度
+  water_bod REAL, -- BOD浓度
+  water_fecal_coliform REAL, -- 粪大肠菌群
+  water_monitor TEXT, -- 是否在线监测
+  waster1_type TEXT, -- 医疗废物名称，类别
+  waster1_annual REAL, -- 年产生量
+  waster1_jcz REAL, -- 交持证单位量
+  waster2_type TEXT, -- 医疗废物名称，类别
+  waster2_annual REAL, -- 年产生量
+  waster2_jcz REAL, -- 交持证单位量
+  waster3_type TEXT, -- 医疗废物名称，类别
+  waster3_annual REAL, -- 年产生量
+  waster3_jcz REAL, -- 交持证单位量
   survey_person TEXT, -- 调查人
   contact TEXT, -- 联系人
   survey_date TIMESTAMP,

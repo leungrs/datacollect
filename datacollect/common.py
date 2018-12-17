@@ -79,27 +79,42 @@ def init_admin_tree(node, obj):
             init_admin_tree(child_node, value)
 
 
-def create_china_admin_tree(file_path):
+def create_admin_tree(province=None, city=None, district=None, town=None):
+    file_path = os.path.join(DATA_FOLDER, "address4.json")
     root = AdminNode("中国", -1)
     with open(file_path, "r", encoding="utf-8") as fp:
         obj = json.load(fp)
+        if province is not None:
+            filter_by_key(obj, province)
+            province_obj = obj.get(province)
+            if city is not None:
+                filter_by_key(province_obj, city)
+                city_obj = province_obj.get(city)
+                if district is not None:
+                    filter_by_key(city_obj, district)
+                    district_obj = city_obj.get(district)
+                    if town is not None:
+                        filter_by_key(district_obj, town)
         init_admin_tree(root, obj)
     return root
 
 
+def filter_by_key(obj, key):
+    if not obj:
+        return
+    for k in list(obj.keys()):
+        if k != key:
+            obj.pop(k)
+
+
 class AdminNodeHandler(object):
-    def __init__(self):
-        self.root = create_china_admin_tree(os.path.join(DATA_FOLDER, "address4.json"))
-
+    def __init__(self, province=None, city=None, district=None, town=None):
+        self.root = create_admin_tree(province, city, district, town)
         self.level_nodes = [[], [], [], []]
-
         for node in self.root.children:
             level = node.level
             self.level_nodes[level].append(node)
-
-        self.select_by_name(name="广东省")
-        self.select_by_name(level=1, name="深圳市")
-        self.select_by_name(level=2, name="福田区")
+        self.select_by_index()
 
     def select_by_index(self, level=0, index=0):
         self.select_node(self.level_nodes[level][index])
@@ -127,6 +142,24 @@ class AdminNodeHandler(object):
                 self.level_nodes[selected_node.level+1].append(node)
             self.select_node(selected_node.children[0])
 
+    def select_by_item(self, item):
+        province = item["province"]
+        self.select_by_name(0, name=province)
+        city = item["city"]
+        self.select_by_name(1, name=city)
+        district = item["district"]
+        self.select_by_name(2, name=district)
+        town = item["town"]
+        self.select_by_name(3, name=town)
+
+    def get_admins(self):
+        return {
+            "p": self.level_nodes[0],
+            "c": self.level_nodes[1],
+            "d": self.level_nodes[2],
+            "t": self.level_nodes[3],
+        }
+
     def print(self):
         i = 0
         while 1:
@@ -144,6 +177,10 @@ class AdminNodeHandler(object):
                 i += 1
             else:
                 break
+
+
+ADMIN_HANDLER = AdminNodeHandler("广东省", "深圳市", "福田区", None)
+
 
 if __name__ == '__main__':
     hd = AdminNodeHandler()

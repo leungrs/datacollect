@@ -39,41 +39,34 @@
         <div class="form-row">
             <label class="col-sm-2 text-sm-right" for="province">省(自治区、直辖市)</label>
             <div class="col-sm-4">
-                <select name="province" id="province"
+                <select name="restaurant_type" id="restaurant_type"
                         class="custom-select custom-select-sm"  required>
-                    {% for pitem in admins['p'] %}
-                    <option {{'selected' if pitem.selected}} value='{{pitem.name}}'>{{pitem.name}}</option>
-                    {% endfor %}
+                    <option value="">请选择...</option>
+                    <option {{'selected' if (item['restaurant_type'] or '中餐') == '中餐'}} value="中餐">中餐</option>
+                    <option {{'selected' if (item['restaurant_type']) == '西餐'}} value="西餐">西餐</option>
+                    <option {{'selected' if (item['restaurant_type']) == '烧烤'}} value="烧烤">烧烤</option>
+                    <option {{'selected' if (item['restaurant_type']) == '其他'}} value="其他">其他</option>
                 </select>
+                <input type="text" name="province"
+                           value="{{item['province'] or ''}}"
+                       class="form-control form-control-sm" id="province">
             </div>
             <label class="col-sm-2 text-sm-right" for="city">地(区、市、州、盟)</label>
             <div class="col-sm-4">
-                <select name="city" id="city"
-                        class="custom-select custom-select-sm"  required>
-                    {% for pitem in admins['c'] %}
-                    <option {{'selected' if pitem.selected}} value='{{pitem.name}}'>{{pitem.name}}</option>
-                    {% endfor %}
-                </select>
+                <input type="text" name="city" class="form-control form-control-sm" id="city"
+                   value="{{item['city'] or ''}}">
             </div>
         </div>
         <div class="form-row">
             <label class="col-sm-2 text-sm-right" for="district">县(区、市、旗)</label>
             <div class="col-sm-4">
-                <select name="district" id="district"
-                        class="custom-select custom-select-sm"  required>
-                    {% for pitem in admins['d'] %}
-                    <option {{'selected' if pitem.selected}} value='{{pitem.name}}'>{{pitem.name}}</option>
-                    {% endfor %}
-                </select>
+                <input type="text"  value="{{item['district'] or ''}}"
+                       name="district" class="form-control form-control-sm" id="district">
             </div>
             <label class="col-sm-2 text-sm-right" for="town">乡(镇)</label>
             <div class="col-sm-4">
-                <select name="town" id="town"
-                        class="custom-select custom-select-sm"  required>
-                    {% for pitem in admins['t'] %}
-                    <option {{'selected' if pitem.selected}} value='{{pitem.name}}'>{{pitem.name}}</option>
-                    {% endfor %}
-                </select>
+                <input type="text" name="town"  value="{{item['town'] or ''}}"
+                       class="form-control form-control-sm" id="town">
             </div>
         </div>
         <div class="form-row">
