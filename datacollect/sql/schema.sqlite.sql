@@ -115,6 +115,7 @@ CREATE TABLE hospital_survey (
   annual_turnover REAL, -- 年营业额
   building_area REAL, -- 建筑面积
   water_used REAL, -- 年用水量
+  water_process_name TEXT, -- 废水处理工艺名称
   water_waster_emit REAL, -- 年废水排放量
   water_cod REAL, -- 废水化学需氧量浓度
   water_bod REAL, -- BOD浓度

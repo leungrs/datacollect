@@ -5,8 +5,8 @@ INSERT INTO user (username, role, password) VALUES  ('Administrator', 'manager',
 --VALUES ("汽车维修企业", "汽车维修企业污染源信息调查表", "car");
 INSERT INTO survey_types (name, fullname, index_page)
 VALUES ("餐饮企业", "餐饮企业污染源信息调查表", 'restaurant');
---INSERT INTO survey_types (name, fullname, index_page)
---VALUES ("医疗机构", "医疗机构污染源信息调查表", 'hospital');
+INSERT INTO survey_types (name, fullname, index_page)
+VALUES ("医疗机构", "医疗机构污染源信息调查表", 'hospital');
 --INSERT INTO survey_types (name, fullname, index_page)
 --VALUES ("加油站", "加油站污染源信息调查表", 'gas');
 --INSERT INTO survey_types (name, fullname, index_page)

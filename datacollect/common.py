@@ -143,6 +143,10 @@ class AdminNodeHandler(object):
             self.select_node(selected_node.children[0])
 
     def select_by_item(self, item):
+        if not item:
+            self.select_by_index()
+            return
+
         province = item["province"]
         self.select_by_name(0, name=province)
         city = item["city"]
@@ -152,7 +156,7 @@ class AdminNodeHandler(object):
         town = item["town"]
         self.select_by_name(3, name=town)
 
-    def get_admins(self):
+    def get_admins(self, init=False):
         return {
             "p": self.level_nodes[0],
             "c": self.level_nodes[1],

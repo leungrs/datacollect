@@ -21,17 +21,17 @@
 
 <form id="fileForm" method="post" enctype="multipart/form-data">
     <input type="file" style="display: none;" name="excel_file"
-           id="excel_import" onchange="import_excel(this, 'restaurant')">
+           id="excel_import" onchange="import_excel(this, 'hospital')">
 </form>
 
 <div class="my-toolbar">
   <div class="btn-toolbar justify-content-between" role="toolbar">
       <div class="btn-group" role="group" aria-label="First group">
-        <a href="/restaurant/create" class="btn btn-outline-primary">新增</a>
+        <a href="/hospital/create" class="btn btn-outline-primary">新增</a>
       </div>
       <div class="btn-group">
         <button onclick="open_excel()" class="btn btn-outline-primary">Excel导入</button>
-        <a href="/common/export?excel_type=restaurant" id="excel_export"
+        <a href="/common/export?excel_type=hospital" id="excel_export"
            class="btn btn-outline-primary" target="_blank">
             Excel导出
         </a>
@@ -39,7 +39,7 @@
   </div>
 </div>
 
-<table data-method="post" data-toggle="table" data-url="{{url_for('restaurant.query')}}"
+<table data-method="post" data-toggle="table" data-url="{{url_for('hospital.query')}}"
    data-side-pagination="server"
    data-pagination="true"
    data-page-list="[5, 10, 20, 50, 100, 200]"

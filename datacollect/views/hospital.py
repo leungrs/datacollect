@@ -8,8 +8,9 @@ from flask import (
 )
 
 from datacollect import get_db
+from datacollect.common import ADMIN_HANDLER
 from datacollect.views.auth import login_required
-from datacollect.dao import restaurant, select
+from datacollect.dao import hospital, select
 
 bp = Blueprint('hospital', __name__, url_prefix="/hospital")
 
@@ -36,7 +37,7 @@ def query():
             "id", "ent_name", "province",
             "uniform_credit_code"
         ],
-        table_name="ent_restaurant_survey",
+        table_name="hospital_survey",
         param=param
     )
     data = {"total": total, "rows": rows}
@@ -47,16 +48,19 @@ def query():
 @login_required
 def create():
     """Create a new post for the current user."""
+    item = None
     if request.method == 'POST':
-        data = request.form.copy()
-        data["updated_date"] = datetime.now()
-        data["updated_by"] = g.user["username"]
-        error = restaurant.insert_update(get_db(), data)
+        item = request.form.copy()
+        item["updated_date"] = datetime.now()
+        item["updated_by"] = g.user["username"]
+        error = hospital.insert_update(get_db(), item)
         if error is not None:
             flash(error)
         else:
-            return redirect(url_for('restaurant.index'))
-    return render_template('restaurant/update.html', item=None)
+            return redirect(url_for('hospital.index'))
+    ADMIN_HANDLER.select_by_item(item)
+    admins = ADMIN_HANDLER.get_admins()
+    return render_template('hospital/update.html', item=None, admins=admins)
 
 
 @bp.route('/<int:id>/update', methods=('GET', 'POST'))
@@ -65,27 +69,29 @@ def update(id):
     """Update a post if the current user is the author."""
     if request.method == 'POST':
         item = request.form
-        error = restaurant.insert_update(get_db(), item, id)
+        error = hospital.insert_update(get_db(), item, id)
         if error is not None:
             flash(error)
         else:
-            return redirect(url_for('restaurant.index'))
+            return redirect(url_for('hospital.index'))
     else:
-        item = restaurant.select_by_id(get_db(), id)
-    return render_template('restaurant/update.html', item=item)
+        item = hospital.select_by_id(get_db(), id)
+    ADMIN_HANDLER.select_by_item(item)
+    admins = ADMIN_HANDLER.get_admins()
+    return render_template('hospital/update.html', item=item, admins=admins)
 
 
 @bp.route('/<int:id>/delete', methods=('POST',))
 @login_required
 def delete(id):
-    restaurant.delete_by_id(get_db(), id)
-    return redirect(url_for('restaurant.index'))
+    hospital.delete_by_id(get_db(), id)
+    return redirect(url_for('hospital.index'))
 
 
 @bp.route('/<int:id>/export', methods=('GET',))
 @login_required
 def export(id):
-    item = restaurant.select_by_id(get_db(), id)
+    item = hospital.select_by_id(get_db(), id)
     result = render_template("hospital/rest.xml", item=item)
     response = make_response(result)
     response.headers["Content-Disposition"] = "attachment; filename=hospital.doc"

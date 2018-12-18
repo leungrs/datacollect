@@ -47,15 +47,17 @@ def query():
 @login_required
 def create():
     """Create a new post for the current user."""
+    item = None
     if request.method == 'POST':
-        data = request.form.copy()
-        data["updated_date"] = datetime.now()
-        data["updated_by"] = g.user["username"]
-        error = restaurant.insert_update(get_db(), data)
+        item = request.form.copy()
+        item["updated_date"] = datetime.now()
+        item["updated_by"] = g.user["username"]
+        error = restaurant.insert_update(get_db(), item)
         if error is not None:
             flash(error)
         else:
             return redirect(url_for('restaurant.index'))
+    ADMIN_HANDLER.select_by_item(item)
     admins = ADMIN_HANDLER.get_admins()
     return render_template('restaurant/update.html', item=None, admins=admins)
 
@@ -68,14 +70,12 @@ def update(id):
         item = request.form
         error = restaurant.insert_update(get_db(), item, id)
         if error is not None:
-            ADMIN_HANDLER.select_by_item(item)
             flash(error)
         else:
             return redirect(url_for('restaurant.index'))
     else:
         item = restaurant.select_by_id(get_db(), id)
-        ADMIN_HANDLER.select_by_item(item)
-
+    ADMIN_HANDLER.select_by_item(item)
     admins = ADMIN_HANDLER.get_admins()
     return render_template('restaurant/update.html', item=item, admins=admins)
 
