@@ -2,7 +2,7 @@
 
 
 from datacollect.common import to_type, to_d_m_s
-from datacollect.dao import sqlite3_row_to_dict
+from datacollect.dao import sqlite3_row_to_dict, RestaurantTable
 
 
 def select_by_id(db, id):
@@ -115,3 +115,81 @@ def import_restaurant_from_array(array, db, updated_date, updated_by):
         if not err_msg:
             success_count += 1
     return success_count
+
+
+def stat_exp(db, param):
+    fields = []
+    fields_en = []
+    headers = []
+
+    field_name_dict = dict(RestaurantTable.TABLE_FIELDS)
+
+    fields.append("town")
+    fields_en.append("town")
+    headers.append(field_name_dict["town"])
+
+    if param.get("customer_capacity") == "on":
+        fields.append("sum({0}) as {0}".format("customer_capacity"))
+        fields_en.append("customer_capacity")
+        headers.append(field_name_dict["customer_capacity"])
+
+    if param.get("burner_num") == "on":
+        fields.append("sum({0}) as {0}".format("burner_num"))
+        fields_en.append("burner_num")
+        headers.append(field_name_dict["burner_num"])
+
+    if param.get("employee_num") == "on":
+        fields.append("sum({0}) as {0}".format("employee_num"))
+        fields_en.append("employee_num")
+        headers.append(field_name_dict["employee_num"])
+
+    if param.get("annual_turnover") == "on":
+        fields.append("sum({0}) as {0}".format("annual_turnover"))
+        fields_en.append("annual_turnover")
+        headers.append(field_name_dict["annual_turnover"])
+
+    if param.get("ent_area") == "on":
+        fields.append("sum({0}) as {0}".format("ent_area"))
+        fields_en.append("ent_area")
+        headers.append(field_name_dict["ent_area"])
+
+    if param.get("cooking_oil") == "on":
+        fields.append("sum({0}) as {0}".format("cooking_oil"))
+        fields_en.append("cooking_oil")
+        headers.append(field_name_dict["cooking_oil"])
+
+    if param.get("water_used") == "on":
+        fields.append("sum({0}) as {0}".format("water_used"))
+        fields_en.append("water_used")
+        headers.append(field_name_dict["water_used"])
+
+    if param.get("water_waster_emit") == "on":
+        fields.append("sum({0}) as {0}".format("water_waster_emit"))
+        fields_en.append("water_waster_emit")
+        headers.append(field_name_dict["water_waster_emit"])
+
+    if param.get("kitchen_waster_volume") == "on":
+        fields.append("sum({0}) as {0}".format("kitchen_waster_volume"))
+        fields_en.append("kitchen_waster_volume")
+        headers.append(field_name_dict["kitchen_waster_volume"])
+
+    town = param.get("town")
+    sql = "select town, {} from {}".format(
+        ",".join(fields),
+        RestaurantTable.TABLE_NAME
+    )
+    if town:
+        sql += " where town=? group by town"
+        result = db.execute(sql, [town]).fetchall()
+    else:
+        sql += " group by town"
+        result = db.execute(sql).fetchall()
+
+    rows = [sqlite3_row_to_dict(item) for item in result]
+    array_result = []
+    array_result.append(headers)
+    for row in rows:
+        array_result.append([row[f] for f in fields_en])
+    return array_result
+
+

@@ -246,7 +246,7 @@
                 </div>
             </div>
         </fieldset>
-        <fieldset>
+        <fieldset id="hospital_water_info">
             <legend>医疗废物情况</legend>
             <div class="form-row">
                 <label class="col-sm-2 text-sm-right" for="waster1_type">
@@ -275,9 +275,65 @@
                              value="{{item['waster1_jcz'] or 0}}" name="waster1_jcz" id="waster1_jcz">
                 </div>
             </div>
-            <div class="form-row text-center">
-                <button id="btn_add" class="btn btn-secondary">+</button>
+            <div class="form-row">
+                <label class="col-sm-2 text-sm-right" for="waster2_type">
+                    名称、类别
+                </label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control form-control-sm"
+                             value="{{item['waster2_type'] or ''}}"
+                           name="waster2_type"
+                           id="waster2_type">
+                </div>
+                <label class="col-sm-2 text-sm-right" for="waster2_annual">
+                    年产生量(吨)
+                </label>
+                <div class="col-sm-2">
+                    <input type="number" step="0.01" class="form-control form-control-sm"
+                             value="{{item['waster2_annual'] or 0}}"
+                           name="waster2_annual"
+                           id="waster2_annual" placeholder="年产生量(吨)">
+                </div>
+                <label class="col-sm-2 text-sm-right" for="waster2_jcz">
+                    交持证单位量(吨)
+                </label>
+                <div class="col-sm-2">
+                    <input type="number" step="1" class="form-control form-control-sm"
+                             value="{{item['waster2_jcz'] or 0}}"
+                           name="waster2_jcz" id="waster2_jcz">
+                </div>
             </div>
+            <div class="form-row">
+                <label class="col-sm-2 text-sm-right" for="waster3_type">
+                    名称、类别
+                </label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control form-control-sm"
+                             value="{{item['waster3_type'] or ''}}"
+                           name="waster3_type"
+                           id="waster3_type">
+                </div>
+                <label class="col-sm-2 text-sm-right" for="waster3_annual">
+                    年产生量(吨)
+                </label>
+                <div class="col-sm-2">
+                    <input type="number" step="0.01" class="form-control form-control-sm"
+                             value="{{item['waster3_annual'] or 0}}"
+                           name="waster3_annual"
+                           id="waster3_annual" placeholder="年产生量(吨)">
+                </div>
+                <label class="col-sm-2 text-sm-right" for="waster3_jcz">
+                    交持证单位量(吨)
+                </label>
+                <div class="col-sm-2">
+                    <input type="number" step="1" class="form-control form-control-sm"
+                             value="{{item['waster3_jcz'] or 0}}"
+                           name="waster3_jcz" id="waster3_jcz">
+                </div>
+            </div>
+            <!--<div class="form-row text-center">-->
+                <!--<button id="btn_add" type="button" class="btn btn-secondary">+</button>-->
+            <!--</div>-->
         </fieldset>
         <hr>
         <div class="text-center">
@@ -288,4 +344,12 @@
         </div>
     </form>
 </div>
+{% endblock %}
+
+{% block script %}
+<script>
+    $("#btn_add").click(function(){
+        alert("aaaa");
+    });
+</script>
 {% endblock %}

@@ -1,7 +1,128 @@
 {% extends 'base.html' %}
 {% block title %}餐饮企业{% endblock %}
-{% block content %}
 
+{% block modal %}
+<div class="modal" id="stat_modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-header">
+                <h5 class="modal-title">统计导出</h5>
+				<button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+			</div>
+			<div class="modal-body">
+                <form id="frm_stat_exp"  method="post" action="/restaurant/stat_exp" target="_blank">
+                    <div class="form-row">
+                        <div class="form-group col-sm-3">
+                            <select name="province" id="province"
+                                    class="custom-select custom-select-sm"  required>
+                                {% for pitem in admins['p'] %}
+                                <option {{'selected' if pitem.selected}} value='{{pitem.name}}'>{{pitem.name}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-3">
+                            <select name="city" id="city"
+                                    class="custom-select custom-select-sm"  required>
+                                {% for pitem in admins['c'] %}
+                                <option {{'selected' if pitem.selected}} value='{{pitem.name}}'>{{pitem.name}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-3">
+                            <select name="district" id="district"
+                                    class="custom-select custom-select-sm"  required>
+                                {% for pitem in admins['d'] %}
+                                <option {{'selected' if pitem.selected}} value='{{pitem.name}}'>{{pitem.name}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-3">
+                           <select name="town" id="town"
+                                    class="custom-select custom-select-sm"  required>
+                                <option value="" >全部</option>
+                                {% for pitem in admins['t'] %}
+                                <option value='{{pitem.name}}'>{{pitem.name}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="customer_capacity"
+                               id="customer_capacity">
+                        <label class="form-check-label" for="customer_capacity">
+                            可容纳就餐人数
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="burner_num"
+                               id="burner_num">
+                        <label class="form-check-label" for="burner_num">
+                            炉头数
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="employee_num"
+                               id="employee_num">
+                        <label class="form-check-label" for="employee_num">
+                            员工数
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox"  name="annual_turnover"
+                               id="annual_turnover">
+                        <label class="form-check-label" for="annual_turnover">
+                            年营业额
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="ent_area" id="ent_area">
+                        <label class="form-check-label" for="ent_area">
+                            经验面积
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="cooking_oil"
+                               id="cooking_oil">
+                        <label class="form-check-label" for="cooking_oil">
+                            食用油使用量
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="water_used"
+                               id="water_used">
+                        <label class="form-check-label" for="water_used">
+                            年用水量
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="water_waster_emit"
+                               id="water_waster_emit">
+                        <label class="form-check-label" for="water_waster_emit">
+                            年废水排放量
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="kitchen_waster_volume"
+                               id="kitchen_waster_volume">
+                        <label class="form-check-label" for="kitchen_waster_volume">
+                            餐厨垃圾产生量
+                        </label>
+                    </div>
+                </form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button id="btn_stat_exp" type="button" class="btn btn-primary">导出</button>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block content %}
 <div class="search_area">
 <form>
   <div class="form-row align-items-center">
@@ -25,16 +146,17 @@
 </form>
 
 <div class="my-toolbar">
-  <div class="btn-toolbar justify-content-between" role="toolbar">
-      <div class="btn-group" role="group" aria-label="First group">
-        <a href="/restaurant/create" class="btn btn-outline-primary">新增</a>
-      </div>
+  <div class="btn-toolbar justify-content-end" role="toolbar">
       <div class="btn-group">
+        <a href="/restaurant/create" class="btn btn-outline-primary">新增</a>
         <button onclick="open_excel()" class="btn btn-outline-primary">Excel导入</button>
-        <a href="/common/export?excel_type=restaurant" id="excel_export"
-           class="btn btn-outline-primary" target="_blank">
-            Excel导出
-        </a>
+        <!--<a href="/common/export?excel_type=restaurant" id="excel_export"-->
+           <!--class="btn btn-outline-primary" target="_blank">-->
+            <!--Excel导出-->
+        <!--</a>-->
+        <button class="btn btn-primary" data-toggle="modal"
+                  data-target="#stat_modal"
+                  type="button">统计导出</button>
       </div>
   </div>
 </div>
@@ -63,5 +185,10 @@
     {% if g.user['role'] == 'manager' %}
     is_manager = true;
     {% endif %}
+
+    $("#btn_stat_exp").click(function(){
+       $("#frm_stat_exp").submit();
+       $("#stat_modal").modal("hide");
+    });
 </script>
 {% endblock %}

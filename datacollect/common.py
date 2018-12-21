@@ -156,7 +156,7 @@ class AdminNodeHandler(object):
         town = item["town"]
         self.select_by_name(3, name=town)
 
-    def get_admins(self, init=False):
+    def get_admins(self):
         return {
             "p": self.level_nodes[0],
             "c": self.level_nodes[1],

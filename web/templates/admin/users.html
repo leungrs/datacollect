@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %}用户管理{% endblock %}
+{% block content %}
+
+<div class="search_area">
+<form>
+  <div class="form-row align-items-center">
+    <div class="col-auto">
+      <input type="text" class="form-control mb-2"
+             placeholder="用户名">
+    </div>
+    <div class="col-auto">
+        <input type="text" class="form-control mb-2"
+               placeholder="角色">
+    </div>
+    <div class="col-auto">
+      <button type="button" class="btn btn-primary mb-2">搜索</button>
+    </div>
+  </div>
+</form>
+</div>
+
+<div class="my-toolbar">
+  <div class="btn-toolbar justify-content-end" role="toolbar">
+      <div class="btn-group" role="group" aria-label="First group">
+        <a href="/hospital/create" class="btn btn-outline-primary">新增</a>
+      </div>
+  </div>
+</div>
+
+<table data-method="post" data-toggle="table" data-url="{{url_for('admin.query_user')}}"
+   data-side-pagination="server"
+   data-pagination="true"
+   data-page-list="[5, 10, 20, 50, 100, 200]"
+>
+    <thead>
+        <tr>
+            <th data-field="id">ID</th>
+            <th data-field="username">用户名</th>
+            <th data-field="role">角色</th>
+            <th data-formatter="op_formatter">操作</th>
+        </tr>
+    </thead>
+</table>
+{% endblock %}
+
+{% block script %}
+<script src="{{ url_for('static', filename='js/common.js') }}"></script>
+<script>
+    var is_manager = false;
+    {% if g.user['role'] == 'manager' %}
+    is_manager = true;
+    {% endif %}
+</script>
+{% endblock %}

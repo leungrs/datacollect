@@ -90,3 +90,9 @@ def sqlite3_row_to_dict(row):
             key: row[key]
             for key in row.keys()
         }
+
+
+def sqlite3_rows_to_dict(rows):
+    result = []
+    for row in rows:
+        result.append(sqlite3_row_to_dict(row))
