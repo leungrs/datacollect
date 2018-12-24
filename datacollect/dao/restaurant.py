@@ -191,5 +191,3 @@ def stat_exp(db, param):
     for row in rows:
         array_result.append([row[f] for f in fields_en])
     return array_result
-
-

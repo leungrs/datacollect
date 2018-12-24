@@ -6,15 +6,16 @@ from datacollect.config import DATA_FOLDER
 
 SUCCESS = "ok"
 FAIL = "fail"
+DEFAULT_PASSWORD = "888888"
 
 
 class Result(object):
     """"""
 
     def __init__(self, status=SUCCESS, data=None, message=""):
-        self.status = status
-        self.message = message
-        self.data = data
+        self._status = status
+        self._message = message
+        self._data = data
 
     def to_json(self):
         return {
@@ -22,6 +23,38 @@ class Result(object):
             "message": self.message,
             "data": self.data
         }
+
+    def __bool__(self):
+        return self.status == SUCCESS
+
+    @property
+    def message(self):
+        return self._message
+
+    @message.setter
+    def message(self, value):
+        if value:
+            self._message = value
+            self._status = FAIL
+        else:
+            self._message = ""
+            self._status = SUCCESS
+
+    @property
+    def status(self):
+        return self._status
+
+    @status.setter
+    def status(self, value):
+        self._status = value
+
+    @property
+    def data(self):
+        return self._data
+
+    @data.setter
+    def data(self, value):
+        self._data = value
 
 
 def to_type(obj, type_obj=str, default=0):

@@ -39,13 +39,12 @@ function import_excel(obj, excel_type)
     });
 }
 
-function id_field_formatter(value, row, index, field)
-{
+function id_field_formatter(value, row, index, field) {
     return "<a href='"+value+ "/update'>" + value + "</a>"
 }
 
-function op_formatter(value, row, index, field)
-{
+
+function op_formatter(value, row, index, field){
    rowid = row.id
    btn_del = "<button data-rowid=" +rowid+ " class='op_delete btn btn-primary'>删除</button>"
    btn_exp = "<a href='" +rowid+ "/export' class='ml-1 op_export btn btn-primary'>导出</a>"
@@ -54,6 +53,17 @@ function op_formatter(value, row, index, field)
    }
    return btn_exp
 }
+
+
+$('#confirm_modal').on('show.bs.modal', function (event) {
+    if (!event.relatedTarget) {
+        return;
+    }
+    var relatedTarget = $(event.relatedTarget);
+    var uid = relatedTarget.data('uid');
+    var modal = $(this)
+    modal.find("#confirm_dialog_value").val(uid);
+});
 
 
 $(document).on("click", ".op_delete", function(e) {
@@ -71,3 +81,8 @@ $(document).on("click", ".op_delete", function(e) {
         }
     });
 });
+
+
+function register_confirm_ok_handler(handler) {
+    $("#btn_confirm_ok").click(handler);
+}

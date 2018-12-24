@@ -52,7 +52,7 @@ def create():
     """Create a new post for the current user."""
     item = None
     if request.method == 'POST':
-        item = request.form
+        item = request.form.copy()
         item["updated_date"] = datetime.now()
         item["updated_by"] = g.user["username"]
         error = restaurant.insert_update(get_db(), item)

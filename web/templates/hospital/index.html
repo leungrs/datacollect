@@ -25,11 +25,9 @@
 </form>
 
 <div class="my-toolbar">
-  <div class="btn-toolbar justify-content-between" role="toolbar">
-      <div class="btn-group" role="group" aria-label="First group">
-        <a href="/hospital/create" class="btn btn-outline-primary">新增</a>
-      </div>
+  <div class="btn-toolbar justify-content-end" role="toolbar">
       <div class="btn-group">
+        <a href="/hospital/create" class="btn btn-outline-primary">新增</a>
         <button onclick="open_excel()" class="btn btn-outline-primary">Excel导入</button>
         <a href="/common/export?excel_type=hospital" id="excel_export"
            class="btn btn-outline-primary" target="_blank">
@@ -57,11 +55,11 @@
 {% endblock %}
 
 {% block script %}
-<script src="{{ url_for('static', filename='js/common.js') }}"></script>
 <script>
     var is_manager = false;
     {% if g.user['role'] == 'manager' %}
     is_manager = true;
     {% endif %}
 </script>
+<script src="{{ url_for('static', filename='js/common.js') }}"></script>
 {% endblock %}
