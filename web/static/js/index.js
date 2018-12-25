@@ -1,8 +1,8 @@
-var $rest_table;
+var $table;
 
-function InitRestTable () {
-    //记录页面bootstrap-table全局变量$rest_table，方便应用
-    $rest_table = $('#rest_table').bootstrapTable({
+function InitTable () {
+    //记录页面bootstrap-table全局变量$table，方便应用
+    $table = $('#table').bootstrapTable({
         url: "query",                      //请求后台的URL（*）
         method: 'post',                      //请求方式（*）
         striped: true,                      //是否显示行间隔色
@@ -20,7 +20,6 @@ function InitRestTable () {
         showRefresh: false,                  //是否显示刷新按钮
         minimumCountColumns: 2,             //最少允许的列数
         clickToSelect: true,                //是否启用点击选中行
-        //height: 500,                      //行高，如果没有设置height属性，表格自动根据记录条数决定表格高度
         uniqueId: "id",                     //每一行的唯一标识，一般为主键列
         showToggle: false,                   //是否显示详细视图和列表视图的切换按钮
         cardView: false,                    //是否显示详细视图
@@ -60,7 +59,9 @@ function actionFormatter(value, row, index, field){
     var id = row.id;
     var result = "<a class='p-1 text-success'  title='编辑' href='"+id+ "/update'><span class='oi oi-pencil'></span></a>"
     result += "<a class='p-1 text-success'  title='导出word' href='"+id+ "/export'><span class='oi oi-data-transfer-download'></span></a>"
-    result += "<a data-uid='" + id + "' href='javascript:;' data-toggle='modal' data-target='#confirm_modal' class='p-1 text-danger' title='删除'><span class='oi oi-delete'></span></a>";
+    if (is_manager) {
+        result += "<a data-uid='" + id + "' href='javascript:;' data-toggle='modal' data-target='#confirm_modal' class='p-1 text-danger' title='删除'><span class='oi oi-delete'></span></a>";
+    }
     return result;
 }
 
@@ -72,7 +73,8 @@ register_confirm_ok_handler(function(){
         processData: false,
         contentType: false,
         success: function() {
-            $rest_table.bootstrapTable("refresh");
+            $table.bootstrapTable("refresh");
+            $("#confirm_modal").modal("hide");
         },
         error: function() {
             alert("删除失败!");
@@ -80,5 +82,9 @@ register_confirm_ok_handler(function(){
     });
 });
 
+InitTable();
 
-InitRestTable();
+$("#btn_stat_exp").click(function(){
+   $("#frm_stat_exp").submit();
+   $("#stat_modal").modal("hide");
+});

@@ -36,30 +36,10 @@
       </div>
   </div>
 </div>
-
-<table data-method="post" data-toggle="table" data-url="{{url_for('hospital.query')}}"
-   data-side-pagination="server"
-   data-pagination="true"
-   data-page-list="[5, 10, 20, 50, 100, 200]"
->
-    <thead>
-        <tr>
-            <th data-sortable="true" data-formatter="id_field_formatter" data-field="id">ID</th>
-            <th data-field="uniform_credit_code">社会统一信用代码</th>
-            <th data-field="ent_name">企业名称</th>
-            <th data-field="province">省份</th>
-            <th data-formatter="op_formatter">操作</th>
-        </tr>
-    </thead>
-</table>
+<table id="table"></table>
 {% endblock %}
 
 {% block script %}
-<script>
-    var is_manager = false;
-    {% if g.user['role'] == 'manager' %}
-    is_manager = true;
-    {% endif %}
-</script>
 <script src="{{ url_for('static', filename='js/common.js') }}"></script>
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
 {% endblock %}

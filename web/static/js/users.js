@@ -88,8 +88,13 @@ function saveUser() {
        }),
        "contentType": "application/json",
        "success": function(data, a, b, c) {
-            $user_table.bootstrapTable("refresh");
-            $("#user_modal").modal("hide");
+            if (data.status == "ok") {
+                $user_table.bootstrapTable("refresh");
+                $("#user_modal").modal("hide");
+            } else {
+                alert(data.message || "保存失败。")
+            }
+
        },
        "error": function() {
           alert("保存失败。")

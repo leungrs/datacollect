@@ -160,21 +160,10 @@
       </div>
   </div>
 </div>
-<table id="rest_table"></table>
+<table id="table"></table>
 {% endblock %}
 
 {% block script %}
-<script>
-    var is_manager = false;
-    {% if g.user['role'] == 'manager' %}
-    is_manager = true;
-    {% endif %}
-
-    $("#btn_stat_exp").click(function(){
-       $("#frm_stat_exp").submit();
-       $("#stat_modal").modal("hide");
-    });
-</script>
 <script src="{{ url_for('static', filename='js/common.js') }}"></script>
-<script src="{{ url_for('static', filename='js/restaurant.js') }}"></script>
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
 {% endblock %}

@@ -93,7 +93,12 @@
         {% block footer %}{% endblock %}
       </div>
     </div>
-
+    <script>
+      var is_manager = false;
+      {% if g.user['role'] == 'manager' %}
+      is_manager = true;
+      {% endif %}
+    </script>
     <script src="{{ url_for('static', filename='js/jquery-3.3.1.js') }}"></script>
     <script src="{{ url_for('static', filename='js/popper-1.14.3.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bootstrap-4.1.3.min.js') }}"></script>

@@ -31,7 +31,7 @@ def query():
     username = user['username']
     role = user['role']
     if role == 'user':
-        param["uniform_credit_code"] = username
+        param["updated_by"] = username
 
     total, rows = select(
         db=get_db(),
