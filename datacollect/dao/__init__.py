@@ -5,7 +5,7 @@ from datacollect.dao.table import RestaurantTable
 
 
 def select(db, table_name, select_fields=None,
-           order_field="id", sort_order="desc",
+           order_field="id", like_condition=None, sort_order="desc",
            fetchone=False, return_count=False, param=None):
     param = param or {}
     limit = param.pop("limit", None)
@@ -15,10 +15,18 @@ def select(db, table_name, select_fields=None,
     w_fields = []
     w_values = []
     for k, v in param.items():
+        if isinstance(v, str):
+            v = v.strip()
+            if not v:
+                continue
         w_fields.append(k)
         w_values.append(v)
 
     where = " and ".join("{}=?".format(f) for f in w_fields)
+    if like_condition:
+        if where:
+            where += " and "
+        where += " and ".join("{} like '%{}%'".format(k, v) for k, v in like_condition.items())
 
     fields = "*"
     if select_fields:

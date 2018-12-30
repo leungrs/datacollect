@@ -25,6 +25,8 @@ function InitTable () {
         cardView: false,                    //是否显示详细视图
         detailView: false,                  //是否显示父子表
         queryParams : function (params) {
+            params["uniform_credit_code"] = $("#uniform_credit_code").val().trim();
+            params["ent_name"] = $("#ent_name").val().trim();
             return params;
         },
         columns: [{
@@ -87,4 +89,8 @@ InitTable();
 $("#btn_stat_exp").click(function(){
    $("#frm_stat_exp").submit();
    $("#stat_modal").modal("hide");
+});
+
+$("#btn_index_search").click(function(){
+    $table.bootstrapTable("refresh");
 });

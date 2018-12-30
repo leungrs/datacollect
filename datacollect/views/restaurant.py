@@ -33,12 +33,21 @@ def query():
     if role == 'user':
         param["updated_by"] = username
 
+    like_condition = {}
+    uniform_credit_code = param.pop("uniform_credit_code", "").strip()
+    if uniform_credit_code:
+        like_condition["uniform_credit_code"] = uniform_credit_code
+    ent_name = param.pop("ent_name", "").strip()
+    if ent_name:
+        like_condition["ent_name"] = ent_name
+
     total, rows = select(
         db=get_db(),
         select_fields=[
             "id", "ent_name", "province",
             "uniform_credit_code"
         ],
+        like_condition=like_condition,
         table_name="ent_restaurant_survey",
         param=param
     )
