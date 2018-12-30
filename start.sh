@@ -1,0 +1,1 @@
+nohup gunicorn -b 0.0.0.0:80 -t 1800 wsgi:app &
