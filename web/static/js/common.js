@@ -22,7 +22,9 @@ function import_excel(obj, excel_type) {
             }
             else {
                 alert("导入成功！");
-                refresh_curr_page();
+                if ($table) {
+                    $table.bootstrapTable("refresh");
+                }
             }
             $(obj).val("");
         },

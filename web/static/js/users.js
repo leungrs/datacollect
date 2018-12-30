@@ -1,8 +1,8 @@
-var $user_table;
+var $table;
 
-function InitUserTable () {
-    //记录页面bootstrap-table全局变量$user_table，方便应用
-    $user_table = $('#user_table').bootstrapTable({
+function InitTable () {
+    //记录页面bootstrap-table全局变量$table，方便应用
+    $table = $('#user_table').bootstrapTable({
         url: "query_user",                      //请求后台的URL（*）
         method: 'post',                      //请求方式（*）
         //toolbar: '#toolbar',              //工具按钮用哪个容器
@@ -58,15 +58,26 @@ function actionFormatter(value, row, index, field){
     var id = row.id;
     var role = row.role;
     var username = row.username;
-    var result = "<a href='javascript:;' class='p-1 text-success'" +
-    " data-userid='" + id + "' data-userrole='" + role + "' " + "' data-username='" + username + "' " +
-    "data-toggle='modal' data-target='#user_modal' title='编辑'><span class='oi oi-pencil'></span></a>";
-    result += "<a href='javascript:;' class='p-1 text-success' title='重置密码'><span class='oi oi-lock-locked'></span></a>";
-    result += "<a href='javascript:;' class='p-1 text-danger' title='删除'><span class='oi oi-delete'></span></a>";
+    var result = "";
+    if (username != "Administrator") {
+        result += "<a href='javascript:;' class='p-1 text-success' title='编辑'" +
+            " data-target='#user_modal' data-toggle='modal'" +
+            " data-userid='" + id + "'" +
+            " data-userrole='" + role + "'" +
+            " data-username='" + username + "'" +
+            "><span class='oi oi-pencil'></span></a>";
+
+        result += "<a href='javascript:;' class='p-1 text-success' title='修改密码'" +
+            " data-target='#pass_modal' data-toggle='modal'" +
+            " data-userid='" + id + "'" +
+            "><span class='oi oi-lock-locked'></span></a>";
+
+        result += "<a data-uid='" + id + "' href='javascript:;' data-toggle='modal' data-target='#confirm_modal' class='p-1 text-danger' title='删除'><span class='oi oi-delete'></span></a>";
+    }
     return result;
 }
 
-function editUser() {
+function newUser() {
     $("#user_id").val("");
     $("#username").val("")
     $("#role").val("user")
@@ -89,7 +100,7 @@ function saveUser() {
        "contentType": "application/json",
        "success": function(data, a, b, c) {
             if (data.status == "ok") {
-                $user_table.bootstrapTable("refresh");
+                $table.bootstrapTable("refresh");
                 $("#user_modal").modal("hide");
             } else {
                 alert(data.message || "保存失败。")
@@ -103,6 +114,63 @@ function saveUser() {
 
 
 }
+
+function changePassword() {
+    // 修改密码
+    user_id = $("#user_id1").val().trim();
+    password = $("#password").val().trim();
+    confirm_password = $("#confirm_password").val();
+    if (!password) {
+        alert("请输入密码！");
+        return;
+    }
+    if (password != confirm_password) {
+        alert("两次密码输入不一致！");
+        return;
+    }
+    $.ajax({
+       "url": "change_password",
+       "type": "post",
+       "data": JSON.stringify({
+          "user_id": user_id,
+          "password": password
+       }),
+       "contentType": "application/json",
+       "success": function(data, a, b, c) {
+            if (data.status == "ok") {
+                $("#pass_modal").modal("hide");
+                setTimeout(function() {
+                    alert("修改密码成功。")
+                }, 100)
+            } else {
+                alert(data.message || "修改密码失败。")
+            }
+
+       },
+       "error": function() {
+          alert("保存失败。")
+       }
+    });
+
+
+}
+
+register_confirm_ok_handler(function(){
+    uid = $("#confirm_dialog_value").val()
+    $.ajax({
+        url: uid+"/delete",
+        type: "post",
+        processData: false,
+        contentType: false,
+        success: function() {
+            $table.bootstrapTable("refresh");
+            $("#confirm_modal").modal("hide");
+        },
+        error: function() {
+            alert("删除失败!");
+        }
+    });
+});
 
 $('#user_modal').on('show.bs.modal', function (event) {
     if (!event.relatedTarget) {
@@ -118,3 +186,15 @@ $('#user_modal').on('show.bs.modal', function (event) {
     modal.find('#username').val(username)
     modal.find('#role').val(role)
 });
+
+$('#pass_modal').on('show.bs.modal', function (event) {
+    if (!event.relatedTarget) {
+        return;
+    }
+    var relatedTarget = $(event.relatedTarget);
+    var userid = relatedTarget.data('userid');
+    var modal = $(this)
+    modal.find("#user_id1").val(userid);
+});
+
+InitTable()

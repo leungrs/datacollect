@@ -96,3 +96,35 @@ def sqlite3_rows_to_dict(rows):
     result = []
     for row in rows:
         result.append(sqlite3_row_to_dict(row))
+
+
+FUTIAN = {
+    "province": "广东省",
+    "city": "深圳市",
+    "district": "福田区"
+}
+
+
+FUTIAN_TOWN = {
+    "南园街道": "南园街道办事处",
+    "福田街道": "福田街道办事处",
+    "园岭街道": "园岭街道办事处",
+    "沙头街道": "沙头街道办事处",
+    "香蜜湖街道": "香蜜湖街道办事处",
+    "梅林街道": "梅林街道办事处",
+    "福保街道": "福保街道办事处",
+    "莲花街道": "莲花街道办事处",
+    "华富街道": "华富街道办事处",
+    "华强北街道": "华强北街道办事处",
+}
+
+
+def get_town_from_address(address, startswith=False):
+    for key, value in FUTIAN_TOWN.items():
+        if startswith:
+            if key.startswith(address):
+                return value
+        elif key in address:
+            return value
+
+    return ""

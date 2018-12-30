@@ -136,4 +136,71 @@ CREATE TABLE hospital_survey (
   updated_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updated_by TEXT NOT NULL
 );
+-- 汽车维修企业污染源信息调查表
+CREATE TABLE car_survey (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  uniform_credit_code TEXT,  -- 社会统一信用代码
+  origin_org_code TEXT,  -- 原组织机构代码号
+  ent_name TEXT, -- 单位名称
+  ent_former_name TEXT, -- 单位曾用名
+  province TEXT,  -- 省
+  city TEXT, -- 市
+  district TEXT, -- 地（区，市，州，盟）
+  town TEXT,  -- 乡镇
+  address TEXT,
+  region_code TEXT,
+  longitude REAL,
+  latitude REAL,
+  lon_d REAL,
+  lon_m REAL,
+  lon_s REAL,
+  lat_d REAL,
+  lat_m REAL,
+  lat_s REAL,
+  legal_person TEXT, -- 法人代表
+  open_date TEXT,  -- 开业(成立)时间
+  ent_contact TEXT, -- 企业联系人
+  ent_phone TEXT, -- 企业联系电话
+  run_normally TEXT, -- 是否正常运营
+  ent_type TEXT, -- 汽修企业类型
+  car_num INT, -- 洗车车位数
+  house_num INT, -- 烤漆房个数
+  annual_turnover REAL, -- 年营业额
+  building_area REAL, -- 经营面积
+  oil_paint_used REAL, --  油性漆用量
+  water_paint_used REAL, -- 水性漆用量
+  thinner_used REAL, -- 天那水用量
+  water_used REAL, -- 年用水量
+  water_waster_emit REAL, -- 年废水排放量
+  water_process_name TEXT, -- 废水处理工艺名称
+  oil_device TEXT, -- 是否有隔油沉淀设施
+  water_cod REAL, -- 废水化学需氧量浓度
+  water_nh4 REAL, -- 废水氨氮浓度
+  water_tp REAL, -- 废水总磷浓度
+  water_oil REAL, -- 石油类浓度
+  water_monitor TEXT, -- 是否在线监测
+  gas_process_name TEXT, -- 有机废气处理工艺名称
+  gas_emission_vol REAL, -- 有机废气排放风量
+  device_runtime REAL, -- 设施年运行小时数
+  benzene REAL, -- 苯浓度
+  methylbenzene REAL, -- 甲苯浓度
+  dimethylbenzene REAL, -- 二甲苯浓度
+  not_ch4 REAL, -- 非甲烷浓度
+  voc_total REAL, -- 总VOC浓度
+  gas_monitor TEXT, -- 是否安装在线监测
+  waster1_type TEXT, -- 危险废物名称，类别
+  waster1_annual REAL, -- 年产生量
+  waster1_jcz REAL, -- 交持证单位量
+  waster2_type TEXT, -- 危险废物名称，类别
+  waster2_annual REAL, -- 年产生量
+  waster2_jcz REAL, -- 交持证单位量
+  waster3_type TEXT, -- 危险废物名称，类别
+  waster3_annual REAL, -- 年产生量
+  waster3_jcz REAL, -- 交持证单位量
+  survey_person TEXT, -- 调查人
+  contact TEXT, -- 联系人
+  survey_date TIMESTAMP,
+  updated_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_by TEXT NOT NULL
+);
 

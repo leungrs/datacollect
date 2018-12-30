@@ -1,12 +1,14 @@
 # coding: utf-8
 
 
-from flask import Blueprint, render_template, request, g, jsonify
+from flask import Blueprint, render_template, request, jsonify, url_for
 from werkzeug.security import generate_password_hash
+from werkzeug.utils import redirect
 
 from datacollect import get_db
 from datacollect.common import Result
 from datacollect.dao import select
+from datacollect.views.auth import login_required
 
 bp = Blueprint('admin', __name__, url_prefix='/admin')
 
@@ -64,35 +66,26 @@ def save_user():
     return jsonify(result.to_json())
 
 
-@bp.route("/reset_pass", methods=["POST"])
-def reset_pass():
-    """重置密码"""
+@bp.route('/<int:id>/delete', methods=('POST',))
+@login_required
+def delete(id):
+    users.delete_by_id(get_db(), id)
+    return "ok"
+
+
+@bp.route("/change_password", methods=["POST"])
+def change_password():
+    """修改密码"""
     param = request.json
-    role = param.get("role") or "user"
-    username = param.get("username")
     user_id = param.get("user_id")
+    password = param.get("password")
     db = get_db()
     result = Result()
 
-    if not username:
-        result.message = '请输入用户名'
+    if not password:
+        result.message = '请输入新密码'
     else:
-        if not user_id:
-            sql = 'SELECT id FROM user WHERE username = ?'
-            if db.execute(sql, (username,)).fetchone() is not None:
-                result.message = '用户名 {0} 已经存在'.format(username)
-
-    if result:
-        if not user_id:
-            db.execute(
-                'INSERT INTO user (username, role, password) VALUES (?, ?, ?)',
-                (username, role, generate_password_hash("888888"))
-            )
-        else:
-            db.execute(
-                'update user (username, role) set username=?, role=? where id=?',
-                (username, role, user_id)
-            )
+        sql = 'update user set password=? where id=?'
+        db.execute(sql, (generate_password_hash(password), user_id))
         db.commit()
-
     return jsonify(result.to_json())

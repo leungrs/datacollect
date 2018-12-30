@@ -2,7 +2,7 @@
 
 
 from datacollect.common import to_type, to_d_m_s
-from datacollect.dao import sqlite3_row_to_dict
+from datacollect.dao import sqlite3_row_to_dict, get_town_from_address, FUTIAN
 
 
 def select_by_id(db, id):
@@ -78,25 +78,24 @@ def import_hospital_from_array(array, db, updated_date, updated_by):
     columns = array[0]
     rows = array[1:]
     valid_names = {
-        "餐饮企业名称": "ent_name",
-        "经营地址": "address",
+        "统一社会信用代码": "uniform_credit_code",
+        "单位名称": "ent_name",
+        "单位地址": "address",
         "经度": "longitude:float",
         "纬度": "latitude:float",
         "法人代表": "legal_person",
-        "投产时间": "open_date",
-        "企业联系人": "ent_contact",
-        "联系电话": "ent_phone:str",
-        "餐饮类型.1": "restaurant_type",
-        "可容纳用餐人数": "customer_capacity:float",
-        "员工人数": "employee_num:int",
-        "经营面积": "ent_area:float",
-        "用水量": "water_used:float",
-        "餐厨垃圾处置去向": "kitchen_waster_gone"
+        "开业时间": "open_date",
+        "联系人": "ent_contact",
+        "手机号码": "ent_phone:str",
+        "建筑面积": "building_area:float",
+        "床位数": "bed_num:int",
+        "是否安装在线监测": "water_monitor",
+        "填表人": "survey_person",
     }
     success_count = 0
     for row in rows:
-        burner_count = 0
         item = {}
+        town = ""
         for i, col in enumerate(columns):
             val = row[i]
             if col in valid_names:
@@ -105,12 +104,13 @@ def import_hospital_from_array(array, db, updated_date, updated_by):
                     valid_name, type_str = valid_name.split(":")
                     val = to_type(val, type_str)
                 item[valid_name] = val
-            elif "炉" in col:
-                burner_count += to_type(val, int, 0)
-        # 处理炉头数
-        item["burner_num"] = burner_count
+            elif col == "街道办":
+                town = val
+
         item["updated_date"] = updated_date
         item["updated_by"] = updated_by
+        item.update(FUTIAN)
+        item["town"] = get_town_from_address(town, startswith=True)
         err_msg = insert_update(db, item)
         if not err_msg:
             success_count += 1

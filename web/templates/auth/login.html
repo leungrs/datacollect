@@ -15,10 +15,11 @@
     <h1 class="h3 mb-3 font-weight-normal">用户登录</h1>
     <label for="inputUsername" class="sr-only">用户名</label>
     <input type="text" name="username" id="inputUsername" class="form-control"
-           placeholder="用户名" required autofocus>
+           value="{{param.username}}"
+           placeholder="用户名" required {{'autofocus' if param.username_auto_focus}}>
     <label for="inputPassword" class="sr-only">Password</label>
     <input type="password" name="password" id="inputPassword"
-           class="form-control" placeholder="密码" required>
+           class="form-control" placeholder="密码" required {{'autofocus' if param.password_auto_focus}}>
     {% for message in get_flashed_messages() %}
     <div class="flash">{{ message }}</div>
     {% endfor %}

@@ -149,21 +149,21 @@
             </div>
         </div>
         <div class="form-row">
-            <label class="col-sm-2 text-sm-right" for="bed_num">床位数</label>
+            <label class="col-sm-2 text-sm-right" for="car_num">洗车车位数(个)</label>
             <div class="col-sm-4">
-                <input type="number" name="bed_num"
-                         value="{{item['bed_num'] or 0}}"
-                       class="form-control form-control-sm" id="bed_num">
+                <input type="number" name="car_num"
+                         value="{{item['car_num'] or 0}}"
+                       class="form-control form-control-sm" id="car_num">
             </div>
-            <label class="col-sm-2 text-sm-right" for="patient_num">年就诊人数</label>
+            <label class="col-sm-2 text-sm-right" for="house_num">烤漆房数量(个)</label>
             <div class="col-sm-4">
-                <input type="number" name="patient_num"
-                          value="{{item['patient_num'] or 0}}"
-                       class="form-control form-control-sm" id="patient_num">
+                <input type="number" name="house_num"
+                          value="{{item['house_num'] or 0}}"
+                       class="form-control form-control-sm" id="house_num">
             </div>
         </div>
         <div class="form-row">
-            <label class="col-sm-2 text-sm-right" for="building_area">建筑面积(m&sup2;)</label>
+            <label class="col-sm-2 text-sm-right" for="building_area">经营面积(m&sup2;)</label>
             <div class="col-sm-4">
                 <input type="number" name="building_area" step="0.01"
                           value="{{item['building_area'] or 0}}"
@@ -176,6 +176,11 @@
             </div>
         </div>
         <div class="form-row">
+            <label class="col-sm-2 text-sm-right" for="ent_type">汽修企业类型</label>
+            <div class="col-sm-4">
+                <input type="text" name="ent_type" value="{{item['ent_type'] or ''}}"
+                       class="form-control form-control-sm" id="ent_type">
+            </div>
             <label class="col-sm-2 text-sm-right" for="run_normally">是/否正常运营</label>
             <div class="col-sm-4">
                 <select name="run_normally" id="run_normally"
@@ -187,6 +192,37 @@
                 </select>
             </div>
         </div>
+        </fieldset>
+        <fieldset>
+            <legend>挥发性原辅料使用情况</legend>
+            <div class="form-row">
+                <label class="col-sm-2 text-sm-right" for="oil_paint_used">
+                    油性漆用量(吨)
+                </label>
+                <div class="col-sm-2">
+                    <input type="number" step="0.01"  class="form-control form-control-sm"
+                             value="{{item['oil_paint_used'] or 0}}"
+                           name="oil_paint_used"
+                           id="oil_paint_used">
+                </div>
+                <label class="col-sm-2 text-sm-right" for="water_paint_used">
+                    水性漆用量(吨)
+                </label>
+                <div class="col-sm-2">
+                    <input type="number" step="0.01" class="form-control form-control-sm"
+                           value="{{item['water_paint_used'] or 0}}"
+                           name="water_paint_used"
+                           id="water_paint_used">
+                </div>
+                <label class="col-sm-2 text-sm-right" for="thinner_used">
+                    天那水用量(吨)
+                </label>
+                <div class="col-sm-2">
+                    <input type="number" step="0.01" class="form-control form-control-sm"
+                           value="{{item['thinner_used'] or 0}}" name="thinner_used"
+                           id="thinner_used">
+                </div>
+            </div>
         </fieldset>
         <fieldset>
             <legend>废水情况</legend>
@@ -205,36 +241,37 @@
                 </div>
             </div>
             <div class="form-row">
-                <label class="col-sm-2 text-sm-right" for="water_cod">COD浓度</label>
+                <label class="col-sm-2 text-sm-right" for="water_cod">化学需氧量浓度</label>
                 <div class="col-sm-4">
                     <input type="number" step="0.01" name="water_cod"  value="{{item['water_cod'] or 0}}"
                            class="form-control form-control-sm" id="water_cod">
                 </div>
-                <label class="col-sm-2 text-sm-right" for="water_bod">BOD浓度</label>
+                <label class="col-sm-2 text-sm-right" for="water_oil">石油类浓度</label>
                 <div class="col-sm-4">
-                    <input type="number" step="0.01" name="water_bod"
-                           value="{{item['water_bod'] or 0}}"
-                           class="form-control form-control-sm" id="water_bod">
+                    <input type="number" step="0.01" name="water_oil"  value="{{item['water_oil'] or 0}}"
+                           class="form-control form-control-sm" id="water_oil">
                 </div>
             </div>
             <div class="form-row">
-                <label class="col-sm-2 text-sm-right" for="water_fecal_coliform">
-                    粪大肠菌群(个/L)
-                </label>
+                <label class="col-sm-2 text-sm-right" for="water_nh4">氨氮浓度</label>
                 <div class="col-sm-4">
-                    <input type="number" step="0.01" name="water_fecal_coliform"
-                           value="{{item['water_fecal_coliform'] or 0}}"
-                           class="form-control form-control-sm" id="water_fecal_coliform">
+                    <input type="number" step="0.01" name="water_nh4"  value="{{item['water_nh4'] or 0}}"
+                           class="form-control form-control-sm" id="water_nh4">
+                </div>
+                <label class="col-sm-2 text-sm-right" for="water_tp">总磷浓度</label>
+                <div class="col-sm-4">
+                    <input type="number" step="0.01" name="water_tp"  value="{{item['water_tp'] or 0}}"
+                           class="form-control form-control-sm" id="water_tp">
                 </div>
             </div>
             <div class="form-row">
-                <label class="col-sm-2 text-sm-right" for="water_process_name">
-                    污水处理工艺名称
-                </label>
+                <label class="col-sm-2 text-sm-right" for="oil_device">是否有隔油设施</label>
                 <div class="col-sm-4">
-                    <input type="text" name="water_process_name"
-                           value="{{item['water_process_name'] or ''}}"
-                           class="form-control form-control-sm" id="water_process_name">
+                    <select class="custom-select custom-select-sm" name="oil_device" id="oil_device" required>
+                      <option value="">请选择...</option>
+                      <option {{'selected' if (item['oil_device'] or '是') == '是'}} value="是">是</option>
+                      <option {{'selected' if item['oil_device']  == '否'}} value="否">否</option>
+                    </select>
                 </div>
                 <label class="col-sm-2 text-sm-right" for="water_monitor">是否安装在线监测</label>
                 <div class="col-sm-4">
@@ -246,8 +283,92 @@
                 </div>
             </div>
         </fieldset>
-        <fieldset id="hospital_water_info">
-            <legend>医疗废物情况</legend>
+        <fieldset>
+            <legend>废气情况</legend>
+            <div class="form-row">
+                <label class="col-sm-2 text-sm-right" for="gas_emission_vol">
+                    有机废气排放风量(m&sup3;/h)
+                </label>
+                <div class="col-sm-4">
+                    <input type="number" step="0.01" class="form-control form-control-sm"
+                             value="{{item['gas_emission_vol'] or 0}}"
+                           name="gas_emission_vol"
+                           id="gas_emission_vol">
+                </div>
+                <label class="col-sm-2 text-sm-right" for="device_runtime">年运行小时数</label>
+                <div class="col-sm-4">
+                    <input type="number" step="1" class="form-control form-control-sm"
+                             value="{{item['device_runtime'] or 0}}"
+                           name="device_runtime"
+                           id="device_runtime" placeholder="有机废气排放设施年运行小时数">
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="col-sm-2 text-sm-right" for="gas_process_name">
+                    处理工艺
+                </label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm"
+                       name="gas_process_name" value="{{item['gas_process_name'] or ''}}"
+                       id="gas_process_name" placeholder="有机废气处理工艺名称">
+                </div>
+                <label class="col-sm-2 text-sm-right" for="gas_monitor">是否安装在线监测</label>
+                <div class="col-sm-4">
+                    <select class="custom-select custom-select-sm" name="gas_monitor" id="gas_monitor" required>
+                      <option value="">请选择...</option>
+                      <option {{'selected' if (item['gas_monitor'] or '是') == '是'}} value="是">是</option>
+                      <option {{'selected' if item['gas_monitor']  == '否'}} value="否">否</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="col-sm-2 text-sm-right" for="benzene">
+                    苯浓度(mg/m&sup3;)
+                </label>
+                <div class="col-sm-4">
+                    <input type="number" step="0.01" name="benzene"
+                           class="form-control form-control-sm"
+                           id="benzene" value="{{item['benzene'] or 0}}">
+                </div>
+                <label class="col-sm-2 text-sm-right" for="not_ch4">
+                    非甲烷总烃浓度(mg/m&sup3;)
+                </label>
+                <div class="col-sm-4">
+                    <input type="number" step="0.01" value="{{item['not_ch4'] or 0}}"
+                           name="not_ch4" class="form-control form-control-sm" id="not_ch4">
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="col-sm-2 text-sm-right" for="methylbenzene">
+                    甲苯浓度(mg/m&sup3;)
+                </label>
+                <div class="col-sm-4">
+                    <input type="number" step="0.01" name="methylbenzene"
+                           class="form-control form-control-sm"
+                           id="methylbenzene" value="{{item['methylbenzene'] or 0}}">
+                </div>
+                <label class="col-sm-2 text-sm-right" for="dimethylbenzene">
+                    二甲苯浓度(mg/m&sup3;)
+                </label>
+                <div class="col-sm-4">
+                    <input type="number" step="0.01" value="{{item['dimethylbenzene'] or 0}}"
+                           name="dimethylbenzene" class="form-control form-control-sm"
+                           id="dimethylbenzene">
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="col-sm-2 text-sm-right" for="voc_total">
+                    总VOC浓度(mg/m&sup3;)
+                </label>
+                <div class="col-sm-4">
+                    <input type="number" step="0.01" name="voc_total"
+                           class="form-control form-control-sm"
+                           id="voc_total" value="{{item['voc_total'] or 0}}">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset id="hazard_waste_info">
+            <legend>危险废物情况</legend>
             <div class="form-row">
                 <label class="col-sm-2 text-sm-right" for="waster1_type">
                     名称、类别
@@ -272,7 +393,7 @@
                 </label>
                 <div class="col-sm-2">
                     <input type="number" step="1" class="form-control form-control-sm"
-                             value="{{item['waster1_jcz'] or 0}}" name="waster1_jcz"
+                           value="{{item['waster1_jcz'] or 0}}" name="waster1_jcz"
                            id="waster1_jcz" placeholder="交持证单位量(吨)">
                 </div>
             </div>

@@ -9,6 +9,7 @@ from flask import (
 
 from datacollect.common import Result
 from datacollect.dao.restaurant import import_restaurant_from_array
+from datacollect.dao.hospital import import_hospital_from_array
 from datacollect.db import get_db
 from datacollect.dao import get_excel_array
 from datacollect.views.auth import login_required
@@ -45,6 +46,7 @@ def import_from_array(data, db, excel_type, updated_date, updated_by):
     success_count = 0
     if excel_type == "restaurant":
         success_count = import_restaurant_from_array(data, db, updated_date, updated_by)
+    elif excel_type == "hospital":
+        success_count = import_hospital_from_array(data, db, updated_date, updated_by)
     result.data = success_count
-    result.message = "导入成功{}条记录".format(success_count)
     return result

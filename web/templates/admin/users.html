@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% block title %}用户管理{% endblock %}
-{% block content %}
 
 {% block modal %}
 <div class="modal" id="user_modal">
@@ -20,7 +19,7 @@
                         <label for="username" class="col-sm-2 col-form-label">用户名</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control form-control-sm"
-                                 id="username" name="username" placeholder="用户名">
+                                 id="username" name="username" required>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -42,8 +41,50 @@
 		</div>
 	</div>
 </div>
+<div class="modal" id="pass_modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        	<div class="modal-header">
+                <h5 class="modal-title">修改密码</h5>
+				<button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+			</div>
+			<div class="modal-body">
+                <form>
+                    <input type="hidden" id="user_id1" name="user_id">
+                    <div class="form-group row">
+                        <label for="password" class="col-sm-4 text-sm-right col-form-label">新密码</label>
+                        <div class="col-sm-8">
+                          <input type="password" minlength="6" class="form-control form-control-sm"
+                                 id="password" name="password" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="confirm_password" class="text-sm-right col-sm-4 col-form-label">
+                            再次输入密码
+                        </label>
+                        <div class="col-sm-8">
+                            <input type="password" minlength="6" class="form-control form-control-sm"
+                                 id="confirm_password" name="confirm_password" required>
+                        </div>
+                    </div>
+                </form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button id="btn_change_password" onclick="changePassword()"
+                        type="button" class="btn btn-primary">
+                    保存
+                </button>
+			</div>
+		</div>
+	</div>
+</div>
 {% endblock %}
 
+{% block content %}
 <div class="search_area">
 <form>
   <div class="form-row align-items-center">
@@ -61,24 +102,15 @@
   </div>
 </form>
 </div>
-
 <div class="my-toolbar">
   <div class="btn-toolbar justify-content-end" role="toolbar">
-      <button id="btn_new_user" onclick="editUser()" class="btn btn-outline-primary">新增</button>
+      <button id="btn_new_user" onclick="newUser()" class="btn btn-outline-primary">新增</button>
   </div>
 </div>
-
 <table id="user_table"></table>
 {% endblock %}
 
 {% block script %}
 <script src="{{ url_for('static', filename='js/common.js') }}"></script>
 <script src="{{ url_for('static', filename='js/users.js') }}"></script>
-<script>
-    var is_manager = false;
-    {% if g.user['role'] == 'manager' %}
-    is_manager = true;
-    {% endif %}
-    InitUserTable();
-</script>
 {% endblock %}

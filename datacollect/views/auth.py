@@ -83,6 +83,9 @@ def register():
 @bp.route('/login', methods=('GET', 'POST'))
 def login():
     """Log in a registered user by adding the user id to the session."""
+    username = ""
+    username_auto_focus = True
+    password_auto_focus = False
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
@@ -93,9 +96,12 @@ def login():
         ).fetchone()
 
         if user is None:
-            error = '用户名不存在'
+            error = '用户名{}不存在'.format(username)
+            username = ""
         elif not check_password_hash(user['password'], password):
             error = '密码错误'
+            username_auto_focus = False
+            password_auto_focus = True
 
         if error is None:
             # store the user id in a new session and return to the index
@@ -105,7 +111,11 @@ def login():
 
         flash(error)
 
-    return render_template('auth/login.html')
+    return render_template('auth/login.html', param={
+        "username": username,
+        "username_auto_focus": username_auto_focus,
+        "password_auto_focus": password_auto_focus,
+    })
 
 
 @bp.route('/logout')

@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}医疗企业{% endblock %}
+{% block title %}汽修企业{% endblock %}
 {% block content %}
 
 <div class="search_area">
@@ -21,15 +21,15 @@
 
 <form id="fileForm" method="post" enctype="multipart/form-data">
     <input type="file" style="display: none;" name="excel_file"
-           id="excel_import" onchange="import_excel(this, 'hospital')">
+           id="excel_import" onchange="import_excel(this, 'car')">
 </form>
 
 <div class="my-toolbar">
   <div class="btn-toolbar justify-content-end" role="toolbar">
       <div class="btn-group">
-        <a href="/hospital/create" class="btn btn-outline-primary">新增</a>
-        <button onclick="open_excel()" class="btn btn-outline-primary">Excel导入</button>
-        <!--<a href="/common/export?excel_type=hospital" id="excel_export"-->
+        <a href="/car/create" class="btn btn-outline-primary">新增</a>
+        <!--<button onclick="open_excel()" class="btn btn-outline-primary">Excel导入</button>-->
+        <!--<a href="/common/export?excel_type=car" id="excel_export"-->
            <!--class="btn btn-outline-primary" target="_blank">-->
             <!--Excel导出-->
         <!--</a>-->
