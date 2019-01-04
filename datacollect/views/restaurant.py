@@ -48,7 +48,7 @@ def query():
             "uniform_credit_code"
         ],
         like_condition=like_condition,
-        table_name="ent_restaurant_survey",
+        table_name="restaurant_survey",
         param=param
     )
     data = {"total": total, "rows": rows}

@@ -4,8 +4,13 @@
 DROP TABLE IF EXISTS user;
 DROP TABLE IF EXISTS user_last_cache;
 DROP TABLE IF EXISTS survey_types;
-DROP TABLE IF EXISTS ent_restaurant_survey;
+DROP TABLE IF EXISTS restaurant_survey;
 DROP TABLE IF EXISTS hospital_survey;
+DROP TABLE IF EXISTS car_survey;
+DROP TABLE IF EXISTS gas_survey;
+DROP TABLE IF EXISTS org_survey;
+DROP TABLE IF EXISTS life_survey;
+DROP TABLE IF EXISTS river_survey;
 
 -- 用户信息表
 CREATE TABLE user (
@@ -30,7 +35,7 @@ CREATE TABLE survey_types (
   attrib3 TEXT
 );
 -- 餐饮企业污染源信息调查表
-CREATE TABLE ent_restaurant_survey (
+CREATE TABLE restaurant_survey (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   uniform_credit_code TEXT,  -- 社会统一信用代码
   origin_org_code TEXT,  -- 原组织机构代码号
@@ -197,6 +202,161 @@ CREATE TABLE car_survey (
   waster3_type TEXT, -- 危险废物名称，类别
   waster3_annual REAL, -- 年产生量
   waster3_jcz REAL, -- 交持证单位量
+  survey_person TEXT, -- 调查人
+  contact TEXT, -- 联系人
+  survey_date TIMESTAMP,
+  updated_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_by TEXT NOT NULL
+);
+-- 加油站污染源信息调查表
+CREATE TABLE gas_survey (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  uniform_credit_code TEXT,  -- 社会统一信用代码
+  origin_org_code TEXT,  -- 原组织机构代码号
+  ent_name TEXT, -- 单位名称
+  ent_former_name TEXT, -- 单位曾用名
+  province TEXT,  -- 省
+  city TEXT, -- 市
+  district TEXT, -- 地（区，市，州，盟）
+  town TEXT,  -- 乡镇
+  address TEXT,
+  region_code TEXT,
+  longitude REAL,
+  latitude REAL,
+  lon_d REAL,
+  lon_m REAL,
+  lon_s REAL,
+  lat_d REAL,
+  lat_m REAL,
+  lat_s REAL,
+  legal_person TEXT, -- 法人代表
+  open_date TEXT,  -- 开业(成立)时间
+  ent_contact TEXT, -- 企业联系人
+  ent_phone TEXT, -- 企业联系电话
+  run_normally TEXT, -- 是否正常运营
+  gasoline_total REAL, -- 汽油总罐容
+  gasoline_sale REAL, -- 汽油年销售量
+  gasoline_recycle_stage TEXT, -- 汽油回收阶段
+  gasoline_has_device TEXT, -- 有无排放处理装置
+  gasoline_has_monitor TEXT, -- 有无在线监测系统
+  gasoline_device_finished TEXT, -- 汽油回收装置改造完成时间
+  diesel_total REAL, -- 柴油总罐容
+  diesel_sale REAL, -- 柴油年销售量
+  waster1_type TEXT, -- 危险废物名称，类别
+  waster1_annual REAL, -- 年产生量
+  waster1_jcz REAL, -- 交持证单位量
+  waster2_type TEXT, -- 危险废物名称，类别
+  waster2_annual REAL, -- 年产生量
+  waster2_jcz REAL, -- 交持证单位量
+  waster3_type TEXT, -- 危险废物名称，类别
+  waster3_annual REAL, -- 年产生量
+  waster3_jcz REAL, -- 交持证单位量
+  survey_person TEXT, -- 调查人
+  contact TEXT, -- 联系人
+  survey_date TIMESTAMP,
+  updated_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_by TEXT NOT NULL
+);
+-- 检测机构、实验室、学校和物业公司危险废物信息调查表
+CREATE TABLE org_survey (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  uniform_credit_code TEXT,  -- 社会统一信用代码
+  origin_org_code TEXT,  -- 原组织机构代码号
+  ent_name TEXT, -- 单位名称
+  ent_former_name TEXT, -- 单位曾用名
+  province TEXT,  -- 省
+  city TEXT, -- 市
+  district TEXT, -- 地（区，市，州，盟）
+  town TEXT,  -- 乡镇
+  address TEXT,
+  region_code TEXT,
+  longitude REAL,
+  latitude REAL,
+  lon_d REAL,
+  lon_m REAL,
+  lon_s REAL,
+  lat_d REAL,
+  lat_m REAL,
+  lat_s REAL,
+  legal_person TEXT, -- 法人代表
+  open_date TEXT,  -- 开业(成立)时间
+  ent_contact TEXT, -- 企业联系人
+  ent_phone TEXT, -- 企业联系电话
+  run_normally TEXT, -- 是否正常运营
+  waster1_type TEXT, -- 危险废物名称，类别
+  waster1_annual REAL, -- 年产生量
+  waster1_jcz REAL, -- 交持证单位量
+  waster2_type TEXT, -- 危险废物名称，类别
+  waster2_annual REAL, -- 年产生量
+  waster2_jcz REAL, -- 交持证单位量
+  waster3_type TEXT, -- 危险废物名称，类别
+  waster3_annual REAL, -- 年产生量
+  waster3_jcz REAL, -- 交持证单位量
+  survey_person TEXT, -- 调查人
+  contact TEXT, -- 联系人
+  survey_date TIMESTAMP,
+  updated_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_by TEXT NOT NULL
+);
+-- 县域城镇生活污染调查表
+CREATE TABLE life_survey (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  province TEXT,  -- 省
+  city TEXT, -- 市
+  district TEXT, -- 地（区，市，州，盟）
+  town TEXT,  -- 乡镇
+  address TEXT,
+  region_code TEXT,
+  total_population REAL, -- 全县人口
+  city_population REAL, -- 县城人口
+  transient_population REAL, -- 暂住人口
+  city_transient_population REAL, -- 县城暂住人口
+  public_service_water REAL, -- 公共服务用水量
+  family_water REAL, -- 居民家庭用水量
+  free_water REAL, -- 生活用水量（免费供水）
+  water_population REAL, -- 用水人口
+  centralize_heating_area REAL, -- 集中供热面积
+  manufactured_gas REAL, -- 人工煤气销售气量
+  natural_gas REAL, -- 天然气销售气量
+  liquefied_petroleum_gas REAL, -- 液化石油气销售气量
+  town_count INT, -- 建制镇个数
+  town_population REAL, -- 建成区常住人口
+  town_water REAL, -- 建成区生活用水量
+  town_water_population REAL, -- 建成区用水人口
+  town_average_water REAL, -- 建成区人均日生活用水量
+  country_average_water REAL, -- 村庄人均日生活用水量
+  survey_person TEXT, -- 调查人
+  contact TEXT, -- 联系人
+  survey_date TIMESTAMP,
+  updated_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_by TEXT NOT NULL
+);
+-- 入河（海）排污口信息调查表
+CREATE TABLE river_survey (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  outfall_name TEXT, -- 排污口名称
+  outfall_code TEXT, -- 排污口编码
+  outfall_category TEXT, -- 排污口类别
+  province TEXT,  -- 省
+  city TEXT, -- 市
+  district TEXT, -- 地（区，市，州，盟）
+  town TEXT,  -- 乡镇
+  address TEXT,
+  region_code TEXT,
+  longitude REAL,
+  latitude REAL,
+  lon_d REAL,
+  lon_m REAL,
+  lon_s REAL,
+  lat_d REAL,
+  lat_m REAL,
+  lat_s REAL,
+  install_unit TEXT, -- 设置单位
+  outfall_size TEXT, -- 排污口规模
+  outfall_type TEXT, -- 排污口类型
+  outfall_way TEXT, -- 入河（海）方式
+  receiving_water_name TEXT, -- 受纳水体名称
+  receiving_water_code TEXT, -- 受纳水体代码
   survey_person TEXT, -- 调查人
   contact TEXT, -- 联系人
   survey_date TIMESTAMP,

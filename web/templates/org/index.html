@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}检测机构、实验室、学校和物业公司{% endblock %}
+{% block content %}
+
+<div class="search_area">
+<form>
+  <div class="form-row align-items-center">
+    <div class="col-auto">
+      <input type="text" class="form-control mb-2"  id="uniform_credit_code"
+             placeholder="社会统一信用代码">
+    </div>
+    <div class="col-auto">
+        <input type="text" class="form-control mb-2" id="ent_name" placeholder="企业名称">
+    </div>
+    <div class="col-auto">
+      <button type="button" class="btn btn-primary mb-2">搜索</button>
+    </div>
+  </div>
+</form>
+</div>
+
+<form id="fileForm" method="post" enctype="multipart/form-data">
+    <input type="file" style="display: none;" name="excel_file"
+           id="excel_import" onchange="import_excel(this, 'org')">
+</form>
+
+<div class="my-toolbar">
+  <div class="btn-toolbar justify-content-end" role="toolbar">
+      <div class="btn-group">
+        <a href="/org/create" class="btn btn-outline-primary">新增</a>
+        <!--<button onclick="open_excel()" class="btn btn-outline-primary">Excel导入</button>-->
+        <!--<a href="/common/export?excel_type=org" id="excel_export"-->
+           <!--class="btn btn-outline-primary" target="_blank">-->
+            <!--Excel导出-->
+        <!--</a>-->
+      </div>
+  </div>
+</div>
+<table id="table"></table>
+{% endblock %}
+
+{% block script %}
+<script src="{{ url_for('static', filename='js/common.js') }}"></script>
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+{% endblock %}

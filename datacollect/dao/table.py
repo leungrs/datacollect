@@ -8,11 +8,11 @@ class Table(object):
 
 
 class TableNames:
-    ENT_RESTAURANT_SURVEY = "ent_restaurant_survey"
+    RESTAURANT_SURVEY = "restaurant_survey"
 
 
 class RestaurantTable(Table):
-    TABLE_NAME = TableNames.ENT_RESTAURANT_SURVEY
+    TABLE_NAME = TableNames.RESTAURANT_SURVEY
     TABLE_FIELDS = [
         ("id", "唯一键ID"),
         ("uniform_credit_code", "社会统一信用代码"),
