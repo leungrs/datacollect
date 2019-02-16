@@ -2,6 +2,8 @@
 
 {% block content %}
 <div class="container">
+    <h4 class="text-center">医疗机构染源信息调查表</h4>
+    <hr>
     <form method="post">
         <fieldset>
         <legend>企业基本信息</legend>
@@ -125,10 +127,12 @@
             </div>
         </div>
         <div class="form-row">
-            <label class="col-sm-2 text-sm-right" for="legal_person">法定(单位负责人)</label>
+            <label class="col-sm-2 text-sm-right" for="legal_person">法定代表人</label>
             <div class="col-sm-4">
                 <input type="text" name="legal_person"   value="{{item['legal_person'] or ''}}"
-                       class="form-control form-control-sm" id="legal_person">
+                       class="form-control form-control-sm" id="legal_person"
+                       placeholder="法定代表人(单位负责人)"
+                >
             </div>
             <label class="col-sm-2 text-sm-right" for="open_date">开业(成立)时间</label>
             <div class="col-sm-4">
@@ -345,9 +349,4 @@
         </div>
     </form>
 </div>
-{% endblock %}
-
-{% block script %}
-<script>
-</script>
 {% endblock %}

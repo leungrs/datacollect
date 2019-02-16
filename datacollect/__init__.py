@@ -33,13 +33,17 @@ def create_app(config=None):
 
     # apply the blueprints to the app
     from datacollect.views import auth, restaurant, common, \
-        hospital, admin, car
+        hospital, admin, car, gas, river, org, life
     app.register_blueprint(auth.bp)
     app.register_blueprint(restaurant.bp)
     app.register_blueprint(common.bp)
     app.register_blueprint(hospital.bp)
     app.register_blueprint(admin.bp)
     app.register_blueprint(car.bp)
+    app.register_blueprint(gas.bp)
+    app.register_blueprint(river.bp)
+    app.register_blueprint(life.bp)
+    app.register_blueprint(org.bp)
 
     # make url_for('index') == url_for('blog.index')
     # in another app, you might define a separate main index here with
