@@ -101,7 +101,7 @@ def delete(id):
 @login_required
 def export(id):
     item = hospital.select_by_id(get_db(), id)
-    result = render_template("hospital/rest.xml", item=item)
+    result = render_template("hospital/hospital.xml", item=item)
     response = make_response(result)
     response.headers["Content-Disposition"] = "attachment; filename=hospital.doc"
     return response

@@ -15,6 +15,9 @@ def create_app(config=None):
         DATABASE=os.path.join(app.instance_path, 'datacollect.sqlite'),
     )
 
+    app.add_template_filter(string_filter, "s")
+    app.add_template_filter(number_filter, "num")
+
     if config is None:
         app.config.from_pyfile('config.py', silent=True)
     else:
@@ -54,4 +57,18 @@ def create_app(config=None):
     print(app.url_map)
 
     return app
+
+
+def string_filter(value, length=0):
+    if not value:
+        return " " * length if length else ""
+    return str(value)
+
+
+def number_filter(value, n=2):
+    if value is None:
+        return "    "
+    if n == 0:
+        return int(value)
+    return round(value, n)
 
