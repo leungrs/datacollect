@@ -13,14 +13,14 @@
             </label>
             <div class="col-sm-4">
                 <input type="text" class="form-control form-control-sm"
-                       name="uniform_credit_code" value="{{item['uniform_credit_code'] or ''}}"
+                       name="uniform_credit_code" value="{{item['uniform_credit_code']|s}}"
                        id="uniform_credit_code">
             </div>
             <label class="col-sm-2 text-sm-right" for="origin_org_code">原组织机构代码号</label>
             <div class="col-sm-4">
                 <input type="text" class="form-control form-control-sm"
                         name="origin_org_code" id="origin_org_code"
-                         value="{{item['origin_org_code'] or ''}}"
+                         value="{{item['origin_org_code']|s}}"
                        placeholder="尚未领取统一社会信用代码的填写">
             </div>
         </div>
@@ -28,13 +28,13 @@
             <label class="col-sm-2 text-sm-right" for="ent_name">单位详细名称</label>
             <div class="col-sm-4">
                 <input type="text" name="ent_name" class="form-control form-control-sm"
-                         value="{{item['ent_name'] or ''}}"
+                         value="{{item['ent_name']|s}}"
                        id="ent_name" required>
             </div>
             <label class="col-sm-2 text-sm-right" for="ent_former_name">曾用名</label>
             <div class="col-sm-4">
                 <input type="text" name="ent_former_name"
-                           value="{{item['ent_former_name'] or ''}}"
+                           value="{{item['ent_former_name']|s}}"
                        class="form-control form-control-sm" id="ent_former_name">
             </div>
         </div>
@@ -81,12 +81,12 @@
         <div class="form-row">
             <label class="col-sm-2 text-sm-right" for="address">街，村，门牌号</label>
             <div class="col-sm-4">
-                <input type="text" name="address"   value="{{item['address'] or ''}}"
+                <input type="text" name="address"   value="{{item['address']|s}}"
                        class="form-control form-control-sm" id="address">
             </div>
             <label class="col-sm-2 text-sm-right" for="region_code">区划代码</label>
             <div class="col-sm-4">
-                <input type="text" name="region_code" value="{{item['region_code'] or ''}}"
+                <input type="text" name="region_code" value="{{item['region_code']|s}}"
                        class="form-control form-control-sm" id="region_code">
             </div>
         </div>
@@ -95,15 +95,15 @@
             <div class="col-sm-4">
                 <div class="input-group">
                   <input type="number" step="1" max="180" min="-180" name="lon_d" id="lon_d"
-                          value="{{item['lon_d'] or 0}}"
+                          value="{{item['lon_d']|num(0)}}"
                          class="text-right form-control form-control-sm"
                          placeholder="度">
                   <input type="number"  step="1" max="59" min="0"  name="lon_m"
-                          value="{{item['lon_m'] or 0}}"
+                          value="{{item['lon_m']|num(0)}}"
                          class="text-right form-control form-control-sm"
                          placeholder="分">
                   <input type="number" name="lon_s"   step="0.01" max="59" min="0"
-                            value="{{item['lon_s'] or 0}}"
+                            value="{{item['lon_s']|num}}"
                          class="text-right form-control form-control-sm"
                          placeholder="秒">
                 </div>
@@ -112,43 +112,42 @@
             <div class="col-sm-4">
                 <div class="input-group">
                   <input type="number" name="lat_d" id="lat_d"
-                           value="{{item['lat_d'] or 0}}"  step="1" max="90" min="-90"
+                           value="{{item['lat_d']|num(0)}}"  step="1" max="90" min="-90"
                          class="text-right form-control form-control-sm"
                          placeholder="度">
                   <input type="number" name="lat_m"   step="1" max="59" min="0"
-                          value="{{item['lat_m'] or 0}}"
+                          value="{{item['lat_m']|num(0)}}"
                          class="text-right form-control form-control-sm"
                          placeholder="分">
                   <input type="number" name="lat_s"   step="0.01" max="59.99" min="0"
-                            value="{{item['lat_s'] or 0}}"
+                            value="{{item['lat_s']|num}}"
                          class="text-right form-control form-control-sm"
                          placeholder="秒">
                 </div>
             </div>
         </div>
         <div class="form-row">
-            <label class="col-sm-2 text-sm-right" for="legal_person">法定代表人</label>
+            <label class="col-sm-2 text-sm-right" for="legal_person">法定代表人(单位负责人)</label>
             <div class="col-sm-4">
-                <input type="text" name="legal_person"   value="{{item['legal_person'] or ''}}"
+                <input type="text" name="legal_person"   value="{{item['legal_person']|s}}"
                        class="form-control form-control-sm" id="legal_person"
-                       placeholder="法定代表人(单位负责人)"
                 >
             </div>
             <label class="col-sm-2 text-sm-right" for="open_date">开业(成立)时间</label>
             <div class="col-sm-4">
-                <input type="text" name="open_date"    value="{{item['open_date'] or ''}}"
+                <input type="text" name="open_date"  value="{{item['open_date']|s}}"
                        class="form-control form-control-sm" id="open_date">
             </div>
         </div>
         <div class="form-row">
             <label class="col-sm-2 text-sm-right" for="address">联系人</label>
             <div class="col-sm-4">
-                <input type="text" name="ent_contact" value="{{item['ent_contact'] or ''}}"
+                <input type="text" name="ent_contact" value="{{item['ent_contact']|s}}"
                        class="form-control form-control-sm" id="ent_contact">
             </div>
             <label class="col-sm-2 text-sm-right" for="region_code">电话号码</label>
             <div class="col-sm-4">
-                <input type="text" name="ent_phone"   value="{{item['ent_phone'] or ''}}"
+                <input type="text" name="ent_phone"   value="{{item['ent_phone']|s}}"
                        class="form-control form-control-sm" id="ent_phone">
             </div>
         </div>
@@ -166,7 +165,7 @@
             </div>
             <label class="col-sm-2 text-sm-right" for="region_code">炉头数</label>
             <div class="col-sm-4">
-                <input type="number" name="burner_num"  value="{{item['burner_num'] or 0}}"
+                <input type="number" name="burner_num"  value="{{item['burner_num']|num(0)}}"
                        class="form-control form-control-sm" id="burner_num">
             </div>
         </div>
@@ -174,13 +173,13 @@
             <label class="col-sm-2 text-sm-right" for="employee_num">员工人数</label>
             <div class="col-sm-4">
                 <input type="number" name="employee_num"
-                         value="{{item['employee_num'] or 0}}"
+                         value="{{item['employee_num']|num(0)}}"
                        class="form-control form-control-sm" id="employee_num">
             </div>
             <label class="col-sm-2 text-sm-right" for="customer_capacity">可容纳就餐人数</label>
             <div class="col-sm-4">
                 <input type="number" name="customer_capacity"
-                          value="{{item['customer_capacity'] or 0}}"
+                          value="{{item['customer_capacity']|num(0)}}"
                        class="form-control form-control-sm" id="customer_capacity">
             </div>
         </div>
@@ -188,13 +187,13 @@
             <label class="col-sm-2 text-sm-right" for="ent_area">经营面积(m&sup2;)</label>
             <div class="col-sm-4">
                 <input type="number" name="ent_area" step="0.01"
-                          value="{{item['ent_area'] or 0}}"
+                          value="{{item['ent_area']|num}}"
                        class="form-control form-control-sm" id="ent_area">
             </div>
             <label class="col-sm-2 text-sm-right" for="annual_turnover">年营业额(万元)</label>
             <div class="col-sm-4">
                 <input type="number" step="0.01" name="annual_turnover"
-                       value="{{item['annual_turnover'] or 0}}"
+                       value="{{item['annual_turnover']|num}}"
                        class="form-control form-control-sm" id="annual_turnover">
             </div>
         </div>
@@ -202,7 +201,7 @@
             <label class="col-sm-2 text-sm-right" for="run_normally">是/否正常运营</label>
             <div class="col-sm-4">
                 <select name="run_normally" id="run_normally"
-                        class="custom-select custom-select-sm"   value="{{item['run_normally'] or ''}}"
+                        class="custom-select custom-select-sm" value="{{item['run_normally']|s}}"
                         required>
                   <option value="">请选择...</option>
                   <option {{'selected' if (item['run_normally'] or '是') == '是'}} value="是">是</option>
@@ -217,7 +216,7 @@
                 <label class="col-sm-2 text-sm-right" for="cooking_oil">食用油使用量(吨)</label>
                 <div class="col-sm-10">
                     <input type="number" step="0.01" class="form-control form-control-sm"
-                           name="cooking_oil"   value="{{item['cooking_oil'] or 0}}"
+                           name="cooking_oil"   value="{{item['cooking_oil']|num}}"
                            id="cooking_oil">
                 </div>
             </div>
@@ -227,38 +226,40 @@
             <div class="form-row">
                 <label class="col-sm-2 text-sm-right" for="water_used">年用水量(m&sup3;)</label>
                 <div class="col-sm-4">
-                    <input type="number" step="0.01" name="water_used"  value="{{item['water_used'] or 0}}"
+                    <input type="number" step="0.01" name="water_used"
+                           value="{{item['water_used']|num}}"
                            class="form-control form-control-sm" id="water_used">
                 </div>
                 <label class="col-sm-2 text-sm-right" for="water_waster_emit">年废水排放量</label>
                 <div class="col-sm-4">
                     <input type="number" step="0.01" class="form-control form-control-sm"
                            name="water_waster_emit"
-                            value="{{item['water_waster_emit'] or 0}}"
+                            value="{{item['water_waster_emit']|num}}"
                            id="water_waster_emit">
                 </div>
             </div>
             <div class="form-row">
                 <label class="col-sm-2 text-sm-right" for="water_cod">化学需氧量浓度</label>
                 <div class="col-sm-4">
-                    <input type="number" step="0.01" name="water_cod"  value="{{item['water_cod'] or 0}}"
+                    <input type="number" step="0.01" name="water_cod"
+                           value="{{item['water_cod']|num}}"
                            class="form-control form-control-sm" id="water_cod">
                 </div>
                 <label class="col-sm-2 text-sm-right" for="water_oil">动植物油浓度</label>
                 <div class="col-sm-4">
-                    <input type="number" step="0.01" name="water_oil"  value="{{item['water_oil'] or 0}}"
+                    <input type="number" step="0.01" name="water_oil"  value="{{item['water_oil']|num}}"
                            class="form-control form-control-sm" id="water_oil">
                 </div>
             </div>
             <div class="form-row">
                 <label class="col-sm-2 text-sm-right" for="water_nh4">氨氮浓度</label>
                 <div class="col-sm-4">
-                    <input type="number" step="0.01" name="water_nh4"  value="{{item['water_nh4'] or 0}}"
+                    <input type="number" step="0.01" name="water_nh4"  value="{{item['water_nh4']|num}}"
                            class="form-control form-control-sm" id="water_nh4">
                 </div>
                 <label class="col-sm-2 text-sm-right" for="water_tp">总磷浓度</label>
                 <div class="col-sm-4">
-                    <input type="number" step="0.01" name="water_tp"  value="{{item['water_tp'] or 0}}"
+                    <input type="number" step="0.01" name="water_tp"  value="{{item['water_tp']|num}}"
                            class="form-control form-control-sm" id="water_tp">
                 </div>
             </div>
@@ -289,14 +290,14 @@
                 </label>
                 <div class="col-sm-4">
                     <input type="number" step="0.01" class="form-control form-control-sm"
-                             value="{{item['gas_emission_vol'] or 0}}"
+                             value="{{item['gas_emission_vol']|num}}"
                            name="gas_emission_vol"
                            id="gas_emission_vol">
                 </div>
                 <label class="col-sm-2 text-sm-right" for="device_runtime">年运行小时数</label>
                 <div class="col-sm-4">
                     <input type="number" step="1" class="form-control form-control-sm"
-                             value="{{item['device_runtime'] or 0}}"
+                             value="{{item['device_runtime']|num(0)}}"
                            name="device_runtime"
                            id="device_runtime" placeholder="油烟排放设施年运行小时数">
                 </div>
@@ -308,13 +309,13 @@
                 <div class="col-sm-4">
                     <input type="number" step="0.01" name="gas_solid"
                            class="form-control form-control-sm"
-                           id="gas_solid"    value="{{item['gas_solid'] or 0}}">
+                           id="gas_solid"    value="{{item['gas_solid']|num}}">
                 </div>
                 <label class="col-sm-2 text-sm-right" for="not_ch4">
                     非甲烷总烃浓度(mg/m&sup3;)
                 </label>
                 <div class="col-sm-4">
-                    <input type="number" step="0.01" value="{{item['not_ch4'] or 0}}"
+                    <input type="number" step="0.01" value="{{item['not_ch4']|num}}"
                            name="not_ch4" class="form-control form-control-sm" id="not_ch4">
                 </div>
             </div>
@@ -346,7 +347,7 @@
                 <div class="col-sm-4">
                     <input type="number" step="0.01" class="form-control form-control-sm"
                            name="kitchen_waster_volume"
-                            value="{{item['kitchen_waster_volume'] or 0}}"
+                            value="{{item['kitchen_waster_volume']|num}}"
                            id="kitchen_waster_volume">
                 </div>
                 <label class="col-sm-2 text-sm-right" for="kitchen_waster_gone">
@@ -354,7 +355,7 @@
                 </label>
                 <div class="col-sm-4">
                     <input type="text" class="form-control form-control-sm"
-                              value="{{item['kitchen_waster_gone'] or ''}}"
+                              value="{{item['kitchen_waster_gone']|s}}"
                            name="kitchen_waster_gone"
                            id="kitchen_waster_gone">
                 </div>

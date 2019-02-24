@@ -118,7 +118,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['uniform_credit_code']}}</w:t>
+<w:t>{{item['uniform_credit_code']|s}}</w:t>
 </w:r>
 </w:p>
 <w:p w:rsidR="00674D64" w:rsidRPr="00674D64" w:rsidRDefault="00674D64" w:rsidP="000A26E0">
@@ -143,7 +143,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['origin_org_code']}}</w:t>
+<w:t>{{item['origin_org_code']|s}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -210,7 +210,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['ent_name']}}</w:t>
+<w:t>{{item['ent_name']|s}}</w:t>
 </w:r>
 </w:p>
 <w:p w:rsidR="00F4450F" w:rsidRPr="000A26E0" w:rsidRDefault="00F4450F" w:rsidP="000A26E0">
@@ -243,7 +243,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['ent_former_name']}}</w:t>
+<w:t>{{item['ent_former_name']|s}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -295,7 +295,7 @@
 <w:szCs w:val="18"/>
 <w:u w:val="single"/>
 </w:rPr>
-<w:t>{{item['province']}}</w:t>
+<w:t>{{item['province']|s(6)}}</w:t>
 </w:r>
 <w:r w:rsidRPr="00674D64">
 <w:rPr>
@@ -347,7 +347,7 @@
 <w:szCs w:val="18"/>
 <w:u w:val="single"/>
 </w:rPr>
-<w:t xml:space="preserve">{{item['city']}}</w:t>
+<w:t xml:space="preserve">{{item['city']|s(6)}}</w:t>
 </w:r>
 <w:r>
 <w:rPr>
@@ -382,7 +382,7 @@
 <w:szCs w:val="18"/>
 <w:u w:val="single"/>
 </w:rPr>
-<w:t>{{item['district']}}</w:t>
+<w:t>{{item['district']|s(6)}}</w:t>
 </w:r>
 <w:r w:rsidRPr="00674D64">
 <w:rPr>
@@ -442,7 +442,7 @@
 <w:szCs w:val="18"/>
 <w:u w:val="single"/>
 </w:rPr>
-<w:t>{{item['town']}}</w:t>
+<w:t>{{item['town']|s(10)}}</w:t>
 </w:r>
 <w:r w:rsidRPr="00674D64">
 <w:rPr>
@@ -504,7 +504,7 @@
 <w:szCs w:val="18"/>
 <w:u w:val="single"/>
 </w:rPr>
-<w:t>{{item['address']}}</w:t>
+<w:t>{{item['address']|s(20)}}</w:t>
 </w:r>
 <w:r w:rsidR="00F67AD1">
 <w:rPr>
@@ -597,7 +597,7 @@
 <w:szCs w:val="18"/>
 <w:u w:val="single"/>
 </w:rPr>
-<w:t>{{item['region_code']}}</w:t>
+<w:t>{{item['region_code']|s}}</w:t>
 </w:r>
 </w:p>
 <w:p w:rsidR="00F4450F" w:rsidRPr="000A26E0" w:rsidRDefault="00F4450F" w:rsidP="000A26E0">
@@ -666,7 +666,7 @@
 <w:szCs w:val="18"/>
 <w:u w:val="single"/>
 </w:rPr>
-<w:t>{{item['lon_d']}}</w:t>
+<w:t>{{item['lon_d']|num(0)}}</w:t>
 </w:r>
 <w:r w:rsidRPr="000A26E0">
 <w:rPr>
@@ -683,7 +683,7 @@
 <w:szCs w:val="18"/>
 <w:u w:val="single"/>
 </w:rPr>
-<w:t>{{item['lon_m']}}</w:t>
+<w:t>{{item['lon_m']|num(0)}}</w:t>
 </w:r>
 <w:r w:rsidRPr="000A26E0">
 <w:rPr>
@@ -700,7 +700,7 @@
 <w:szCs w:val="18"/>
 <w:u w:val="single"/>
 </w:rPr>
-<w:t>{{item['lon_s']}}</w:t>
+<w:t>{{item['lon_s']|num}}</w:t>
 </w:r>
 <w:r w:rsidRPr="000A26E0">
 <w:rPr>
@@ -741,7 +741,7 @@
 <w:szCs w:val="18"/>
 <w:u w:val="single"/>
 </w:rPr>
-<w:t>{{item['lat_d']}}</w:t>
+<w:t>{{item['lat_d']|num(0)}}</w:t>
 </w:r>
 <w:r w:rsidRPr="000A26E0">
 <w:rPr>
@@ -758,7 +758,7 @@
 <w:szCs w:val="18"/>
 <w:u w:val="single"/>
 </w:rPr>
-<w:t>{{item['lat_m']}}</w:t>
+<w:t>{{item['lat_m']|num(0)}}</w:t>
 </w:r>
 <w:r w:rsidRPr="000A26E0">
 <w:rPr>
@@ -775,7 +775,7 @@
 <w:szCs w:val="18"/>
 <w:u w:val="single"/>
 </w:rPr>
-<w:t>{{item['lat_s']}}</w:t>
+<w:t>{{item['lat_s']|num}}</w:t>
 </w:r>
 <w:r w:rsidRPr="000A26E0">
 <w:rPr>
@@ -811,7 +811,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>法定代表人（单位负责任）</w:t>
+<w:t>法定代表人（单位负责人）</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -834,7 +834,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['legal_person']}}</w:t>
+<w:t>{{item['legal_person']|s}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -885,7 +885,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['open_date']}}</w:t>
+<w:t>{{item['open_date']|s}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -954,7 +954,7 @@
 <w:szCs w:val="18"/>
 <w:u w:val="single"/>
 </w:rPr>
-<w:t>{{item['ent_contact']}}</w:t>
+<w:t>{{item['ent_contact']|s}}</w:t>
 </w:r>
 <w:proofErr w:type="gramEnd"/>
 <w:r w:rsidRPr="000A26E0">
@@ -980,7 +980,7 @@
 <w:szCs w:val="18"/>
 <w:u w:val="single"/>
 </w:rPr>
-<w:t>{{item['ent_phone']}}</w:t>
+<w:t>{{item['ent_phone']|s}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -1031,7 +1031,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['run_normally']}}</w:t>
+<w:t>{{item['run_normally']|s}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -1081,7 +1081,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['restaurant_type']}}</w:t>
+<w:t>{{item['restaurant_type']|s}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -1125,7 +1125,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['burner_num']}}</w:t>
+<w:t>{{item['burner_num']|num(0)}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -1183,7 +1183,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['customer_capacity']}}</w:t>
+<w:t>{{item['customer_capacity']|num(0)}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -1235,7 +1235,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['employee_num']}}</w:t>
+<w:t>{{item['employee_num']|num(0)}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -1293,7 +1293,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['annual_turnover']}}</w:t>
+<w:t>{{item['annual_turnover']|num}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -1362,7 +1362,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['ent_area']}}</w:t>
+<w:t>{{item['ent_area']|num}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -1452,7 +1452,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['cooking_oil']}}</w:t>
+<w:t>{{item['cooking_oil']|num}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -1559,7 +1559,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['water_used']}}</w:t>
+<w:t>{{item['water_used']|num}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -1609,7 +1609,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['oil_device']}}</w:t>
+<w:t>{{item['oil_device']|s}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -1678,7 +1678,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['water_waster_emit']}}</w:t>
+<w:t>{{item['water_waster_emit']|num}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -1750,7 +1750,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['water_cod']}}</w:t>
+<w:t>{{item['water_cod']|num}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -1819,7 +1819,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['water_oil']}}</w:t>
+<w:t>{{item['water_oil']|num}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -1883,7 +1883,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['water_nh4']}}</w:t>
+<w:t>{{item['water_nh4']|num}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -1952,7 +1952,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['water_tp']}}</w:t>
+<w:t>{{item['water_tp']|num}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -2003,7 +2003,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['water_monitor']}}</w:t>
+<w:t>{{item['water_monitor']|s}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -2084,7 +2084,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['gas_device']}}</w:t>
+<w:t>{{item['gas_device']|s}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -2153,7 +2153,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['gas_emission_vol']}}</w:t>
+<w:t>{{item['gas_emission_vol']|num}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -2211,7 +2211,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['device_runtime']}}</w:t>
+<w:t>{{item['device_runtime']|num(0)}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -2280,7 +2280,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['gas_solid']}}</w:t>
+<w:t>{{item['gas_solid']|num}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -2355,7 +2355,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['not_ch4']}}</w:t>
+<w:t>{{item['not_ch4']|num}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -2399,7 +2399,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['gas_monitor']}}</w:t>
+<w:t>{{item['gas_monitor']|s}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -2488,7 +2488,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['kitchen_waster_volume']}}</w:t>
+<w:t>{{item['kitchen_waster_volume']|num}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
@@ -2532,7 +2532,7 @@
 <w:sz w:val="18"/>
 <w:szCs w:val="18"/>
 </w:rPr>
-<w:t>{{item['kitchen_waster_gone']}}</w:t>
+<w:t>{{item['kitchen_waster_gone']|s}}</w:t>
 </w:r>
 </w:p>
 </w:tc>

@@ -1,5 +1,6 @@
 # coding: utf-8
 from datetime import datetime
+from urllib.parse import quote
 
 from flask import (
     Blueprint, flash, g, redirect, render_template,
@@ -59,7 +60,7 @@ def query():
 @login_required
 def create():
     """Create a new post for the current user."""
-    item = None
+    item = {}
     if request.method == 'POST':
         item = request.form.copy()
         item["updated_date"] = datetime.now()
@@ -71,7 +72,7 @@ def create():
             return redirect(url_for('restaurant.index'))
     ADMIN_HANDLER.select_by_item(item)
     admins = ADMIN_HANDLER.get_admins()
-    return render_template('restaurant/update.html', item=None, admins=admins)
+    return render_template('restaurant/update.html', item=item, admins=admins)
 
 
 @bp.route('/<int:id>/update', methods=('GET', 'POST'))
@@ -103,9 +104,10 @@ def delete(id):
 @login_required
 def export(id):
     item = restaurant.select_by_id(get_db(), id)
-    result = render_template("restaurant/rest.xml", item=item)
+    result = render_template("restaurant/restaurant.xml", item=item)
     response = make_response(result)
-    response.headers["Content-Disposition"] = "attachment; filename=restaurant.doc"
+    filename = quote("餐饮表-" + item["ent_name"] + ".doc")
+    response.headers["Content-Disposition"] = "attachment; filename*=utf-8''{}".format(filename)
     return response
 
 

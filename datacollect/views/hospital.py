@@ -1,6 +1,7 @@
 # coding: utf-8
 
 from datetime import datetime
+from urllib.parse import quote
 
 from flask import (
     Blueprint, flash, g, redirect, render_template,
@@ -103,5 +104,6 @@ def export(id):
     item = hospital.select_by_id(get_db(), id)
     result = render_template("hospital/hospital.xml", item=item)
     response = make_response(result)
-    response.headers["Content-Disposition"] = "attachment; filename=hospital.doc"
+    filename = quote("医疗表-" + item["ent_name"] + ".doc")
+    response.headers["Content-Disposition"] = "attachment; filename*=utf-8''{}".format(filename)
     return response

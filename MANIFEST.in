@@ -1,6 +1,13 @@
 include LICENSE
-include datacollect/schema.sql
+include .gitignore
+include datacollect/sql/schema.sqlite.sql
+include datacollect/sql/data.sqlite.sql
+include wsgi.py
+include manage.py
+include start.sh
+include stop.sh
 graft datacollect/static
 graft datacollect/templates
 graft tests
+graft web
 global-exclude *.pyc

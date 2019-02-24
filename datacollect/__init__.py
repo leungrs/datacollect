@@ -1,7 +1,8 @@
 import os
-
+from datetime import date, datetime
 from flask import Flask
 import flask_excel
+from jinja2 import Undefined
 
 from datacollect.db import get_db
 from .config import STATIC_FOLDER, TEMPLATES_FOLDER
@@ -17,6 +18,7 @@ def create_app(config=None):
 
     app.add_template_filter(string_filter, "s")
     app.add_template_filter(number_filter, "num")
+    app.add_template_filter(date_filter, "date")
 
     if config is None:
         app.config.from_pyfile('config.py', silent=True)
@@ -66,9 +68,16 @@ def string_filter(value, length=0):
 
 
 def number_filter(value, n=2):
-    if value is None:
+    if value is None or value == '' or isinstance(value, Undefined):
         return "    "
     if n == 0:
         return int(value)
     return round(value, n)
 
+
+def date_filter(value):
+    if not value:
+        return ""
+    if isinstance(value, (date, datetime)):
+        return value.strftime("%Y-%m-%d")
+    return ""
