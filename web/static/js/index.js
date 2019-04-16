@@ -68,9 +68,15 @@ function actionFormatter(value, row, index, field){
 }
 
 register_confirm_ok_handler(function(){
-    uid = $("#confirm_dialog_value").val()
+    uid = $("#confirm_dialog_value").val();
+    url = "";
+    if (uid == "__all__") {
+        url =  "delete_all";
+    } else {
+        url =  uid+"/delete";
+    }
     $.ajax({
-        url: uid+"/delete",
+        url: url,
         type: "post",
         processData: false,
         contentType: false,

@@ -83,8 +83,8 @@ def to_d_m_s(val):
     i_d = int(val)
     m = (val - i_d) * 60
     i_m = int(m)
-    i_s = int((m - i_m) * 60)
-    return i_d, i_m, i_s
+    f_s = (m - i_m) * 60
+    return i_d, i_m, f_s
 
 
 class AdminNode(object):

@@ -13,6 +13,7 @@ from datacollect.common import ADMIN_HANDLER
 from datacollect.views.auth import login_required
 from datacollect.dao import hospital, select
 
+
 bp = Blueprint('hospital', __name__, url_prefix="/hospital")
 
 
@@ -107,3 +108,10 @@ def export(id):
     filename = quote("医疗表-" + item["ent_name"] + ".doc")
     response.headers["Content-Disposition"] = "attachment; filename*=utf-8''{}".format(filename)
     return response
+
+
+@bp.route('/delete_all', methods=('POST',))
+@login_required
+def delete_all_data():
+    result = hospital.delete_all(get_db())
+    return jsonify(result.to_json())

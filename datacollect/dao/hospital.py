@@ -1,7 +1,7 @@
 # coding: utf-8
 
 
-from datacollect.common import to_type, to_d_m_s
+from datacollect.common import to_type, to_d_m_s, Result
 from datacollect.dao import sqlite3_row_to_dict, get_town_from_address, FUTIAN
 
 
@@ -91,6 +91,21 @@ def import_hospital_from_array(array, db, updated_date, updated_by):
         "床位数": "bed_num:int",
         "是否安装在线监测": "water_monitor",
         "填表人": "survey_person",
+        "废水处理工艺名称": "water_process_name",
+        "年废水排放量": "water_waster_emit",
+        "废水排放浓度COD": "water_cod",
+        "废水排放浓度BOD": "water_bod",
+        "粪大肠菌群": "water_fecal_coliform",
+        "医疗废物1名称、类别": "waster1_type",
+        "医疗废物1年生产量": "waster1_annual",
+        "医疗废物1交持证单位量": "waster1_jcz",
+        "医疗废物2名称、类别": "waster2_type",
+        "医疗废物2年生产量": "waster2_annual",
+        "医疗废物2交持证单位量": "waster2_jcz",
+        "医疗废物3名称、类别": "waster3_type",
+        "医疗废物3年生产量": "waster3_annual",
+        "医疗废物3交持证单位量": "waster3_jcz",
+        "区划代码": "region_code",
     }
     success_count = 0
     for row in rows:
@@ -115,3 +130,13 @@ def import_hospital_from_array(array, db, updated_date, updated_by):
         if not err_msg:
             success_count += 1
     return success_count
+
+
+def delete_all(db):
+    try:
+        sql = "delete from hospital_survey"
+        db.execute(sql)
+        db.commit()
+        return Result()
+    except Exception as e:
+        return Result(message="删除失败:%s" % e)
