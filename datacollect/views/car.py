@@ -1,6 +1,7 @@
 # coding: utf-8
 
 from datetime import datetime
+from urllib.parse import quote
 
 from flask import (
     Blueprint, flash, g, redirect, render_template,
@@ -101,7 +102,8 @@ def delete(id):
 @login_required
 def export(id):
     item = car.select_by_id(get_db(), id)
-    result = render_template("car/rest.xml", item=item)
+    result = render_template("car/car.xml", item=item)
     response = make_response(result)
-    response.headers["Content-Disposition"] = "attachment; filename=car.doc"
+    filename = quote("汽修表-" + item["ent_name"] + ".doc")
+    response.headers["Content-Disposition"] = "attachment; filename*=utf-8''{}".format(filename)
     return response

@@ -106,6 +106,8 @@ def import_hospital_from_array(array, db, updated_date, updated_by):
         "医疗废物3年生产量": "waster3_annual",
         "医疗废物3交持证单位量": "waster3_jcz",
         "区划代码": "region_code",
+        "年就诊人数": "patient_num",
+        "年营业额": "annual_turnover",
     }
     success_count = 0
     for row in rows:

@@ -1,0 +1,5179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?mso-application progid="Word.Document"?>
+<w:wordDocument xmlns:aml="http://schemas.microsoft.com/aml/2001/core" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml" xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wsp="http://schemas.microsoft.com/office/word/2003/wordml/sp2" xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core" w:macrosPresent="no" w:embeddedObjPresent="no" w:ocxPresent="no" xml:space="preserve">
+<w:ignoreSubtree w:val="http://schemas.microsoft.com/office/word/2003/wordml/sp2"/>
+<o:DocumentProperties>
+<o:Author>Sky123.Org</o:Author>
+<o:LastAuthor>Pc</o:LastAuthor>
+<o:Revision>3</o:Revision>
+<o:TotalTime>5</o:TotalTime>
+<o:Created>2019-05-12T09:09:00Z</o:Created>
+<o:LastSaved>2019-05-12T09:19:00Z</o:LastSaved>
+<o:Pages>2</o:Pages>
+<o:Words>299</o:Words>
+<o:Characters>1706</o:Characters>
+<o:Company>Sky123.Org</o:Company>
+<o:Lines>14</o:Lines>
+<o:Paragraphs>4</o:Paragraphs>
+<o:CharactersWithSpaces>2001</o:CharactersWithSpaces>
+<o:Version>15</o:Version>
+</o:DocumentProperties>
+<o:CustomDocumentProperties>
+<o:KSOProductBuildVer dt:dt="string">2052-10.1.0.7400</o:KSOProductBuildVer>
+</o:CustomDocumentProperties>
+<w:fonts>
+<w:defaultFonts w:ascii="Calibri" w:fareast="宋体" w:h-ansi="Calibri" w:cs="Times New Roman"/>
+<w:font w:name="Times New Roman">
+<w:panose-1 w:val="02020603050405020304"/>
+<w:charset w:val="00"/>
+<w:family w:val="Roman"/>
+<w:pitch w:val="variable"/>
+<w:sig w:usb-0="E0002EFF" w:usb-1="C000785B" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000"/>
+</w:font>
+<w:font w:name="宋体">
+<w:altName w:val="SimSun"/>
+<w:panose-1 w:val="02010600030101010101"/>
+<w:charset w:val="86"/>
+<w:family w:val="auto"/>
+<w:pitch w:val="variable"/>
+<w:sig w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000"/>
+</w:font>
+<w:font w:name="黑体">
+<w:altName w:val="SimHei"/>
+<w:panose-1 w:val="02010609060101010101"/>
+<w:charset w:val="86"/>
+<w:family w:val="Modern"/>
+<w:pitch w:val="fixed"/>
+<w:sig w:usb-0="800002BF" w:usb-1="38CF7CFA" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000"/>
+</w:font>
+<w:font w:name="黑体">
+<w:altName w:val="SimHei"/>
+<w:panose-1 w:val="02010609060101010101"/>
+<w:charset w:val="86"/>
+<w:family w:val="Modern"/>
+<w:pitch w:val="fixed"/>
+<w:sig w:usb-0="800002BF" w:usb-1="38CF7CFA" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000"/>
+</w:font>
+<w:font w:name="Calibri">
+<w:panose-1 w:val="020F0502020204030204"/>
+<w:charset w:val="00"/>
+<w:family w:val="Swiss"/>
+<w:pitch w:val="variable"/>
+<w:sig w:usb-0="E0002AFF" w:usb-1="C000247B" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000"/>
+</w:font>
+<w:font w:name="仿宋_GB2312">
+<w:altName w:val="仿宋"/>
+<w:charset w:val="86"/>
+<w:family w:val="Modern"/>
+<w:pitch w:val="fixed"/>
+<w:sig w:usb-0="00000001" w:usb-1="080E0000" w:usb-2="00000010" w:usb-3="00000000" w:csb-0="00040000" w:csb-1="00000000"/>
+</w:font>
+<w:font w:name="Cambria">
+<w:panose-1 w:val="02040503050406030204"/>
+<w:charset w:val="00"/>
+<w:family w:val="Roman"/>
+<w:pitch w:val="variable"/>
+<w:sig w:usb-0="E00002FF" w:usb-1="400004FF" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="0000019F" w:csb-1="00000000"/>
+</w:font>
+<w:font w:name="@宋体">
+<w:panose-1 w:val="02010600030101010101"/>
+<w:charset w:val="86"/>
+<w:family w:val="auto"/>
+<w:pitch w:val="variable"/>
+<w:sig w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000"/>
+</w:font>
+<w:font w:name="@黑体">
+<w:panose-1 w:val="02010609060101010101"/>
+<w:charset w:val="86"/>
+<w:family w:val="Modern"/>
+<w:pitch w:val="fixed"/>
+<w:sig w:usb-0="800002BF" w:usb-1="38CF7CFA" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000"/>
+</w:font>
+<w:font w:name="@仿宋_GB2312">
+<w:charset w:val="86"/>
+<w:family w:val="Modern"/>
+<w:pitch w:val="fixed"/>
+<w:sig w:usb-0="00000001" w:usb-1="080E0000" w:usb-2="00000010" w:usb-3="00000000" w:csb-0="00040000" w:csb-1="00000000"/>
+</w:font>
+</w:fonts>
+<w:styles>
+<w:versionOfBuiltInStylenames w:val="7"/>
+<w:latentStyles w:defLockedState="off" w:latentStyleCount="371">
+<w:lsdException w:name="Normal"/>
+<w:lsdException w:name="heading 1"/>
+<w:lsdException w:name="heading 2"/>
+<w:lsdException w:name="heading 3"/>
+<w:lsdException w:name="heading 4"/>
+<w:lsdException w:name="heading 5"/>
+<w:lsdException w:name="heading 6"/>
+<w:lsdException w:name="heading 7"/>
+<w:lsdException w:name="heading 8"/>
+<w:lsdException w:name="heading 9"/>
+<w:lsdException w:name="caption"/>
+<w:lsdException w:name="Title"/>
+<w:lsdException w:name="Subtitle"/>
+<w:lsdException w:name="Strong"/>
+<w:lsdException w:name="Emphasis"/>
+<w:lsdException w:name="Normal Table"/>
+<w:lsdException w:name="Table Simple 1"/>
+<w:lsdException w:name="Table Simple 2"/>
+<w:lsdException w:name="Table Simple 3"/>
+<w:lsdException w:name="Table Classic 1"/>
+<w:lsdException w:name="Table Classic 2"/>
+<w:lsdException w:name="Table Classic 3"/>
+<w:lsdException w:name="Table Classic 4"/>
+<w:lsdException w:name="Table Colorful 1"/>
+<w:lsdException w:name="Table Colorful 2"/>
+<w:lsdException w:name="Table Colorful 3"/>
+<w:lsdException w:name="Table Columns 1"/>
+<w:lsdException w:name="Table Columns 2"/>
+<w:lsdException w:name="Table Columns 3"/>
+<w:lsdException w:name="Table Columns 4"/>
+<w:lsdException w:name="Table Columns 5"/>
+<w:lsdException w:name="Table Grid 1"/>
+<w:lsdException w:name="Table Grid 2"/>
+<w:lsdException w:name="Table Grid 3"/>
+<w:lsdException w:name="Table Grid 4"/>
+<w:lsdException w:name="Table Grid 5"/>
+<w:lsdException w:name="Table Grid 6"/>
+<w:lsdException w:name="Table Grid 7"/>
+<w:lsdException w:name="Table Grid 8"/>
+<w:lsdException w:name="Table List 1"/>
+<w:lsdException w:name="Table List 2"/>
+<w:lsdException w:name="Table List 3"/>
+<w:lsdException w:name="Table List 4"/>
+<w:lsdException w:name="Table List 5"/>
+<w:lsdException w:name="Table List 6"/>
+<w:lsdException w:name="Table List 7"/>
+<w:lsdException w:name="Table List 8"/>
+<w:lsdException w:name="Table 3D effects 1"/>
+<w:lsdException w:name="Table 3D effects 2"/>
+<w:lsdException w:name="Table 3D effects 3"/>
+<w:lsdException w:name="Table Contemporary"/>
+<w:lsdException w:name="Table Elegant"/>
+<w:lsdException w:name="Table Professional"/>
+<w:lsdException w:name="Table Subtle 1"/>
+<w:lsdException w:name="Table Subtle 2"/>
+<w:lsdException w:name="Table Web 1"/>
+<w:lsdException w:name="Table Web 2"/>
+<w:lsdException w:name="Table Web 3"/>
+<w:lsdException w:name="Table Theme"/>
+<w:lsdException w:name="No Spacing"/>
+<w:lsdException w:name="Light Shading"/>
+<w:lsdException w:name="Light List"/>
+<w:lsdException w:name="Light Grid"/>
+<w:lsdException w:name="Medium Shading 1"/>
+<w:lsdException w:name="Medium Shading 2"/>
+<w:lsdException w:name="Medium List 1"/>
+<w:lsdException w:name="Medium List 2"/>
+<w:lsdException w:name="Medium Grid 1"/>
+<w:lsdException w:name="Medium Grid 2"/>
+<w:lsdException w:name="Medium Grid 3"/>
+<w:lsdException w:name="Dark List"/>
+<w:lsdException w:name="Colorful Shading"/>
+<w:lsdException w:name="Colorful List"/>
+<w:lsdException w:name="Colorful Grid"/>
+<w:lsdException w:name="Light Shading Accent 1"/>
+<w:lsdException w:name="Light List Accent 1"/>
+<w:lsdException w:name="Light Grid Accent 1"/>
+<w:lsdException w:name="Medium Shading 1 Accent 1"/>
+<w:lsdException w:name="Medium Shading 2 Accent 1"/>
+<w:lsdException w:name="Medium List 1 Accent 1"/>
+<w:lsdException w:name="List Paragraph"/>
+<w:lsdException w:name="Quote"/>
+<w:lsdException w:name="Intense Quote"/>
+<w:lsdException w:name="Medium List 2 Accent 1"/>
+<w:lsdException w:name="Medium Grid 1 Accent 1"/>
+<w:lsdException w:name="Medium Grid 2 Accent 1"/>
+<w:lsdException w:name="Medium Grid 3 Accent 1"/>
+<w:lsdException w:name="Dark List Accent 1"/>
+<w:lsdException w:name="Colorful Shading Accent 1"/>
+<w:lsdException w:name="Colorful List Accent 1"/>
+<w:lsdException w:name="Colorful Grid Accent 1"/>
+<w:lsdException w:name="Light Shading Accent 2"/>
+<w:lsdException w:name="Light List Accent 2"/>
+<w:lsdException w:name="Light Grid Accent 2"/>
+<w:lsdException w:name="Medium Shading 1 Accent 2"/>
+<w:lsdException w:name="Medium Shading 2 Accent 2"/>
+<w:lsdException w:name="Medium List 1 Accent 2"/>
+<w:lsdException w:name="Medium List 2 Accent 2"/>
+<w:lsdException w:name="Medium Grid 1 Accent 2"/>
+<w:lsdException w:name="Medium Grid 2 Accent 2"/>
+<w:lsdException w:name="Medium Grid 3 Accent 2"/>
+<w:lsdException w:name="Dark List Accent 2"/>
+<w:lsdException w:name="Colorful Shading Accent 2"/>
+<w:lsdException w:name="Colorful List Accent 2"/>
+<w:lsdException w:name="Colorful Grid Accent 2"/>
+<w:lsdException w:name="Light Shading Accent 3"/>
+<w:lsdException w:name="Light List Accent 3"/>
+<w:lsdException w:name="Light Grid Accent 3"/>
+<w:lsdException w:name="Medium Shading 1 Accent 3"/>
+<w:lsdException w:name="Medium Shading 2 Accent 3"/>
+<w:lsdException w:name="Medium List 1 Accent 3"/>
+<w:lsdException w:name="Medium List 2 Accent 3"/>
+<w:lsdException w:name="Medium Grid 1 Accent 3"/>
+<w:lsdException w:name="Medium Grid 2 Accent 3"/>
+<w:lsdException w:name="Medium Grid 3 Accent 3"/>
+<w:lsdException w:name="Dark List Accent 3"/>
+<w:lsdException w:name="Colorful Shading Accent 3"/>
+<w:lsdException w:name="Colorful List Accent 3"/>
+<w:lsdException w:name="Colorful Grid Accent 3"/>
+<w:lsdException w:name="Light Shading Accent 4"/>
+<w:lsdException w:name="Light List Accent 4"/>
+<w:lsdException w:name="Light Grid Accent 4"/>
+<w:lsdException w:name="Medium Shading 1 Accent 4"/>
+<w:lsdException w:name="Medium Shading 2 Accent 4"/>
+<w:lsdException w:name="Medium List 1 Accent 4"/>
+<w:lsdException w:name="Medium List 2 Accent 4"/>
+<w:lsdException w:name="Medium Grid 1 Accent 4"/>
+<w:lsdException w:name="Medium Grid 2 Accent 4"/>
+<w:lsdException w:name="Medium Grid 3 Accent 4"/>
+<w:lsdException w:name="Dark List Accent 4"/>
+<w:lsdException w:name="Colorful Shading Accent 4"/>
+<w:lsdException w:name="Colorful List Accent 4"/>
+<w:lsdException w:name="Colorful Grid Accent 4"/>
+<w:lsdException w:name="Light Shading Accent 5"/>
+<w:lsdException w:name="Light List Accent 5"/>
+<w:lsdException w:name="Light Grid Accent 5"/>
+<w:lsdException w:name="Medium Shading 1 Accent 5"/>
+<w:lsdException w:name="Medium Shading 2 Accent 5"/>
+<w:lsdException w:name="Medium List 1 Accent 5"/>
+<w:lsdException w:name="Medium List 2 Accent 5"/>
+<w:lsdException w:name="Medium Grid 1 Accent 5"/>
+<w:lsdException w:name="Medium Grid 2 Accent 5"/>
+<w:lsdException w:name="Medium Grid 3 Accent 5"/>
+<w:lsdException w:name="Dark List Accent 5"/>
+<w:lsdException w:name="Colorful Shading Accent 5"/>
+<w:lsdException w:name="Colorful List Accent 5"/>
+<w:lsdException w:name="Colorful Grid Accent 5"/>
+<w:lsdException w:name="Light Shading Accent 6"/>
+<w:lsdException w:name="Light List Accent 6"/>
+<w:lsdException w:name="Light Grid Accent 6"/>
+<w:lsdException w:name="Medium Shading 1 Accent 6"/>
+<w:lsdException w:name="Medium Shading 2 Accent 6"/>
+<w:lsdException w:name="Medium List 1 Accent 6"/>
+<w:lsdException w:name="Medium List 2 Accent 6"/>
+<w:lsdException w:name="Medium Grid 1 Accent 6"/>
+<w:lsdException w:name="Medium Grid 2 Accent 6"/>
+<w:lsdException w:name="Medium Grid 3 Accent 6"/>
+<w:lsdException w:name="Dark List Accent 6"/>
+<w:lsdException w:name="Colorful Shading Accent 6"/>
+<w:lsdException w:name="Colorful List Accent 6"/>
+<w:lsdException w:name="Colorful Grid Accent 6"/>
+<w:lsdException w:name="Subtle Emphasis"/>
+<w:lsdException w:name="Intense Emphasis"/>
+<w:lsdException w:name="Subtle Reference"/>
+<w:lsdException w:name="Intense Reference"/>
+<w:lsdException w:name="Book Title"/>
+<w:lsdException w:name="TOC Heading"/>
+</w:latentStyles>
+<w:style w:type="paragraph" w:default="on" w:styleId="a">
+<w:name w:val="Normal"/>
+<wx:uiName wx:val="正文"/>
+<w:rsid w:val="00F40B5F"/>
+<w:pPr>
+<w:widowControl w:val="off"/>
+<w:jc w:val="both"/>
+</w:pPr>
+<w:rPr>
+<wx:font wx:val="Calibri"/>
+<w:kern w:val="2"/>
+<w:sz w:val="21"/>
+<w:sz-cs w:val="22"/>
+<w:lang w:val="EN-US" w:fareast="ZH-CN" w:bidi="AR-SA"/>
+</w:rPr>
+</w:style>
+<w:style w:type="paragraph" w:styleId="1">
+<w:name w:val="heading 1"/>
+<wx:uiName wx:val="标题 1"/>
+<w:basedOn w:val="a"/>
+<w:next w:val="a"/>
+<w:link w:val="1Char"/>
+<w:rsid w:val="00F40B5F"/>
+<w:pPr>
+<w:keepNext/>
+<w:keepLines/>
+<w:spacing w:line="360" w:line-rule="auto"/>
+<w:ind w:first-line-chars="200" w:first-line="643"/>
+<w:outlineLvl w:val="0"/>
+</w:pPr>
+<w:rPr>
+<w:rFonts w:ascii="Times New Roman" w:fareast="仿宋_GB2312" w:h-ansi="Times New Roman"/>
+<wx:font wx:val="Times New Roman"/>
+<w:b/>
+<w:kern w:val="44"/>
+<w:sz w:val="32"/>
+</w:rPr>
+</w:style>
+<w:style w:type="paragraph" w:styleId="2">
+<w:name w:val="heading 2"/>
+<wx:uiName wx:val="标题 2"/>
+<w:basedOn w:val="a"/>
+<w:next w:val="a"/>
+<w:link w:val="2Char"/>
+<w:rsid w:val="00F40B5F"/>
+<w:pPr>
+<w:keepNext/>
+<w:keepLines/>
+<w:spacing w:before="260" w:after="260" w:line="416" w:line-rule="auto"/>
+<w:outlineLvl w:val="1"/>
+</w:pPr>
+<w:rPr>
+<w:rFonts w:ascii="Cambria" w:h-ansi="Cambria"/>
+<wx:font wx:val="Cambria"/>
+<w:b/>
+<w:b-cs/>
+<w:sz w:val="32"/>
+<w:sz-cs w:val="32"/>
+</w:rPr>
+</w:style>
+<w:style w:type="paragraph" w:styleId="3">
+<w:name w:val="heading 3"/>
+<wx:uiName wx:val="标题 3"/>
+<w:basedOn w:val="a"/>
+<w:next w:val="a"/>
+<w:link w:val="3Char"/>
+<w:rsid w:val="00F40B5F"/>
+<w:pPr>
+<w:keepNext/>
+<w:keepLines/>
+<w:spacing w:before="260" w:after="260" w:line="416" w:line-rule="auto"/>
+<w:outlineLvl w:val="2"/>
+</w:pPr>
+<w:rPr>
+<wx:font wx:val="Calibri"/>
+<w:b/>
+<w:b-cs/>
+<w:sz w:val="32"/>
+<w:sz-cs w:val="32"/>
+</w:rPr>
+</w:style>
+<w:style w:type="character" w:default="on" w:styleId="a0">
+<w:name w:val="Default Paragraph Font"/>
+<wx:uiName wx:val="默认段落字体"/>
+</w:style>
+<w:style w:type="table" w:default="on" w:styleId="a1">
+<w:name w:val="Normal Table"/>
+<wx:uiName wx:val="普通表格"/>
+<w:rPr>
+<wx:font wx:val="Calibri"/>
+<w:lang w:val="EN-US" w:fareast="ZH-CN" w:bidi="AR-SA"/>
+</w:rPr>
+<w:tblPr>
+<w:tblInd w:w="0" w:type="dxa"/>
+<w:tblCellMar>
+<w:top w:w="0" w:type="dxa"/>
+<w:left w:w="108" w:type="dxa"/>
+<w:bottom w:w="0" w:type="dxa"/>
+<w:right w:w="108" w:type="dxa"/>
+</w:tblCellMar>
+</w:tblPr>
+</w:style>
+<w:style w:type="list" w:default="on" w:styleId="a2">
+<w:name w:val="No List"/>
+<wx:uiName wx:val="无列表"/>
+</w:style>
+<w:style w:type="paragraph" w:styleId="a3">
+<w:name w:val="footer"/>
+<wx:uiName wx:val="页脚"/>
+<w:basedOn w:val="a"/>
+<w:link w:val="Char"/>
+<w:rsid w:val="00F40B5F"/>
+<w:pPr>
+<w:tabs>
+<w:tab w:val="center" w:pos="4153"/>
+<w:tab w:val="right" w:pos="8306"/>
+</w:tabs>
+<w:snapToGrid w:val="off"/>
+<w:jc w:val="left"/>
+</w:pPr>
+<w:rPr>
+<wx:font wx:val="Calibri"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:style>
+<w:style w:type="paragraph" w:styleId="a4">
+<w:name w:val="header"/>
+<wx:uiName wx:val="页眉"/>
+<w:basedOn w:val="a"/>
+<w:link w:val="Char0"/>
+<w:rsid w:val="00F40B5F"/>
+<w:pPr>
+<w:pBdr>
+<w:bottom w:val="single" w:sz="6" wx:bdrwidth="15" w:space="1" w:color="auto"/>
+</w:pBdr>
+<w:tabs>
+<w:tab w:val="center" w:pos="4153"/>
+<w:tab w:val="right" w:pos="8306"/>
+</w:tabs>
+<w:snapToGrid w:val="off"/>
+<w:jc w:val="center"/>
+</w:pPr>
+<w:rPr>
+<wx:font wx:val="Calibri"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:style>
+<w:style w:type="table" w:styleId="a5">
+<w:name w:val="Table Grid"/>
+<wx:uiName wx:val="网格型"/>
+<w:basedOn w:val="a1"/>
+<w:rsid w:val="00F40B5F"/>
+<w:rPr>
+<wx:font wx:val="Calibri"/>
+</w:rPr>
+<w:tblPr>
+<w:tblBorders>
+<w:top w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+<w:left w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+<w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+<w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+<w:insideH w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+<w:insideV w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+</w:tblBorders>
+</w:tblPr>
+</w:style>
+<w:style w:type="paragraph" w:styleId="10">
+<w:name w:val="列出段落1"/>
+<w:basedOn w:val="a"/>
+<w:rsid w:val="00F40B5F"/>
+<w:pPr>
+<w:ind w:first-line-chars="200" w:first-line="420"/>
+</w:pPr>
+<w:rPr>
+<w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+<wx:font wx:val="Times New Roman"/>
+<w:sz-cs w:val="21"/>
+</w:rPr>
+</w:style>
+<w:style w:type="character" w:styleId="1Char">
+<w:name w:val="标题 1 Char"/>
+<w:link w:val="1"/>
+<w:rsid w:val="00F40B5F"/>
+<w:rPr>
+<w:rFonts w:ascii="Times New Roman" w:fareast="仿宋_GB2312" w:h-ansi="Times New Roman" w:cs="Times New Roman"/>
+<w:b/>
+<w:kern w:val="44"/>
+<w:sz w:val="32"/>
+</w:rPr>
+</w:style>
+<w:style w:type="character" w:styleId="2Char">
+<w:name w:val="标题 2 Char"/>
+<w:link w:val="2"/>
+<w:rsid w:val="00F40B5F"/>
+<w:rPr>
+<w:rFonts w:ascii="Cambria" w:fareast="宋体" w:h-ansi="Cambria" w:cs="Times New Roman"/>
+<w:b/>
+<w:b-cs/>
+<w:sz w:val="32"/>
+<w:sz-cs w:val="32"/>
+</w:rPr>
+</w:style>
+<w:style w:type="character" w:styleId="3Char">
+<w:name w:val="标题 3 Char"/>
+<w:link w:val="3"/>
+<w:rsid w:val="00F40B5F"/>
+<w:rPr>
+<w:b/>
+<w:b-cs/>
+<w:sz w:val="32"/>
+<w:sz-cs w:val="32"/>
+</w:rPr>
+</w:style>
+<w:style w:type="character" w:styleId="Char0">
+<w:name w:val="页眉 Char"/>
+<w:link w:val="a4"/>
+<w:rsid w:val="00F40B5F"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:style>
+<w:style w:type="character" w:styleId="Char">
+<w:name w:val="页脚 Char"/>
+<w:link w:val="a3"/>
+<w:rsid w:val="00F40B5F"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:style>
+<w:style w:type="paragraph" w:styleId="a6">
+<w:name w:val="Document Map"/>
+<wx:uiName wx:val="文档结构图"/>
+<w:basedOn w:val="a"/>
+<w:link w:val="Char1"/>
+<w:rsid w:val="00852556"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体"/>
+<wx:font wx:val="Calibri"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:style>
+<w:style w:type="character" w:styleId="Char1">
+<w:name w:val="文档结构图 Char"/>
+<w:link w:val="a6"/>
+<w:rsid w:val="00852556"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:fareast="宋体"/>
+<w:kern w:val="2"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:style>
+<w:style w:type="paragraph" w:styleId="11">
+<w:name w:val="toc 1"/>
+<wx:uiName wx:val="目录 1"/>
+<w:basedOn w:val="a"/>
+<w:next w:val="a"/>
+<w:autoRedefine/>
+<w:rsid w:val="00B33378"/>
+<w:pPr>
+<w:tabs>
+<w:tab w:val="right" w:leader="dot" w:pos="8834"/>
+</w:tabs>
+<w:jc w:val="center"/>
+</w:pPr>
+<w:rPr>
+<wx:font wx:val="Calibri"/>
+<w:b/>
+<w:sz w:val="44"/>
+<w:sz-cs w:val="44"/>
+</w:rPr>
+</w:style>
+<w:style w:type="paragraph" w:styleId="20">
+<w:name w:val="toc 2"/>
+<wx:uiName wx:val="目录 2"/>
+<w:basedOn w:val="a"/>
+<w:next w:val="a"/>
+<w:autoRedefine/>
+<w:rsid w:val="00B33378"/>
+<w:pPr>
+<w:ind w:left-chars="200" w:left="420"/>
+</w:pPr>
+<w:rPr>
+<wx:font wx:val="Calibri"/>
+</w:rPr>
+</w:style>
+<w:style w:type="character" w:styleId="a7">
+<w:name w:val="Hyperlink"/>
+<wx:uiName wx:val="超链接"/>
+<w:rsid w:val="00B33378"/>
+<w:rPr>
+<w:color w:val="0000FF"/>
+<w:u w:val="single"/>
+</w:rPr>
+</w:style>
+<w:style w:type="paragraph" w:styleId="a8">
+<w:name w:val="Balloon Text"/>
+<wx:uiName wx:val="批注框文本"/>
+<w:basedOn w:val="a"/>
+<w:link w:val="Char2"/>
+<w:rsid w:val="0040792A"/>
+<w:rPr>
+<wx:font wx:val="Calibri"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:style>
+<w:style w:type="character" w:styleId="Char2">
+<w:name w:val="批注框文本 Char"/>
+<w:link w:val="a8"/>
+<w:rsid w:val="0040792A"/>
+<w:rPr>
+<w:kern w:val="2"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:style>
+<w:style w:type="character" w:styleId="a9">
+<w:name w:val="annotation reference"/>
+<wx:uiName wx:val="批注引用"/>
+<w:rsid w:val="00D7486A"/>
+<w:rPr>
+<w:sz w:val="21"/>
+<w:sz-cs w:val="21"/>
+</w:rPr>
+</w:style>
+<w:style w:type="paragraph" w:styleId="aa">
+<w:name w:val="annotation text"/>
+<wx:uiName wx:val="批注文字"/>
+<w:basedOn w:val="a"/>
+<w:link w:val="Char3"/>
+<w:rsid w:val="00D7486A"/>
+<w:pPr>
+<w:jc w:val="left"/>
+</w:pPr>
+<w:rPr>
+<wx:font wx:val="Calibri"/>
+</w:rPr>
+</w:style>
+<w:style w:type="character" w:styleId="Char3">
+<w:name w:val="批注文字 Char"/>
+<w:link w:val="aa"/>
+<w:rsid w:val="00D7486A"/>
+<w:rPr>
+<w:kern w:val="2"/>
+<w:sz w:val="21"/>
+<w:sz-cs w:val="22"/>
+</w:rPr>
+</w:style>
+<w:style w:type="paragraph" w:styleId="ab">
+<w:name w:val="annotation subject"/>
+<wx:uiName wx:val="批注主题"/>
+<w:basedOn w:val="aa"/>
+<w:next w:val="aa"/>
+<w:link w:val="Char4"/>
+<w:rsid w:val="00D7486A"/>
+<w:rPr>
+<wx:font wx:val="Calibri"/>
+<w:b/>
+<w:b-cs/>
+</w:rPr>
+</w:style>
+<w:style w:type="character" w:styleId="Char4">
+<w:name w:val="批注主题 Char"/>
+<w:link w:val="ab"/>
+<w:rsid w:val="00D7486A"/>
+<w:rPr>
+<w:b/>
+<w:b-cs/>
+<w:kern w:val="2"/>
+<w:sz w:val="21"/>
+<w:sz-cs w:val="22"/>
+</w:rPr>
+</w:style>
+<w:style w:type="paragraph" w:styleId="30">
+<w:name w:val="toc 3"/>
+<wx:uiName wx:val="目录 3"/>
+<w:basedOn w:val="a"/>
+<w:next w:val="a"/>
+<w:autoRedefine/>
+<w:rsid w:val="008B6165"/>
+<w:pPr>
+<w:ind w:left-chars="400" w:left="840"/>
+</w:pPr>
+<w:rPr>
+<wx:font wx:val="Calibri"/>
+</w:rPr>
+</w:style>
+</w:styles>
+<w:divs>
+<w:div w:id="835220170">
+<w:bodyDiv w:val="on"/>
+<w:marLeft w:val="0"/>
+<w:marRight w:val="0"/>
+<w:marTop w:val="0"/>
+<w:marBottom w:val="0"/>
+<w:divBdr>
+<w:top w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto"/>
+<w:left w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto"/>
+<w:bottom w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto"/>
+<w:right w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto"/>
+</w:divBdr>
+</w:div>
+<w:div w:id="879170837">
+<w:bodyDiv w:val="on"/>
+<w:marLeft w:val="0"/>
+<w:marRight w:val="0"/>
+<w:marTop w:val="0"/>
+<w:marBottom w:val="0"/>
+<w:divBdr>
+<w:top w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto"/>
+<w:left w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto"/>
+<w:bottom w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto"/>
+<w:right w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto"/>
+</w:divBdr>
+</w:div>
+</w:divs>
+<w:shapeDefaults>
+<o:shapedefaults v:ext="edit" spidmax="2049"/>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1"/>
+</o:shapelayout>
+</w:shapeDefaults>
+<w:docPr>
+<w:view w:val="print"/>
+<w:zoom w:percent="160"/>
+<w:doNotEmbedSystemFonts/>
+<w:bordersDontSurroundHeader/>
+<w:bordersDontSurroundFooter/>
+<w:proofState w:spelling="clean" w:grammar="clean"/>
+<w:defaultTabStop w:val="420"/>
+<w:drawingGridHorizontalSpacing w:val="105"/>
+<w:drawingGridVerticalSpacing w:val="156"/>
+<w:displayHorizontalDrawingGridEvery w:val="0"/>
+<w:displayVerticalDrawingGridEvery w:val="2"/>
+<w:punctuationKerning/>
+<w:characterSpacingControl w:val="CompressPunctuation"/>
+<w:validateAgainstSchema/>
+<w:saveInvalidXML w:val="off"/>
+<w:ignoreMixedContent w:val="off"/>
+<w:alwaysShowPlaceholderText w:val="off"/>
+<w:hdrShapeDefaults>
+<o:shapedefaults v:ext="edit" spidmax="2049"/>
+</w:hdrShapeDefaults>
+<w:footnotePr>
+<w:footnote w:type="separator">
+<w:p wsp:rsidR="00035D9B" wsp:rsidRDefault="00035D9B" wsp:rsidP="00F40B5F">
+<w:r>
+<w:separator/>
+</w:r>
+</w:p>
+</w:footnote>
+<w:footnote w:type="continuation-separator">
+<w:p wsp:rsidR="00035D9B" wsp:rsidRDefault="00035D9B" wsp:rsidP="00F40B5F">
+<w:r>
+<w:continuationSeparator/>
+</w:r>
+</w:p>
+</w:footnote>
+</w:footnotePr>
+<w:endnotePr>
+<w:endnote w:type="separator">
+<w:p wsp:rsidR="00035D9B" wsp:rsidRDefault="00035D9B" wsp:rsidP="00F40B5F">
+<w:r>
+<w:separator/>
+</w:r>
+</w:p>
+</w:endnote>
+<w:endnote w:type="continuation-separator">
+<w:p wsp:rsidR="00035D9B" wsp:rsidRDefault="00035D9B" wsp:rsidP="00F40B5F">
+<w:r>
+<w:continuationSeparator/>
+</w:r>
+</w:p>
+</w:endnote>
+</w:endnotePr>
+<w:compat>
+<w:spaceForUL/>
+<w:balanceSingleByteDoubleByteWidth/>
+<w:doNotLeaveBackslashAlone/>
+<w:ulTrailSpace/>
+<w:doNotExpandShiftReturn/>
+<w:adjustLineHeightInTable/>
+<w:breakWrappedTables/>
+<w:snapToGridInCell/>
+<w:wrapTextWithPunct/>
+<w:useAsianBreakRules/>
+<w:dontGrowAutofit/>
+<w:useFELayout/>
+</w:compat>
+<wsp:rsids>
+<wsp:rsidRoot wsp:val="0015189D"/>
+<wsp:rsid wsp:val="0001139D"/>
+<wsp:rsid wsp:val="00024275"/>
+<wsp:rsid wsp:val="00025DF4"/>
+<wsp:rsid wsp:val="00027F30"/>
+<wsp:rsid wsp:val="00035D9B"/>
+<wsp:rsid wsp:val="00040B08"/>
+<wsp:rsid wsp:val="00046C7A"/>
+<wsp:rsid wsp:val="00047F9F"/>
+<wsp:rsid wsp:val="0005763F"/>
+<wsp:rsid wsp:val="00074D14"/>
+<wsp:rsid wsp:val="000877AF"/>
+<wsp:rsid wsp:val="0009656F"/>
+<wsp:rsid wsp:val="00097F72"/>
+<wsp:rsid wsp:val="000A26E5"/>
+<wsp:rsid wsp:val="000A4B3F"/>
+<wsp:rsid wsp:val="000A5917"/>
+<wsp:rsid wsp:val="000A598F"/>
+<wsp:rsid wsp:val="000B55E8"/>
+<wsp:rsid wsp:val="000B5DFD"/>
+<wsp:rsid wsp:val="000C398D"/>
+<wsp:rsid wsp:val="000C3CA4"/>
+<wsp:rsid wsp:val="000C73E6"/>
+<wsp:rsid wsp:val="000D258C"/>
+<wsp:rsid wsp:val="000D50C9"/>
+<wsp:rsid wsp:val="000D5C4B"/>
+<wsp:rsid wsp:val="000D7F02"/>
+<wsp:rsid wsp:val="000E2817"/>
+<wsp:rsid wsp:val="000E3464"/>
+<wsp:rsid wsp:val="000F3532"/>
+<wsp:rsid wsp:val="000F3ABF"/>
+<wsp:rsid wsp:val="00102D24"/>
+<wsp:rsid wsp:val="00104100"/>
+<wsp:rsid wsp:val="0010691C"/>
+<wsp:rsid wsp:val="00113806"/>
+<wsp:rsid wsp:val="001274D2"/>
+<wsp:rsid wsp:val="0013794C"/>
+<wsp:rsid wsp:val="00144FA5"/>
+<wsp:rsid wsp:val="00145582"/>
+<wsp:rsid wsp:val="001516E7"/>
+<wsp:rsid wsp:val="0015189D"/>
+<wsp:rsid wsp:val="001555E9"/>
+<wsp:rsid wsp:val="00156006"/>
+<wsp:rsid wsp:val="001573A2"/>
+<wsp:rsid wsp:val="00163036"/>
+<wsp:rsid wsp:val="0017703B"/>
+<wsp:rsid wsp:val="00185A36"/>
+<wsp:rsid wsp:val="0019112E"/>
+<wsp:rsid wsp:val="0019258A"/>
+<wsp:rsid wsp:val="001948CD"/>
+<wsp:rsid wsp:val="001B1A15"/>
+<wsp:rsid wsp:val="001C23CC"/>
+<wsp:rsid wsp:val="001E7CDA"/>
+<wsp:rsid wsp:val="001F357F"/>
+<wsp:rsid wsp:val="001F74C9"/>
+<wsp:rsid wsp:val="0020547D"/>
+<wsp:rsid wsp:val="00224DD4"/>
+<wsp:rsid wsp:val="0023513E"/>
+<wsp:rsid wsp:val="00240A3E"/>
+<wsp:rsid wsp:val="00241F85"/>
+<wsp:rsid wsp:val="002529AB"/>
+<wsp:rsid wsp:val="002556F6"/>
+<wsp:rsid wsp:val="00257E06"/>
+<wsp:rsid wsp:val="00260465"/>
+<wsp:rsid wsp:val="00264ACD"/>
+<wsp:rsid wsp:val="00272206"/>
+<wsp:rsid wsp:val="002722BE"/>
+<wsp:rsid wsp:val="0027247D"/>
+<wsp:rsid wsp:val="002730C4"/>
+<wsp:rsid wsp:val="0027409D"/>
+<wsp:rsid wsp:val="0027669D"/>
+<wsp:rsid wsp:val="00282F41"/>
+<wsp:rsid wsp:val="00293AB8"/>
+<wsp:rsid wsp:val="00296A9B"/>
+<wsp:rsid wsp:val="00296F16"/>
+<wsp:rsid wsp:val="00297201"/>
+<wsp:rsid wsp:val="00297E7E"/>
+<wsp:rsid wsp:val="002A6120"/>
+<wsp:rsid wsp:val="002A7B19"/>
+<wsp:rsid wsp:val="002B048F"/>
+<wsp:rsid wsp:val="002B1691"/>
+<wsp:rsid wsp:val="002B5C60"/>
+<wsp:rsid wsp:val="002C01B0"/>
+<wsp:rsid wsp:val="002C1192"/>
+<wsp:rsid wsp:val="002C58B0"/>
+<wsp:rsid wsp:val="002D2E51"/>
+<wsp:rsid wsp:val="002E5A76"/>
+<wsp:rsid wsp:val="002E672C"/>
+<wsp:rsid wsp:val="002E7FD8"/>
+<wsp:rsid wsp:val="002F0176"/>
+<wsp:rsid wsp:val="002F6682"/>
+<wsp:rsid wsp:val="002F6F9D"/>
+<wsp:rsid wsp:val="003122B5"/>
+<wsp:rsid wsp:val="00320F5F"/>
+<wsp:rsid wsp:val="00343025"/>
+<wsp:rsid wsp:val="0035010C"/>
+<wsp:rsid wsp:val="003570BE"/>
+<wsp:rsid wsp:val="00363707"/>
+<wsp:rsid wsp:val="00367CA0"/>
+<wsp:rsid wsp:val="00380F73"/>
+<wsp:rsid wsp:val="00385D0F"/>
+<wsp:rsid wsp:val="003E2DCA"/>
+<wsp:rsid wsp:val="003E548B"/>
+<wsp:rsid wsp:val="003F0A4E"/>
+<wsp:rsid wsp:val="0040792A"/>
+<wsp:rsid wsp:val="00416A5C"/>
+<wsp:rsid wsp:val="0042731E"/>
+<wsp:rsid wsp:val="00462B9F"/>
+<wsp:rsid wsp:val="004644C3"/>
+<wsp:rsid wsp:val="0046609B"/>
+<wsp:rsid wsp:val="00470506"/>
+<wsp:rsid wsp:val="00471A53"/>
+<wsp:rsid wsp:val="004821E0"/>
+<wsp:rsid wsp:val="0048442A"/>
+<wsp:rsid wsp:val="00490BEA"/>
+<wsp:rsid wsp:val="004917FC"/>
+<wsp:rsid wsp:val="004932CF"/>
+<wsp:rsid wsp:val="004A05E5"/>
+<wsp:rsid wsp:val="004A2D36"/>
+<wsp:rsid wsp:val="004A3F46"/>
+<wsp:rsid wsp:val="004A7953"/>
+<wsp:rsid wsp:val="004B54CF"/>
+<wsp:rsid wsp:val="004B657C"/>
+<wsp:rsid wsp:val="004B6853"/>
+<wsp:rsid wsp:val="004D678F"/>
+<wsp:rsid wsp:val="004E2AE4"/>
+<wsp:rsid wsp:val="004F484E"/>
+<wsp:rsid wsp:val="005039FC"/>
+<wsp:rsid wsp:val="005160FC"/>
+<wsp:rsid wsp:val="00522AB7"/>
+<wsp:rsid wsp:val="00524511"/>
+<wsp:rsid wsp:val="0052725E"/>
+<wsp:rsid wsp:val="0053296D"/>
+<wsp:rsid wsp:val="0054275F"/>
+<wsp:rsid wsp:val="005454FD"/>
+<wsp:rsid wsp:val="0055629E"/>
+<wsp:rsid wsp:val="005563D3"/>
+<wsp:rsid wsp:val="00567877"/>
+<wsp:rsid wsp:val="005700EA"/>
+<wsp:rsid wsp:val="00574D0C"/>
+<wsp:rsid wsp:val="005750C7"/>
+<wsp:rsid wsp:val="00582721"/>
+<wsp:rsid wsp:val="00584ACD"/>
+<wsp:rsid wsp:val="005854B9"/>
+<wsp:rsid wsp:val="005A2BCC"/>
+<wsp:rsid wsp:val="005D469A"/>
+<wsp:rsid wsp:val="005E51C9"/>
+<wsp:rsid wsp:val="005E5767"/>
+<wsp:rsid wsp:val="005F69DA"/>
+<wsp:rsid wsp:val="005F7049"/>
+<wsp:rsid wsp:val="00602D3B"/>
+<wsp:rsid wsp:val="0061006D"/>
+<wsp:rsid wsp:val="00611065"/>
+<wsp:rsid wsp:val="00611DF7"/>
+<wsp:rsid wsp:val="00620404"/>
+<wsp:rsid wsp:val="006231F7"/>
+<wsp:rsid wsp:val="00641F42"/>
+<wsp:rsid wsp:val="00643748"/>
+<wsp:rsid wsp:val="006735AA"/>
+<wsp:rsid wsp:val="00675336"/>
+<wsp:rsid wsp:val="006767A2"/>
+<wsp:rsid wsp:val="0068129A"/>
+<wsp:rsid wsp:val="00682125"/>
+<wsp:rsid wsp:val="006B1D6F"/>
+<wsp:rsid wsp:val="006B7CF7"/>
+<wsp:rsid wsp:val="006C52CE"/>
+<wsp:rsid wsp:val="006C6517"/>
+<wsp:rsid wsp:val="006C73CF"/>
+<wsp:rsid wsp:val="006D3F71"/>
+<wsp:rsid wsp:val="006E2BF1"/>
+<wsp:rsid wsp:val="007071D8"/>
+<wsp:rsid wsp:val="00744BF2"/>
+<wsp:rsid wsp:val="00744DF2"/>
+<wsp:rsid wsp:val="00746F18"/>
+<wsp:rsid wsp:val="0074774F"/>
+<wsp:rsid wsp:val="00752548"/>
+<wsp:rsid wsp:val="00752F9C"/>
+<wsp:rsid wsp:val="007553DA"/>
+<wsp:rsid wsp:val="00756CE0"/>
+<wsp:rsid wsp:val="00764C90"/>
+<wsp:rsid wsp:val="007658A3"/>
+<wsp:rsid wsp:val="00770A4C"/>
+<wsp:rsid wsp:val="00777923"/>
+<wsp:rsid wsp:val="00777A01"/>
+<wsp:rsid wsp:val="00791F5F"/>
+<wsp:rsid wsp:val="007A0AD1"/>
+<wsp:rsid wsp:val="007B7FED"/>
+<wsp:rsid wsp:val="007D1B5B"/>
+<wsp:rsid wsp:val="007E493F"/>
+<wsp:rsid wsp:val="007F3D7D"/>
+<wsp:rsid wsp:val="00801378"/>
+<wsp:rsid wsp:val="008138D6"/>
+<wsp:rsid wsp:val="008148F7"/>
+<wsp:rsid wsp:val="008175F5"/>
+<wsp:rsid wsp:val="008222CF"/>
+<wsp:rsid wsp:val="00831093"/>
+<wsp:rsid wsp:val="00832EB6"/>
+<wsp:rsid wsp:val="00833A04"/>
+<wsp:rsid wsp:val="00842FE1"/>
+<wsp:rsid wsp:val="00847CB0"/>
+<wsp:rsid wsp:val="00852556"/>
+<wsp:rsid wsp:val="00856B8F"/>
+<wsp:rsid wsp:val="00861707"/>
+<wsp:rsid wsp:val="00863619"/>
+<wsp:rsid wsp:val="00863C7B"/>
+<wsp:rsid wsp:val="00866336"/>
+<wsp:rsid wsp:val="00872998"/>
+<wsp:rsid wsp:val="00876EFB"/>
+<wsp:rsid wsp:val="00891D18"/>
+<wsp:rsid wsp:val="008936BD"/>
+<wsp:rsid wsp:val="008977DB"/>
+<wsp:rsid wsp:val="008A0128"/>
+<wsp:rsid wsp:val="008B0F96"/>
+<wsp:rsid wsp:val="008B6165"/>
+<wsp:rsid wsp:val="008C390F"/>
+<wsp:rsid wsp:val="008D07F1"/>
+<wsp:rsid wsp:val="008D127B"/>
+<wsp:rsid wsp:val="008D4B5D"/>
+<wsp:rsid wsp:val="008E5630"/>
+<wsp:rsid wsp:val="008F2F78"/>
+<wsp:rsid wsp:val="008F3E85"/>
+<wsp:rsid wsp:val="008F3F67"/>
+<wsp:rsid wsp:val="00900632"/>
+<wsp:rsid wsp:val="00904584"/>
+<wsp:rsid wsp:val="00905051"/>
+<wsp:rsid wsp:val="009071AF"/>
+<wsp:rsid wsp:val="00910B3D"/>
+<wsp:rsid wsp:val="009114B4"/>
+<wsp:rsid wsp:val="0091243E"/>
+<wsp:rsid wsp:val="00926202"/>
+<wsp:rsid wsp:val="00926D80"/>
+<wsp:rsid wsp:val="00946457"/>
+<wsp:rsid wsp:val="009550D3"/>
+<wsp:rsid wsp:val="00957907"/>
+<wsp:rsid wsp:val="00965A2D"/>
+<wsp:rsid wsp:val="00971D0B"/>
+<wsp:rsid wsp:val="00975066"/>
+<wsp:rsid wsp:val="00984C45"/>
+<wsp:rsid wsp:val="00985720"/>
+<wsp:rsid wsp:val="009919CD"/>
+<wsp:rsid wsp:val="009B4217"/>
+<wsp:rsid wsp:val="009C14A3"/>
+<wsp:rsid wsp:val="009D2ECD"/>
+<wsp:rsid wsp:val="009D342D"/>
+<wsp:rsid wsp:val="009D5C18"/>
+<wsp:rsid wsp:val="009D5F96"/>
+<wsp:rsid wsp:val="009F0791"/>
+<wsp:rsid wsp:val="009F640B"/>
+<wsp:rsid wsp:val="00A037B5"/>
+<wsp:rsid wsp:val="00A0442D"/>
+<wsp:rsid wsp:val="00A12358"/>
+<wsp:rsid wsp:val="00A15C17"/>
+<wsp:rsid wsp:val="00A23287"/>
+<wsp:rsid wsp:val="00A23FFD"/>
+<wsp:rsid wsp:val="00A24E04"/>
+<wsp:rsid wsp:val="00A30F38"/>
+<wsp:rsid wsp:val="00A34212"/>
+<wsp:rsid wsp:val="00A34906"/>
+<wsp:rsid wsp:val="00A4277B"/>
+<wsp:rsid wsp:val="00A42967"/>
+<wsp:rsid wsp:val="00A6481A"/>
+<wsp:rsid wsp:val="00A83461"/>
+<wsp:rsid wsp:val="00A86C37"/>
+<wsp:rsid wsp:val="00A91003"/>
+<wsp:rsid wsp:val="00A9244F"/>
+<wsp:rsid wsp:val="00A9390F"/>
+<wsp:rsid wsp:val="00A93A7F"/>
+<wsp:rsid wsp:val="00AA0A08"/>
+<wsp:rsid wsp:val="00AA2091"/>
+<wsp:rsid wsp:val="00AA2796"/>
+<wsp:rsid wsp:val="00AC180F"/>
+<wsp:rsid wsp:val="00AC3A4D"/>
+<wsp:rsid wsp:val="00AC4190"/>
+<wsp:rsid wsp:val="00AC4C63"/>
+<wsp:rsid wsp:val="00AD5C58"/>
+<wsp:rsid wsp:val="00AD7D8C"/>
+<wsp:rsid wsp:val="00AE32DE"/>
+<wsp:rsid wsp:val="00AE54F7"/>
+<wsp:rsid wsp:val="00AE7C18"/>
+<wsp:rsid wsp:val="00AF14BD"/>
+<wsp:rsid wsp:val="00B001B8"/>
+<wsp:rsid wsp:val="00B04C6D"/>
+<wsp:rsid wsp:val="00B067B8"/>
+<wsp:rsid wsp:val="00B06C41"/>
+<wsp:rsid wsp:val="00B07580"/>
+<wsp:rsid wsp:val="00B12C07"/>
+<wsp:rsid wsp:val="00B17F8B"/>
+<wsp:rsid wsp:val="00B33378"/>
+<wsp:rsid wsp:val="00B35109"/>
+<wsp:rsid wsp:val="00B404C1"/>
+<wsp:rsid wsp:val="00B44A6B"/>
+<wsp:rsid wsp:val="00B45E3B"/>
+<wsp:rsid wsp:val="00B46AC4"/>
+<wsp:rsid wsp:val="00B51FC9"/>
+<wsp:rsid wsp:val="00B52179"/>
+<wsp:rsid wsp:val="00B5662C"/>
+<wsp:rsid wsp:val="00B66C48"/>
+<wsp:rsid wsp:val="00B70460"/>
+<wsp:rsid wsp:val="00B73A09"/>
+<wsp:rsid wsp:val="00B73DA1"/>
+<wsp:rsid wsp:val="00B74269"/>
+<wsp:rsid wsp:val="00B74E3F"/>
+<wsp:rsid wsp:val="00B75D7D"/>
+<wsp:rsid wsp:val="00B94EFE"/>
+<wsp:rsid wsp:val="00B976D5"/>
+<wsp:rsid wsp:val="00B97789"/>
+<wsp:rsid wsp:val="00BA14F5"/>
+<wsp:rsid wsp:val="00BA509B"/>
+<wsp:rsid wsp:val="00BC23EC"/>
+<wsp:rsid wsp:val="00BC2740"/>
+<wsp:rsid wsp:val="00BD11DF"/>
+<wsp:rsid wsp:val="00BE337E"/>
+<wsp:rsid wsp:val="00BE5FD0"/>
+<wsp:rsid wsp:val="00BE6DB5"/>
+<wsp:rsid wsp:val="00BF0BC8"/>
+<wsp:rsid wsp:val="00BF0FA7"/>
+<wsp:rsid wsp:val="00BF341A"/>
+<wsp:rsid wsp:val="00BF6150"/>
+<wsp:rsid wsp:val="00C02CE3"/>
+<wsp:rsid wsp:val="00C033DF"/>
+<wsp:rsid wsp:val="00C060A4"/>
+<wsp:rsid wsp:val="00C07D78"/>
+<wsp:rsid wsp:val="00C10977"/>
+<wsp:rsid wsp:val="00C17C60"/>
+<wsp:rsid wsp:val="00C203D1"/>
+<wsp:rsid wsp:val="00C207A4"/>
+<wsp:rsid wsp:val="00C3086F"/>
+<wsp:rsid wsp:val="00C3101B"/>
+<wsp:rsid wsp:val="00C31608"/>
+<wsp:rsid wsp:val="00C32375"/>
+<wsp:rsid wsp:val="00C37A98"/>
+<wsp:rsid wsp:val="00C41D7B"/>
+<wsp:rsid wsp:val="00C45705"/>
+<wsp:rsid wsp:val="00C52BA5"/>
+<wsp:rsid wsp:val="00C603EE"/>
+<wsp:rsid wsp:val="00C67287"/>
+<wsp:rsid wsp:val="00C675EA"/>
+<wsp:rsid wsp:val="00C82673"/>
+<wsp:rsid wsp:val="00C84CC1"/>
+<wsp:rsid wsp:val="00C926A1"/>
+<wsp:rsid wsp:val="00C94B5A"/>
+<wsp:rsid wsp:val="00CA5730"/>
+<wsp:rsid wsp:val="00CA68E0"/>
+<wsp:rsid wsp:val="00CA77F4"/>
+<wsp:rsid wsp:val="00CB02F3"/>
+<wsp:rsid wsp:val="00CB042B"/>
+<wsp:rsid wsp:val="00CB1CAB"/>
+<wsp:rsid wsp:val="00CB6991"/>
+<wsp:rsid wsp:val="00CC2909"/>
+<wsp:rsid wsp:val="00CC37FF"/>
+<wsp:rsid wsp:val="00CD294B"/>
+<wsp:rsid wsp:val="00CE50E8"/>
+<wsp:rsid wsp:val="00CE5DC5"/>
+<wsp:rsid wsp:val="00CF3CE5"/>
+<wsp:rsid wsp:val="00CF5B0F"/>
+<wsp:rsid wsp:val="00CF6910"/>
+<wsp:rsid wsp:val="00D04B32"/>
+<wsp:rsid wsp:val="00D21064"/>
+<wsp:rsid wsp:val="00D26206"/>
+<wsp:rsid wsp:val="00D2738A"/>
+<wsp:rsid wsp:val="00D33F21"/>
+<wsp:rsid wsp:val="00D454ED"/>
+<wsp:rsid wsp:val="00D517A6"/>
+<wsp:rsid wsp:val="00D62BF5"/>
+<wsp:rsid wsp:val="00D6411C"/>
+<wsp:rsid wsp:val="00D65091"/>
+<wsp:rsid wsp:val="00D656EF"/>
+<wsp:rsid wsp:val="00D705CD"/>
+<wsp:rsid wsp:val="00D74026"/>
+<wsp:rsid wsp:val="00D7486A"/>
+<wsp:rsid wsp:val="00D76712"/>
+<wsp:rsid wsp:val="00D81BBF"/>
+<wsp:rsid wsp:val="00D835D1"/>
+<wsp:rsid wsp:val="00D83B2D"/>
+<wsp:rsid wsp:val="00D90A1B"/>
+<wsp:rsid wsp:val="00D90ED7"/>
+<wsp:rsid wsp:val="00D92DA1"/>
+<wsp:rsid wsp:val="00DA2EA4"/>
+<wsp:rsid wsp:val="00DB2920"/>
+<wsp:rsid wsp:val="00DB4219"/>
+<wsp:rsid wsp:val="00DC393F"/>
+<wsp:rsid wsp:val="00DC5800"/>
+<wsp:rsid wsp:val="00DD7EF0"/>
+<wsp:rsid wsp:val="00DE2D81"/>
+<wsp:rsid wsp:val="00DE47F9"/>
+<wsp:rsid wsp:val="00DF3FDA"/>
+<wsp:rsid wsp:val="00DF52F2"/>
+<wsp:rsid wsp:val="00DF60F1"/>
+<wsp:rsid wsp:val="00E00D00"/>
+<wsp:rsid wsp:val="00E1366E"/>
+<wsp:rsid wsp:val="00E20BBD"/>
+<wsp:rsid wsp:val="00E317C7"/>
+<wsp:rsid wsp:val="00E35E9E"/>
+<wsp:rsid wsp:val="00E41DC0"/>
+<wsp:rsid wsp:val="00E4211E"/>
+<wsp:rsid wsp:val="00E605D9"/>
+<wsp:rsid wsp:val="00E60A8D"/>
+<wsp:rsid wsp:val="00E636B2"/>
+<wsp:rsid wsp:val="00E73DD5"/>
+<wsp:rsid wsp:val="00E75F44"/>
+<wsp:rsid wsp:val="00E8374D"/>
+<wsp:rsid wsp:val="00EA00D7"/>
+<wsp:rsid wsp:val="00EA10AA"/>
+<wsp:rsid wsp:val="00EB2044"/>
+<wsp:rsid wsp:val="00EB2E50"/>
+<wsp:rsid wsp:val="00EB4787"/>
+<wsp:rsid wsp:val="00EC188F"/>
+<wsp:rsid wsp:val="00EE0303"/>
+<wsp:rsid wsp:val="00EE1C57"/>
+<wsp:rsid wsp:val="00EE3207"/>
+<wsp:rsid wsp:val="00EE57B1"/>
+<wsp:rsid wsp:val="00EF4357"/>
+<wsp:rsid wsp:val="00F03360"/>
+<wsp:rsid wsp:val="00F15DCB"/>
+<wsp:rsid wsp:val="00F17C6A"/>
+<wsp:rsid wsp:val="00F2081A"/>
+<wsp:rsid wsp:val="00F24FE2"/>
+<wsp:rsid wsp:val="00F270D4"/>
+<wsp:rsid wsp:val="00F31BC4"/>
+<wsp:rsid wsp:val="00F31EA4"/>
+<wsp:rsid wsp:val="00F40B5F"/>
+<wsp:rsid wsp:val="00F419B6"/>
+<wsp:rsid wsp:val="00F46CF2"/>
+<wsp:rsid wsp:val="00F55779"/>
+<wsp:rsid wsp:val="00F5646F"/>
+<wsp:rsid wsp:val="00F61F5E"/>
+<wsp:rsid wsp:val="00F62757"/>
+<wsp:rsid wsp:val="00F86BB5"/>
+<wsp:rsid wsp:val="00F914A2"/>
+<wsp:rsid wsp:val="00F928CC"/>
+<wsp:rsid wsp:val="00FA1226"/>
+<wsp:rsid wsp:val="00FB24F5"/>
+<wsp:rsid wsp:val="00FB73B2"/>
+<wsp:rsid wsp:val="00FC2880"/>
+<wsp:rsid wsp:val="00FC7BFE"/>
+<wsp:rsid wsp:val="00FD4FA2"/>
+<wsp:rsid wsp:val="00FE0A52"/>
+<wsp:rsid wsp:val="00FE0C36"/>
+<wsp:rsid wsp:val="00FF1BAB"/>
+<wsp:rsid wsp:val="00FF2FDD"/>
+<wsp:rsid wsp:val="00FF6E03"/>
+<wsp:rsid wsp:val="5A522ABE"/>
+</wsp:rsids>
+</w:docPr>
+<w:body>
+<wx:sect>
+<wx:sub-section>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00611DF7" wsp:rsidP="00611DF7">
+<w:pPr>
+<w:pStyle w:val="1"/>
+<w:adjustRightInd w:val="off"/>
+<w:snapToGrid w:val="off"/>
+<w:spacing w:line="600" w:line-rule="exact"/>
+<w:ind w:first-line-chars="0" w:first-line="0"/>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="黑体" w:cs="黑体"/>
+<wx:font wx:val="黑体"/>
+<w:b w:val="off"/>
+<w:b-cs/>
+<w:sz-cs w:val="32"/>
+</w:rPr>
+</w:pPr>
+<aml:annotation aml:id="0" w:type="Word.Bookmark.Start" w:name="_Toc524977110"/>
+<aml:annotation aml:id="1" w:type="Word.Bookmark.Start" w:name="_Toc528164066"/>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="黑体" w:cs="黑体" w:hint="fareast"/>
+<wx:font wx:val="黑体"/>
+<w:b w:val="off"/>
+<w:b-cs/>
+<w:sz-cs w:val="32"/>
+</w:rPr>
+<w:t>附件1 汽车维修企业污染源信息调查表</w:t>
+</w:r>
+<aml:annotation aml:id="0" w:type="Word.Bookmark.End"/>
+<aml:annotation aml:id="1" w:type="Word.Bookmark.End"/>
+</w:p>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="005D469A" wsp:rsidP="005D469A">
+<w:pPr>
+<w:jc w:val="right"/>
+</w:pPr>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="黑体" w:cs="黑体" w:hint="fareast"/>
+<wx:font wx:val="黑体"/>
+<w:b/>
+<w:b-cs/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>表号： F101表</w:t>
+</w:r>
+</w:p>
+<w:tbl>
+<w:tblPr>
+<w:tblW w:w="0" w:type="auto"/>
+<w:jc w:val="center"/>
+<w:tblBorders>
+<w:top w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+<w:left w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+<w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+<w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+<w:insideH w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+<w:insideV w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+</w:tblBorders>
+<w:tblLook w:val="04A0"/>
+</w:tblPr>
+<w:tblGrid>
+<w:gridCol w:w="483"/>
+<w:gridCol w:w="192"/>
+<w:gridCol w:w="541"/>
+<w:gridCol w:w="350"/>
+<w:gridCol w:w="1190"/>
+<w:gridCol w:w="163"/>
+<w:gridCol w:w="2149"/>
+<w:gridCol w:w="147"/>
+<w:gridCol w:w="58"/>
+<w:gridCol w:w="2107"/>
+<w:gridCol w:w="218"/>
+<w:gridCol w:w="527"/>
+<w:gridCol w:w="1837"/>
+</w:tblGrid>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="004A3F46">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="685"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2348" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:widowControl/>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>统一社会信用代码</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="7258" w:type="dxa"/>
+<w:gridSpan w:val="10"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="002F6682" wsp:rsidRPr="002F6682" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:widowControl/>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:jc w:val="left"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['uniform_credit_code']|s}}</w:t>
+</w:r>
+</w:p>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00611DF7" wsp:rsidP="002F6682">
+<w:pPr>
+<w:widowControl/>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:jc w:val="left"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>尚未领取统一社会信用代码的填写原组织机构代码号：</w:t>
+</w:r>
+<w:r wsp:rsidR="002F6682" wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['origin_org_code']|s}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="004A3F46">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="567"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2348" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:widowControl/>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>单位详细名称</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>及曾用名</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="7258" w:type="dxa"/>
+<w:gridSpan w:val="10"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:widowControl/>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:jc w:val="left"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>单位详细名称：</w:t>
+</w:r>
+<w:r wsp:rsidR="002F6682" wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['ent_name']|s}}</w:t>
+</w:r>
+</w:p>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00611DF7" wsp:rsidP="002F6682">
+<w:pPr>
+<w:widowControl/>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:jc w:val="left"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>曾用名：</w:t>
+</w:r>
+<w:r wsp:rsidR="002F6682" wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['ent_former_name']|s}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="004A3F46">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="986"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2348" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:vmerge w:val="restart"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:widowControl/>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>单位所在地及区划</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="7258" w:type="dxa"/>
+<w:gridSpan w:val="10"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00363707" wsp:rsidP="00363707">
+<w:pPr>
+<w:widowControl/>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:jc w:val="left"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t> </w:t>
+</w:r>
+<w:r wsp:rsidR="002F6682" wsp:rsidRPr="00363707">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t>{{item['province']|s(6)}}</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00363707">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t> </w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>省(自治区、直辖市)</w:t>
+</w:r>
+<w:r>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t> </w:t>
+</w:r>
+<w:r wsp:rsidRPr="00363707">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t>{{item['city']|s(6)}}</w:t>
+</w:r>
+<w:r>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t> </w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>地(区、市、州、盟)</w:t>
+</w:r>
+</w:p>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00363707" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:widowControl/>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:jc w:val="left"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t> </w:t>
+</w:r>
+<w:r wsp:rsidRPr="00363707">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t>{{item['district']|s(6)}}</w:t>
+</w:r>
+<w:r>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t> </w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>县(区、市、旗)</w:t>
+</w:r>
+<w:r>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t> </w:t>
+</w:r>
+<w:r wsp:rsidRPr="00363707">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t>{{item['town']|s(6)}}</w:t>
+</w:r>
+<w:r>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t> </w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>乡(镇)</w:t>
+</w:r>
+</w:p>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00363707" wsp:rsidP="00363707">
+<w:pPr>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:jc w:val="left"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t> </w:t>
+</w:r>
+<w:r wsp:rsidRPr="00363707">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t>{{item['address']|s(10)}}</w:t>
+</w:r>
+<w:r>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t> </w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>街(村)、门牌号</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="004A3F46">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2348" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:vmerge/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:widowControl/>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="7258" w:type="dxa"/>
+<w:gridSpan w:val="10"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00611DF7" wsp:rsidP="002F6682">
+<w:pPr>
+<w:widowControl/>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:jc w:val="left"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>区划代码 </w:t>
+</w:r>
+<w:r wsp:rsidR="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['region_code']|s}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="004A3F46">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2348" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:widowControl/>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>企业地理坐标</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="7258" w:type="dxa"/>
+<w:gridSpan w:val="10"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00611DF7" wsp:rsidP="002F6682">
+<w:pPr>
+<w:widowControl/>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:jc w:val="left"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>经度：</w:t>
+</w:r>
+<w:r wsp:rsidR="00363707" wsp:rsidRPr="00363707">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t> {{item['lon_d']|num(0)}} </w:t>
+</w:r>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>度</w:t>
+</w:r>
+<w:r wsp:rsidR="00363707" wsp:rsidRPr="00363707">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t> {{item['lon_m']|num(0)}} </w:t>
+</w:r>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>分</w:t>
+</w:r>
+<w:r wsp:rsidR="00363707" wsp:rsidRPr="00363707">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t> {{item['lon_s']|num}} </w:t>
+</w:r>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>秒   纬度：</w:t>
+</w:r>
+<w:r wsp:rsidR="00363707" wsp:rsidRPr="00363707">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t> {{item['lat_d']|num(0)}} </w:t>
+</w:r>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>度</w:t>
+</w:r>
+<w:r wsp:rsidR="00363707" wsp:rsidRPr="00363707">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t> {{item['lat_m']|num(0)}} </w:t>
+</w:r>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>分</w:t>
+</w:r>
+<w:r wsp:rsidR="00363707" wsp:rsidRPr="00363707">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+<w:u w:val="single"/>
+</w:rPr>
+<w:t> {{item['lat_s']|num}} </w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="004A3F46">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2348" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:widowControl/>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>法定代表人（单位负责人）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="7258" w:type="dxa"/>
+<w:gridSpan w:val="10"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:widowControl/>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:jc w:val="left"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['legal_person']|s}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="004A3F46">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2348" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:widowControl/>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>开业（成立）时间</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="7258" w:type="dxa"/>
+<w:gridSpan w:val="10"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:widowControl/>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['open_date']|s}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="004A3F46">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2348" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:widowControl/>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>联系方式</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="7258" w:type="dxa"/>
+<w:gridSpan w:val="10"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00611DF7" wsp:rsidP="002F6682">
+<w:pPr>
+<w:spacing w:line="280" w:line-rule="exact"/>
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>联系人：</w:t>
+</w:r>
+<w:r wsp:rsidR="002F6682" wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['ent_contact']|s}}</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t> 电话号码： </w:t>
+</w:r>
+<w:r wsp:rsidR="002F6682" wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['ent_phone']|s}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="00B35109">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2348" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>是</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>/</w:t>
+</w:r>
+<w:proofErr w:type="gramStart"/>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>否正常</w:t>
+</w:r>
+<w:proofErr w:type="gramEnd"/>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>运营</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1736" w:type="dxa"/>
+<w:gridSpan w:val="4"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['run_normally']|s}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2367" w:type="dxa"/>
+<w:gridSpan w:val="4"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>汽修企业类型</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3155" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['ent_type']|s}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="00B35109">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2348" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>年营业额（万元）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1736" w:type="dxa"/>
+<w:gridSpan w:val="4"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['annual_turnover']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2367" w:type="dxa"/>
+<w:gridSpan w:val="4"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>经营面积（</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>m2</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3155" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['building_area']}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="00B35109">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2348" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>洗车车位数（</w:t>
+</w:r>
+<w:proofErr w:type="gramStart"/>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>个</w:t>
+</w:r>
+<w:proofErr w:type="gramEnd"/>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1736" w:type="dxa"/>
+<w:gridSpan w:val="4"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['car_num']|num(0)}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2367" w:type="dxa"/>
+<w:gridSpan w:val="4"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>烤漆房数量（</w:t>
+</w:r>
+<w:proofErr w:type="gramStart"/>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>个</w:t>
+</w:r>
+<w:proofErr w:type="gramEnd"/>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3155" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['house_num']|num(0)}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidTr="004A3F46">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="9606" w:type="dxa"/>
+<w:gridSpan w:val="13"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>挥发性原辅料使用情况</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="0046609B">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1824" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="000D5C4B" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="000D5C4B" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>油性漆用量（吨）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1132" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="000D5C4B" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['oil_paint_used']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1485" w:type="dxa"/>
+<w:gridSpan w:val="4"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="000D5C4B" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="000D5C4B" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>水性漆用量</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>（吨）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1486" w:type="dxa"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="000D5C4B" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['water_paint_used']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1697" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="000D5C4B" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="000D5C4B" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>天那水用量（吨）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1982" w:type="dxa"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="000D5C4B" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['thinner_used']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidTr="004A3F46">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="9606" w:type="dxa"/>
+<w:gridSpan w:val="13"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>废水情况</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="00C17C60">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3049" w:type="dxa"/>
+<w:gridSpan w:val="6"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>年用水量</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>(m3)</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="6557" w:type="dxa"/>
+<w:gridSpan w:val="7"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['water_used']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="00B35109">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3049" w:type="dxa"/>
+<w:gridSpan w:val="6"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>是</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>/</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>否设有隔油、沉淀设施</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1213" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['oil_device']|s}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2189" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>年废水排放量</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>(m3)</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3155" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['water_waster_emit']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="00B35109">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1101" w:type="dxa"/>
+<w:vmerge w:val="restart"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>废水排放浓度</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1948" w:type="dxa"/>
+<w:gridSpan w:val="5"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="009D342D" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>化学需氧量</w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>（</w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>mg/m3</w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1213" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['water_cod']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2189" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="009D342D" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>石油类</w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>（</w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>mg/m3</w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3155" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['water_oil']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="00B35109">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1101" w:type="dxa"/>
+<w:vmerge/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1948" w:type="dxa"/>
+<w:gridSpan w:val="5"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="009D342D" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>氨氮</w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>（</w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>mg/m3</w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1213" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['water_nh4']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2189" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="009D342D" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>总磷</w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>（</w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>mg/m3</w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3155" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['water_tp']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="00C17C60">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3049" w:type="dxa"/>
+<w:gridSpan w:val="6"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>是否安装在线监测</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="6557" w:type="dxa"/>
+<w:gridSpan w:val="7"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidTr="004A3F46">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="9606" w:type="dxa"/>
+<w:gridSpan w:val="13"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>废气情况</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="00B35109">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="337"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3049" w:type="dxa"/>
+<w:gridSpan w:val="6"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>有机废气处理工艺名称</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1213" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['gas_process_name']|s}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2189" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="000D5C4B" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>有机废气排放风</w:t>
+</w:r>
+<w:r wsp:rsidR="00B35109" wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>量</w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>(m3/h)</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3155" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['gas_emission_volume']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="00B35109">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3049" w:type="dxa"/>
+<w:gridSpan w:val="6"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00DB2920" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>有</w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>机废气排放设施年运行时间</w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>(</w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>小时</w:t>
+</w:r>
+<w:r wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>)</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1213" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['device_runtime']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2189" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3155" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="00B35109">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1101" w:type="dxa"/>
+<w:vmerge w:val="restart"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00C17C60" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00C17C60" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>废气排放浓度</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1948" w:type="dxa"/>
+<w:gridSpan w:val="5"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00C17C60" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00C17C60" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>苯浓度（</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>mg/m3</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1213" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00C17C60" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['benzene']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2189" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00C17C60" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00C17C60" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>甲苯（</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>mg/m3</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3155" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00C17C60" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['methylbenzene']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="00B35109">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1101" w:type="dxa"/>
+<w:vmerge/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00C17C60" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00C17C60" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1948" w:type="dxa"/>
+<w:gridSpan w:val="5"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00C17C60" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00C17C60" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>二甲苯（</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>mg/m3</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1213" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00C17C60" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['dimethylbenzene']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2189" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00C17C60" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00C17C60" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>非甲烷总烃（</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>mg/m3</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3155" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00C17C60" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['not_ch4']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="00B35109">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1101" w:type="dxa"/>
+<w:vmerge/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00C17C60" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00C17C60" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1948" w:type="dxa"/>
+<w:gridSpan w:val="5"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00C17C60" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00C17C60" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>总</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>VOC</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>（</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>mg/m3</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1213" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00C17C60" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['voc_total']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2189" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00C17C60" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00C17C60" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3155" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00C17C60" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00C17C60" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="00C17C60">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3049" w:type="dxa"/>
+<w:gridSpan w:val="6"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>是否安装在线监测</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="6557" w:type="dxa"/>
+<w:gridSpan w:val="7"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="left"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['gas_monitor']|s}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidTr="004A3F46">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="9606" w:type="dxa"/>
+<w:gridSpan w:val="13"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>危险废物情况</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="00B35109">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2471" w:type="dxa"/>
+<w:gridSpan w:val="4"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1791" w:type="dxa"/>
+<w:gridSpan w:val="4"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>名称、类别</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2189" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>年产生量（吨）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3155" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>交持证单位量</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>（吨）</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="00B35109">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2471" w:type="dxa"/>
+<w:gridSpan w:val="4"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>危险废物</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>1</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1791" w:type="dxa"/>
+<w:gridSpan w:val="4"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['waster1_type']|s}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2189" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['waster1_annual']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3155" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['waster1_jcz']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="00B35109">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2471" w:type="dxa"/>
+<w:gridSpan w:val="4"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>危险废物</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>2</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1791" w:type="dxa"/>
+<w:gridSpan w:val="4"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['waster2_type']|s}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2189" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['waster2_annual']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3155" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['waster2_jcz']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr wsp:rsidR="002F6682" wsp:rsidRPr="00CD294B" wsp:rsidTr="00B35109">
+<w:trPr>
+<w:trHeight w:h-rule="exact" w:val="340"/>
+<w:jc w:val="center"/>
+</w:trPr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2471" w:type="dxa"/>
+<w:gridSpan w:val="4"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>危险废物</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00CD294B">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>3</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="1791" w:type="dxa"/>
+<w:gridSpan w:val="4"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['waster3_type']|s}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="2189" w:type="dxa"/>
+<w:gridSpan w:val="3"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['waster3_annual']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:w="3155" w:type="dxa"/>
+<w:gridSpan w:val="2"/>
+<w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+<w:vAlign w:val="center"/>
+</w:tcPr>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="002F6682" wsp:rsidP="002F6682">
+<w:pPr>
+<w:jc w:val="center"/>
+<w:rPr>
+<w:b/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['waster3_jcz']|num}}</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+</w:tbl>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00611DF7" wsp:rsidP="00611DF7">
+<w:pPr>
+<w:adjustRightInd w:val="off"/>
+<w:snapToGrid w:val="off"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>注：汽修类型：</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>4S</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>店、修理店（可洗车）、修理店（</w:t>
+</w:r>
+<w:proofErr w:type="gramStart"/>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>不</w:t>
+</w:r>
+<w:proofErr w:type="gramEnd"/>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>洗车）、洗车店（仅洗车）</w:t>
+</w:r>
+</w:p>
+<w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="00611DF7" wsp:rsidP="00611DF7">
+<w:pPr>
+<w:adjustRightInd w:val="off"/>
+<w:snapToGrid w:val="off"/>
+<w:rPr>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:sectPr wsp:rsidR="00611DF7" wsp:rsidRPr="00B73DA1" wsp:rsidSect="004A3F46">
+<w:ftr w:type="odd">
+<w:p wsp:rsidR="0046609B" wsp:rsidRDefault="00B04C6D">
+<w:pPr>
+<w:pStyle w:val="a3"/>
+<w:jc w:val="center"/>
+</w:pPr>
+<w:r>
+<w:fldChar w:fldCharType="begin"/>
+</w:r>
+<w:r wsp:rsidR="007071D8">
+<w:instrText>PAGE \* MERGEFORMAT</w:instrText>
+</w:r>
+<w:r>
+<w:fldChar w:fldCharType="separate"/>
+</w:r>
+<w:r wsp:rsidR="00363707" wsp:rsidRPr="00363707">
+<w:rPr>
+<w:noProof/>
+<w:lang w:val="ZH-CN"/>
+</w:rPr>
+<w:t>-</w:t>
+</w:r>
+<w:r wsp:rsidR="00363707">
+<w:rPr>
+<w:noProof/>
+</w:rPr>
+<w:t> 1 -</w:t>
+</w:r>
+<w:r>
+<w:rPr>
+<w:noProof/>
+</w:rPr>
+<w:fldChar w:fldCharType="end"/>
+</w:r>
+</w:p>
+<w:p wsp:rsidR="0046609B" wsp:rsidRDefault="0046609B">
+<w:pPr>
+<w:pStyle w:val="a3"/>
+<w:ind w:right="360" w:first-line="360"/>
+</w:pPr>
+</w:p>
+</w:ftr>
+<w:pgSz w:w="11906" w:h="16838"/>
+<w:pgMar w:top="1440" w:right="1080" w:bottom="1440" w:left="1080" w:header="851" w:footer="992" w:gutter="0"/>
+<w:pgNumType w:fmt="number-in-dash"/>
+<w:cols w:space="720"/>
+<w:docGrid w:type="lines-and-chars" w:line-pitch="312"/>
+</w:sectPr>
+</w:pPr>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>企业联系人：</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t> </w:t>
+</w:r>
+<w:r wsp:rsidR="002F6682" wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['contact']|s}}</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t> </w:t>
+</w:r>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>         调查人：</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t> </w:t>
+</w:r>
+<w:r wsp:rsidR="002F6682" wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['survey_person']|s}}</w:t>
+</w:r>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t> </w:t>
+</w:r>
+<w:r wsp:rsidRPr="00B73DA1">
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>日期：</w:t>
+</w:r>
+<w:r wsp:rsidR="002F6682" wsp:rsidRPr="002F6682">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['survey_date']|date}}</w:t>
+</w:r>
+</w:p>
+</wx:sub-section>
+</wx:sect>
+<wx:sect>
+<wx:sub-section>
+<w:p wsp:rsidR="000E3464" wsp:rsidRPr="00B73DA1" wsp:rsidRDefault="000E3464" wsp:rsidP="00770A4C">
+<w:pPr>
+<w:pStyle w:val="1"/>
+<w:adjustRightInd w:val="off"/>
+<w:snapToGrid w:val="off"/>
+<w:spacing w:line="600" w:line-rule="exact"/>
+<w:ind w:first-line-chars="0" w:first-line="0"/>
+<w:jc w:val="center"/>
+</w:pPr>
+</w:p>
+</wx:sub-section>
+<w:sectPr wsp:rsidR="000E3464" wsp:rsidRPr="00B73DA1" wsp:rsidSect="004A3F46">
+<w:pgSz w:w="11906" w:h="16838"/>
+<w:pgMar w:top="1440" w:right="1080" w:bottom="1440" w:left="1080" w:header="851" w:footer="992" w:gutter="0"/>
+<w:pgNumType w:fmt="number-in-dash"/>
+<w:cols w:space="720"/>
+<w:docGrid w:type="lines-and-chars" w:line-pitch="312"/>
+</w:sectPr>
+</wx:sect>
+</w:body>
+</w:wordDocument>

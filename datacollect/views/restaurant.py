@@ -123,3 +123,9 @@ def stat_export():
     file_name += town
     return make_response_from_array(array, "xlsx", sheet_name="Sheet1", file_name="{0}.xlsx".format(file_name))
 
+
+@bp.route('/delete_all', methods=('POST',))
+@login_required
+def delete_all_data():
+    result = restaurant.delete_all(get_db())
+    return jsonify(result.to_json())

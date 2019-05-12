@@ -1,7 +1,7 @@
 # coding: utf-8
 
 
-from datacollect.common import to_type, to_d_m_s
+from datacollect.common import to_type, to_d_m_s, Result
 from datacollect.dao import sqlite3_row_to_dict, RestaurantTable, FUTIAN, get_town_from_address
 
 
@@ -188,8 +188,17 @@ def stat_exp(db, param):
         result = db.execute(sql).fetchall()
 
     rows = [sqlite3_row_to_dict(item) for item in result]
-    array_result = []
-    array_result.append(headers)
+    array_result = [headers]
     for row in rows:
         array_result.append([row[f] for f in fields_en])
     return array_result
+
+
+def delete_all(db):
+    try:
+        sql = "delete from restaurant_survey"
+        db.execute(sql)
+        db.commit()
+        return Result()
+    except Exception as e:
+        return Result(message="删除失败:%s" % e)

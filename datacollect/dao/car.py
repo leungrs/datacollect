@@ -1,7 +1,7 @@
 # coding: utf-8
 
 
-from datacollect.common import to_type, to_d_m_s
+from datacollect.common import to_type, to_d_m_s, Result
 from datacollect.dao import sqlite3_row_to_dict
 
 
@@ -115,3 +115,13 @@ def import_car_from_array(array, db, updated_date, updated_by):
         if not err_msg:
             success_count += 1
     return success_count
+
+
+def delete_all(db):
+    try:
+        sql = "delete from car_survey"
+        db.execute(sql)
+        db.commit()
+        return Result()
+    except Exception as e:
+        return Result(message="删除失败:%s" % e)
