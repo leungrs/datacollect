@@ -3596,13 +3596,23 @@
 </w:tcPr>
 <w:p wsp:rsidR="00611DF7" wsp:rsidRPr="00CD294B" wsp:rsidRDefault="00611DF7" wsp:rsidP="004A3F46">
 <w:pPr>
-<w:jc w:val="center"/>
+<w:jc w:val="left"/>
 <w:rPr>
 <w:b/>
 <w:sz w:val="18"/>
 <w:sz-cs w:val="18"/>
 </w:rPr>
 </w:pPr>
+<w:r wsp:rsidRPr="00611DF7">
+<w:rPr>
+<w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast"/>
+<wx:font wx:val="宋体"/>
+<w:kern w:val="0"/>
+<w:sz w:val="18"/>
+<w:sz-cs w:val="18"/>
+</w:rPr>
+<w:t>{{item['gas_monitor']|s}}</w:t>
+</w:r>
 </w:p>
 </w:tc>
 </w:tr>
@@ -3764,7 +3774,7 @@
 <w:sz w:val="18"/>
 <w:sz-cs w:val="18"/>
 </w:rPr>
-<w:t>{{item['gas_emission_volume']|num}}</w:t>
+<w:t>{{item['gas_emission_vol']|num}}</w:t>
 </w:r>
 </w:p>
 </w:tc>
