@@ -154,14 +154,8 @@
         <div class="form-row">
             <label class="col-sm-2 text-sm-right" for="restaurant_type">餐饮类型</label>
             <div class="col-sm-4">
-                <select name="restaurant_type" id="restaurant_type"
-                        class="custom-select custom-select-sm"  required>
-                    <option value="">请选择...</option>
-                    <option {{'selected' if (item['restaurant_type'] or '中餐') == '中餐'}} value="中餐">中餐</option>
-                    <option {{'selected' if (item['restaurant_type']) == '西餐'}} value="西餐">西餐</option>
-                    <option {{'selected' if (item['restaurant_type']) == '烧烤'}} value="烧烤">烧烤</option>
-                    <option {{'selected' if (item['restaurant_type']) == '其他'}} value="其他">其他</option>
-                </select>
+                <input type="text" name="restaurant_type"   value="{{item['restaurant_type']|s}}"
+                       class="form-control form-control-sm" id="restaurant_type">
             </div>
             <label class="col-sm-2 text-sm-right" for="region_code">炉头数</label>
             <div class="col-sm-4">
@@ -200,13 +194,8 @@
         <div class="form-row">
             <label class="col-sm-2 text-sm-right" for="run_normally">是/否正常运营</label>
             <div class="col-sm-4">
-                <select name="run_normally" id="run_normally"
-                        class="custom-select custom-select-sm" value="{{item['run_normally']|s}}"
-                        required>
-                  <option value="">请选择...</option>
-                  <option {{'selected' if (item['run_normally'] or '是') == '是'}} value="是">是</option>
-                  <option {{'selected' if item['run_normally']  == '否'}} value="否">否</option>
-                </select>
+                <input type="text" name="run_normally"   value="{{item['run_normally']|s}}"
+                       class="form-control form-control-sm" id="run_normally">
             </div>
         </div>
         </fieldset>
@@ -266,19 +255,13 @@
             <div class="form-row">
                 <label class="col-sm-2 text-sm-right" for="oil_device">是否有隔油设施</label>
                 <div class="col-sm-4">
-                    <select class="custom-select custom-select-sm" name="oil_device" id="oil_device" required>
-                      <option value="">请选择...</option>
-                      <option {{'selected' if (item['oil_device'] or '是') == '是'}} value="是">是</option>
-                      <option {{'selected' if item['oil_device']  == '否'}} value="否">否</option>
-                    </select>
+                    <input type="text" name="oil_device"   value="{{item['oil_device']|s}}"
+                       class="form-control form-control-sm" id="oil_device">
                 </div>
                 <label class="col-sm-2 text-sm-right" for="water_monitor">是否安装在线监测</label>
                 <div class="col-sm-4">
-                    <select class="custom-select custom-select-sm" name="water_monitor" id="water_monitor" required>
-                      <option value="">请选择...</option>
-                      <option {{'selected' if (item['water_monitor'] or '是') == '是'}} value="是">是</option>
-                      <option {{'selected' if item['water_monitor']  == '否'}} value="否">否</option>
-                    </select>
+                    <input type="text" name="water_monitor"   value="{{item['water_monitor']|s}}"
+                       class="form-control form-control-sm" id="water_monitor">
                 </div>
             </div>
         </fieldset>
@@ -322,19 +305,13 @@
             <div class="form-row">
                 <label class="col-sm-2 text-sm-right" for="gas_device">是否有油烟净化装置</label>
                 <div class="col-sm-4">
-                    <select class="custom-select custom-select-sm" name="gas_device" id="gas_device" required>
-                      <option value="">请选择...</option>
-                      <option {{'selected' if (item['gas_device'] or '是') == '是'}} value="是">是</option>
-                      <option {{'selected' if item['gas_device']  == '否'}} value="否">否</option>
-                    </select>
+                    <input type="text" name="gas_device"   value="{{item['gas_device']|s}}"
+                       class="form-control form-control-sm" id="gas_device">
                 </div>
                 <label class="col-sm-2 text-sm-right" for="gas_monitor">是否安装在线监测</label>
                 <div class="col-sm-4">
-                    <select class="custom-select custom-select-sm" name="gas_monitor" id="gas_monitor" required>
-                      <option value="">请选择...</option>
-                      <option {{'selected' if (item['gas_monitor'] or '是') == '是'}} value="是">是</option>
-                      <option {{'selected' if item['gas_monitor']  == '否'}} value="否">否</option>
-                    </select>
+                    <input type="text" name="gas_monitor"   value="{{item['gas_monitor']|s}}"
+                       class="form-control form-control-sm" id="gas_monitor">
                 </div>
             </div>
         </fieldset>

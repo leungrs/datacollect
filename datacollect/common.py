@@ -1,7 +1,9 @@
 # coding: utf-8
 
 import os
+import re
 import json
+import numbers
 from datacollect.config import DATA_FOLDER
 
 SUCCESS = "ok"
@@ -57,7 +59,7 @@ class Result(object):
         self._data = value
 
 
-def to_type(obj, type_obj=str, default=0):
+def to_type(obj, type_obj=str, default=None):
     try:
         if isinstance(type_obj, str):
             if type_obj == "float":
@@ -66,25 +68,56 @@ def to_type(obj, type_obj=str, default=0):
                 type_obj = int
             elif type_obj == "str":
                 type_obj = str
-                default = ""
             else:
-                pass
-
-        if type_obj is str:
-            default = ""
-
+                return default
         return type_obj(obj)
     except:
         return default
 
 
+D_M_S_STR = r"""
+(\d+°)?(\d+')?(\d+\.?\d+")?
+"""
+D_M_S = re.compile(D_M_S_STR.strip())
+
+
+def get_d_m_s(dms):
+    if isinstance(dms, numbers.Real):
+        return to_d_m_s(dms)
+
+    if isinstance(dms, str):
+        dms = dms.strip()
+
+        try:
+            dms = float(dms)
+            return to_d_m_s(dms)
+        except:
+            pass
+
+        mo = D_M_S.match(dms) if isinstance(dms, str) else None
+        if mo:
+            d, m, s = mo.groups()
+            if d is not None:
+                d = to_type(d[:-1], float)
+            if m is not None:
+                m = to_type(m[:-1], float)
+            if s is not None:
+                s = to_type(s[:-1], float)
+            return d, m, s
+
+    return None, None, None
+
+
 def to_d_m_s(val):
     """十进制转换成度分秒"""
-    i_d = int(val)
-    m = (val - i_d) * 60
-    i_m = int(m)
-    f_s = (m - i_m) * 60
-    return i_d, i_m, f_s
+    try:
+        i_d = int(val)
+        m = (val - i_d) * 60
+        i_m = int(m)
+        f_s = (m - i_m) * 60
+        return i_d, i_m, f_s
+    except:
+        return None, None, None
 
 
 class AdminNode(object):
@@ -220,6 +253,6 @@ ADMIN_HANDLER = AdminNodeHandler("广东省", "深圳市", "福田区", None)
 
 
 if __name__ == '__main__':
-    hd = AdminNodeHandler()
-    hd.print()
+    rv = get_d_m_s('''114°42.039"''')
+    print(rv)
 

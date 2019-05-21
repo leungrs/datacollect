@@ -70,12 +70,8 @@
             </div>
             <label class="col-sm-2 text-sm-right" for="town">乡(镇)</label>
             <div class="col-sm-4">
-               <select name="town" id="town"
-                        class="custom-select custom-select-sm"  required>
-                    {% for pitem in admins['t'] %}
-                    <option {{'selected' if pitem.selected}} value='{{pitem.name}}'>{{pitem.name}}</option>
-                    {% endfor %}
-                </select>
+                 <input type="text" name="town"  value="{{item['town']|s}}"
+                       class="form-control form-control-sm" id="town">
             </div>
         </div>
         <div class="form-row">
@@ -183,13 +179,8 @@
         <div class="form-row">
             <label class="col-sm-2 text-sm-right" for="run_normally">是/否正常运营</label>
             <div class="col-sm-4">
-                <select name="run_normally" id="run_normally"
-                        class="custom-select custom-select-sm" value="{{item['run_normally']|s}}"
-                        required>
-                  <option value="">请选择...</option>
-                  <option {{'selected' if (item['run_normally'] or '是') == '是'}} value="是">是</option>
-                  <option {{'selected' if item['run_normally']  == '否'}} value="否">否</option>
-                </select>
+                <input type="text" name="run_normally"    value="{{item['run_normally']|s}}"
+                       class="form-control form-control-sm" id="run_normally">
             </div>
         </div>
         </fieldset>
@@ -244,11 +235,8 @@
                 </div>
                 <label class="col-sm-2 text-sm-right" for="water_monitor">是否安装在线监测</label>
                 <div class="col-sm-4">
-                    <select class="custom-select custom-select-sm" name="water_monitor" id="water_monitor" required>
-                      <option value="">请选择...</option>
-                      <option {{'selected' if (item['water_monitor'] or '是') == '是'}} value="是">是</option>
-                      <option {{'selected' if item['water_monitor']  == '否'}} value="否">否</option>
-                    </select>
+                     <input type="text" name="water_monitor"    value="{{item['water_monitor']|s}}"
+                       class="form-control form-control-sm" id="water_monitor">
                 </div>
             </div>
         </fieldset>
@@ -271,7 +259,7 @@
                     <input type="number" step="0.01" class="form-control form-control-sm"
                              value="{{item['waster1_annual']|num}}"
                            name="waster1_annual"
-                           id="waster1_annual" placeholder="年产生量(吨)">
+                           id="waster1_annual">
                 </div>
                 <label class="col-sm-2 text-sm-right" for="waster1_jcz">
                     交持证单位量(吨)
@@ -279,7 +267,7 @@
                 <div class="col-sm-2">
                     <input type="number" step="1" class="form-control form-control-sm"
                              value="{{item['waster1_jcz']|num}}" name="waster1_jcz"
-                           id="waster1_jcz" placeholder="交持证单位量(吨)">
+                           id="waster1_jcz">
                 </div>
             </div>
             <div class="form-row">
@@ -299,7 +287,7 @@
                     <input type="number" step="0.01" class="form-control form-control-sm"
                              value="{{item['waster2_annual']|num}}"
                            name="waster2_annual"
-                           id="waster2_annual" placeholder="年产生量(吨)">
+                           id="waster2_annual">
                 </div>
                 <label class="col-sm-2 text-sm-right" for="waster2_jcz">
                     交持证单位量(吨)
@@ -307,7 +295,7 @@
                 <div class="col-sm-2">
                     <input type="number" step="1" class="form-control form-control-sm"
                              value="{{item['waster2_jcz']|num}}"
-                           name="waster2_jcz" id="waster2_jcz" placeholder="交持证单位量(吨)">
+                           name="waster2_jcz" id="waster2_jcz" >
                 </div>
             </div>
             <div class="form-row">
@@ -327,7 +315,7 @@
                     <input type="number" step="0.01" class="form-control form-control-sm"
                              value="{{item['waster3_annual']|num}}"
                            name="waster3_annual"
-                           id="waster3_annual" placeholder="年产生量(吨)">
+                           id="waster3_annual">
                 </div>
                 <label class="col-sm-2 text-sm-right" for="waster3_jcz">
                     交持证单位量(吨)
@@ -335,7 +323,7 @@
                 <div class="col-sm-2">
                     <input type="number" step="1" class="form-control form-control-sm"
                              value="{{item['waster3_jcz']|num}}"
-                           name="waster3_jcz" id="waster3_jcz" placeholder="交持证单位量(吨)">
+                           name="waster3_jcz" id="waster3_jcz">
                 </div>
             </div>
             <!--<div class="form-row text-center">-->

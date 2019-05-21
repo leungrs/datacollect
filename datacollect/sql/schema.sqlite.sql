@@ -47,8 +47,6 @@ CREATE TABLE restaurant_survey (
   town TEXT,  -- 乡镇
   address TEXT,
   region_code TEXT,
-  longitude REAL,
-  latitude REAL,
   lon_d REAL,
   lon_m REAL,
   lon_s REAL,

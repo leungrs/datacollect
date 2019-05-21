@@ -1,7 +1,7 @@
 # coding: utf-8
 
 
-from datacollect.common import to_type, to_d_m_s, Result
+from datacollect.common import to_type, to_d_m_s, Result, get_d_m_s
 from datacollect.dao import sqlite3_row_to_dict, RestaurantTable, FUTIAN, get_town_from_address
 
 
@@ -26,38 +26,20 @@ def insert_update(db, param, id=None):
     try:
         fields = []
         values = []
-        longitude = 0
-        latitude = 0
         for k, v in param.items():
-            if k == "lon_d":
-                longitude += to_type(v, float, 0)
-            elif k == "lon_m":
-                longitude += to_type(v, float, 0) / 60
-            elif k == "lon_s":
-                longitude += to_type(v, float, 0) / 3600
-            elif k == "lat_d":
-                latitude += to_type(v, float, 0)
-            elif k == "lat_m":
-                latitude += to_type(v, float, 0) / 60
-            elif k == "lat_s":
-                latitude += to_type(v, float, 0) / 3600
-            elif k == "longitude":
-                longitude = to_type(v, float, 0)
+            if k == "longitude":
+                d, m, s = get_d_m_s(v)
+                fields.extend(["lon_d","lon_m","lon_s"])
+                values.extend([d, m, s])
+                continue
             elif k == "latitude":
-                latitude = to_type(v, float, 0)
+                d, m, s = get_d_m_s(v)
+                fields.extend(["lat_d", "lat_m", "lat_s"])
+                values.extend([d, m, s])
+                continue
 
             fields.append(k)
             values.append(v)
-
-        if "longitude" not in fields:
-            # 非导入，使用的是度分秒计算出的数据
-            fields.extend(["longitude", "latitude"])
-            values.extend([longitude, latitude])
-        else:
-            fields.extend(["lon_d", "lon_m", "lon_s"])
-            values.extend(to_d_m_s(longitude))
-            fields.extend(["lat_d", "lat_m", "lat_s"])
-            values.extend(to_d_m_s(latitude))
 
         if id is not None:
             sql = "update restaurant_survey set "
@@ -78,37 +60,52 @@ def import_restaurant_from_array(array, db, updated_date, updated_by):
     columns = array[0]
     rows = array[1:]
     valid_names = {
-        "餐饮企业名称": "ent_name",
-        "经营地址": "address",
-        "经度": "longitude:float",
-        "纬度": "latitude:float",
-        "法人代表": "legal_person",
-        "投产时间": "open_date",
-        "企业联系人": "ent_contact",
+        "统一社会信用代码": "uniform_credit_code:str",
+        "单位详细名称": "ent_name:str",
+        "区划代码": "region_code:str",
+        "地址": "address:str",
+        "经度": "longitude:str",
+        "纬度": "latitude:str",
+        "法定代表人（单位负责人）": "legal_person:str",
+        "开业（成立）时间": "open_date:str",
+        "联系人": "ent_contact:str",
         "联系电话": "ent_phone:str",
-        "餐饮类型": "restaurant_type",
-        "可容纳用餐人数": "customer_capacity:float",
-        "员工人数": "employee_num:int",
-        "经营面积": "ent_area:float",
-        "用水量": "water_used:float",
-        "餐厨垃圾处置去向": "kitchen_waster_gone"
+        "是/否正常运营": "run_normally:str",
+        "餐饮类型": "restaurant_type:str",
+        "可容纳就餐人数": "customer_capacity:int",
+        "员工数量": "employee_num:int",
+        "年营业额（万元）": "annual_turnover:float",
+        "经营面积（m2）": "ent_area:float",
+        "食用油使用量（吨）": "cooking_oil:float",
+        "年用水量（m³）": "water_used:float",
+        "是否有隔油设施": "oil_device:str",
+        "年废水排放量": "water_waster_emit:float",
+        "化学需氧量浓度": "water_cod:float",
+        "动植物油浓度": "water_oil:float",
+        "氨氮浓度": "water_nh4:float",
+        "总磷浓度": "water_tp:float",
+        "是否安装在线监测": "water_monitor:str",
+        "是否有油烟净化装置": "gas_device:str",
+        "油烟排放风量": "gas_emission_vol:float",
+        "油烟颗粒物浓度（mg/m3）": "gas_solid:float",
+        "非甲烷总烃浓度（mg/m3）": "not_ch4:float",
+        "油烟排放设施年运行时间": "device_runtime:float",
+        "餐厨垃圾产生量": "kitchen_waster_volume:float",
+        "餐厨垃圾去向": "kitchen_waster_gone:str",
+        "炉头数": "burner_num:int",
+        "街道办": "town:str",
     }
     success_count = 0
     for row in rows:
-        burner_count = 0
         item = {}
         for i, col in enumerate(columns):
             val = row[i]
             if col in valid_names:
                 valid_name = valid_names[col]
-                if ":" in valid_name:
-                    valid_name, type_str = valid_name.split(":")
-                    val = to_type(val, type_str)
-                item[valid_name] = val
-            elif "炉" in col:
-                burner_count += to_type(val, int, 0)
-        # 处理炉头数
-        item["burner_num"] = burner_count
+                valid_name, type_str = valid_name.split(":")
+                val = to_type(val, type_str)
+                if val is not None:
+                    item[valid_name] = val
         item["updated_date"] = updated_date
         item["updated_by"] = updated_by
         item.update(FUTIAN)
